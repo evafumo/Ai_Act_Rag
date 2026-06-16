@@ -1,0 +1,327 @@
+question_id,question_text,answer_summary,chunk_id,chunk_text
+D1,What is the purpose and origin of the data?,"The COMPAS dataset was created by ProPublica to investigate racial bias in the COMPAS recidivism risk‑assessment tool developed by Northpointe Equivant. Curated by journalists Julia Angwin, Jeff Larson, Surya Mattu, and Lauren Kirchner, the dataset was funded by ProPublica and built by collecting and integrating public criminal justice records from Broward County, Florida, covering individuals assessed by COMPAS in 2013 and 2014. The raw data originated from the Broward County Sheriff’s Office, the Broward County Clerk’s Office, and the Florida Department of Corrections, whose staff recorded arrests, jail events, incarceration histories, and COMPAS scores. ProPublica obtained COMPAS scores for all individuals assessed during the period, downloaded criminal records from the Clerk’s Office website, incorporated jail records from the Sheriff’s Office, and added incarceration data from the Department of Corrections. They matched individuals using names and dates of birth and performed extensive cleaning and integration to produce a coherent dataset suitable for auditing algorithmic fairness. The resulting dataset represents a reconstructed, journalist curated view of how COMPAS operated in practice within Broward County’s criminal justice system.",0,"Algorithmic Fairness Datasets: the Story so Far
+207
+Appendix C
+COMPAS
+Key references include Angwin et al. (2016); Larson et al. (2016); Dieterich et al. (2016);
+ProPublica (2016); Equivant (2019); Brennan et al. (2009); Bao et al. (2021); Barenstein
+(2019).
+C.1
+Datasheet
+C.1.1
+Motivation
+– For what purpose was the dataset created?
+This dataset was created for an external audit of racial biases in the Correctional Of-
+fender Management Proﬁling for Alternative Sanctions (COMPAS) risk assessment tool
+develop"
+,,,1," for Alternative Sanctions (COMPAS) risk assessment tool
+developed by Northpointe (now Equivant), which estimates the likelihood of a defendant
+becoming a recidivist.
+– Who created the dataset and on behalf of which entity?
+The dataset was created by Julia Angwin (senior reporter), JeﬀLarson (data editor),
+Surya Mattu (contributing researcher), Lauren Kirchner (senior reporting fellow). All
+four contributors were aﬃliated with ProPublica at the time.
+– Who funded the creation of the dataset?
+The dataset cur"
+,,,2," time.
+– Who funded the creation of the dataset?
+The dataset curation work was likely remunerated by ProPublica.
+C.1.2
+Composition
+– What do the instances that comprise the dataset represent?
+Each instance is a person that was scored for risk of recidivism by the COMPAS system
+in Broward County, Florida, between 2013–2014. In other words, instances are defen-
+dants.
+– How many instances are there in total?
+The COMPAS dataset (ProPublica, 2016) consists of 11,757 defendants assessed at the
+pretrial stage (co"
+,,,16,"obtained COMPAS scores associated with all 18,610
+people scored in 2013 and 2014. Defendants’ public criminal records were obtained from
+the Broward County Clerk’s Oﬃce website matching them based on date of birth, ﬁrst"
+,,,19,"mpas-scores-two-years.
+and last names. The dataset was augmented with jail records provided by the Broward
+County Sheriﬀ’s Oﬃce. Finally public incarceration records were downloaded from the
+Florida Department of Corrections website.
+– What mechanisms or procedures were used to collect the data?
+The original data was plausibly recorded by employees of the Broward County Sheriﬀ’s
+Oﬃce, Broward County Clerk’s Oﬃce, and Florida Department of Corrections. The
+curators of the COMPAS dataset obtained records from"
+D2,What is the context in which the data was created?,"The COMPAS dataset was created using data collected in Broward County, Florida, where COMPAS is used primarily for pretrial release and detention decisions. The data covers COMPAS scores assigned in 2013,2014, jail records from January 2013 to April 2016, and was released by ProPublica in May 2016. The underlying information was originally recorded by the Broward County Sheriff’s Office, Clerk’s Office, and the Florida Department of Corrections as part of routine criminal justice operations. ProPublica later assembled the dataset by obtaining COMPAS scores through a public records request and downloading criminal and incarceration records from official websites. The dataset represents a convenience sample limited to Broward County and the 2013–2014 scoring period, reflecting the local operational context in which COMPAS was deployed.",3,"consists of 11,757 defendants assessed at the
+pretrial stage (compas-scores.csv). A separate dataset is released for a subset of 7,214
+defendants that were observed for two years after screening (compas-scores-two-years.csv).
+Finally a smaller subset of 4,743 defendants focuses on violent recidivism (compas-scores-two-years-violent.csv).
+– Does the dataset contain all possible instances or is it a sample of instances
+from a larger set?
+The dataset represents a convenience sample of all individuals that were"
+,,,4,"set represents a convenience sample of all individuals that were scored by
+the COMPAS tool. It concentrates on defendants in Broward County, as it is a large
+jurisdiction in a state with strong open-records laws (Larson et al., 2016). Moreover,
+due to Broward County using COMPAS primarily in release/detain decisions prior to
+a defendant’s trial, scores assessed at parole, probation or other stages were discarded.
+A notable anomaly in the sample is the low amount of defendants screened between
+June and July "
+,,,26,"210
+Fabris, Messina, Silvello, Susto
+– Over what timeframe was the data collected?
+COMPAS scores are from 2013 and 2014, while jail records cover the period from Jan-
+uary 2013 to April 2016. The dataset was ﬁrst released by ProPublica in May 2016
+(ProPublica, 2016).
+– Were any ethical review processes conducted?
+Unknown.
+– Was the data collected from the individuals in question directly, or obtained
+via third parties or other sources?
+The data was obtained via third parties, namely the Broward County Sheri"
+,,,27," was obtained via third parties, namely the Broward County Sheriﬀ’s Oﬃce
+in Florida through a public records request, from the Broward County Clerk’s Oﬃce
+through the oﬃcial website and through the Florida Department of Corrections through
+the oﬃcial website. Collection from interested individuals would not have been viable.
+– Were the individuals in question notiﬁed about the data collection?
+Likely no. Most of the COMPAS data was publicly available and downloaded from
+the oﬃcial websites of Broward County"
+D3,What data-preparation processing operations took place?,"The COMPAS dataset underwent extensive data‑preparation operations. It is a convenience sample of Broward County defendants scored by COMPAS at the pretrial stage, excluding assessments from parole or probation. ProPublica cross‑referenced three independent public sources, the Sheriff’s Office, Clerk’s Office, and Department of Corrections, to assemble the dataset, then applied a standard preprocessing pipeline that removed records with inconsistent dates, undefined charge degrees, missing COMPAS scores, or indeterminate recidivism outcomes. Additional cleaning addressed clerical errors and structural omissions, though several internal COMPAS risk‑factor variables and pretrial release/detention indicators were missing. Labels for recidivism, violent recidivism, and risk categories were generated algorithmically. The dataset was enriched by merging multiple sources and aggregating roughly 50 variables per defendant, producing several subsets with different scopes. Raw cross‑referenced data is preserved in ProPublica’s GitHub repository, while the cleaned version follows ProPublica’s widely used preprocessing code.",4,"set represents a convenience sample of all individuals that were scored by
+the COMPAS tool. It concentrates on defendants in Broward County, as it is a large
+jurisdiction in a state with strong open-records laws (Larson et al., 2016). Moreover,
+due to Broward County using COMPAS primarily in release/detain decisions prior to
+a defendant’s trial, scores assessed at parole, probation or other stages were discarded.
+A notable anomaly in the sample is the low amount of defendants screened between
+June and July "
+,,,5," is the low amount of defendants screened between
+June and July 2013 compared to the remaining time span of the COMPAS dataset
+(Barenstein, 2019).
+– What data does each instance consist of?
+Instances represent Broward County defendants scored with COMPAS for risk of re-
+cidivism. For each defendant the data provided by ProPublica includes tens of variables
+(∼50) summarizing their demographics, criminal record, custody and COMPAS scores.
+– Is there a label or target associated with each instance?
+Yes. Instan"
+,,,9,"avour that required cross-referencing information from three
+separate sources, namely Broward County Sheriﬀ’s Oﬃce, Broward County Clerk’s Of-
+ﬁce and Florida Department of Corrections. Moreover, Northpointe’s response to the
+ProPublica’s study points out important risk factors considered by the COMPAS algo-
+rithm that are not present in the dataset, among which the criminal involvement scale,
+drug problems sub-scale, age at ﬁrst adjudication, arrest rate and vocational educa-
+tional scale (Dieterich et al."
+,,,10,"arrest rate and vocational educa-
+tional scale (Dieterich et al., 2016). Finally, a clear indication of whether defendants
+were released or detained pretrial seems to be missing.
+– Are relationships between individual instances made explicit?
+No. While it is plausile for some Broward County defendants to be connected, this
+information is not available.
+– Are there recommended data splits?
+No.
+– Are there any errors, sources of noise, or redundancies in the dataset?
+Yes. Clerical errors in records caused inc"
+,,,30,"aning/labelling
+– Was any preprocessing/cleaning/labeling of the data done?
+Yes. Instances were discarded if assessed with COMPAS at parole, probation or other
+stages in the criminal justice system. This data is unavailable. Moreover, ProPublica
+published its datasets with accompanying preprocessing code which has become stan-
+dard (ProPublica, 2016). The standard preprocessing removes instances for which (1)
+arrest dates or charge dates are not within 30 days of the COMPAS assessment, (2)
+true recidivism c"
+,,,31,"t within 30 days of the COMPAS assessment, (2)
+true recidivism cannot be decided, (3) charge degree is not deﬁned as misdemeanor or
+felony, (4) the COMPAS score is not clearly deﬁned. The remaining COMPAS scores
+were bucketed into low, medium and high risk.
+– Was the “raw” data saved in addition to the preprocessed/cleaned/labeled
+data?
+Yes. The data is available in the oﬃcial ProPublica github repository (ProPublica,
+2016). This is an intermediate data artifact, already cross-referenced by ProPublica
+acros"
+D4,What does the data measure and represent?,"The COMPAS dataset represents Broward County defendants assessed for risk of recidivism at the pretrial stage and includes roughly 50 variables describing demographics, criminal history, custody events, and COMPAS risk scores. It contains 11,757 pretrial defendants, with subsets of 7,214 for two‑year recidivism and 4,743 for violent recidivism. The dataset includes two target variables—is_recid and is_violent_recid—defined as arrests within two years, not convictions or actual offending. Several important COMPAS internal risk factors are missing, including the criminal involvement scale, drug problems sub‑scale, age at first adjudication, arrest rate, and vocational/educational scale, and the variable violent_recid is entirely NaN. Additional gaps include missing pretrial release/detention status, redundant columns, clerical mismatches (~4% error rate), and a spurious trend causing all post‑April‑2014 screenings to appear as recidivists. The dataset assumes arrests approximate crime, two‑year windows approximate meaningful risk, and pretrial COMPAS scores reflect true risk assessment, despite structural limitations and missing information.",3,"consists of 11,757 defendants assessed at the
+pretrial stage (compas-scores.csv). A separate dataset is released for a subset of 7,214
+defendants that were observed for two years after screening (compas-scores-two-years.csv).
+Finally a smaller subset of 4,743 defendants focuses on violent recidivism (compas-scores-two-years-violent.csv).
+– Does the dataset contain all possible instances or is it a sample of instances
+from a larger set?
+The dataset represents a convenience sample of all individuals that were"
+,,,5," is the low amount of defendants screened between
+June and July 2013 compared to the remaining time span of the COMPAS dataset
+(Barenstein, 2019).
+– What data does each instance consist of?
+Instances represent Broward County defendants scored with COMPAS for risk of re-
+cidivism. For each defendant the data provided by ProPublica includes tens of variables
+(∼50) summarizing their demographics, criminal record, custody and COMPAS scores.
+– Is there a label or target associated with each instance?
+Yes. Instan"
+,,,6,"ere a label or target associated with each instance?
+Yes. Instances are associated with two target variables (is recid and is violent recid),
+indicating whether defendants were booked in jail with a criminal oﬀense (potentially
+violent) that took place after their COMPAS screening but within two years. The def-
+inition of recidivism and the two-year cutoﬀwere selected by ProPublica staﬀto align
+their audit with deﬁnitions by Northpointe (Brennan et al., 2009; Angwin et al., 2016)."
+,,,52,"Algorithmic Fairness Datasets: the Story so Far
+215
+C.2.3
+Variables
+VARIABLES
+id
+Unique identiﬁer assigned by the authors
+name
+Defendant’s ﬁrst and last name
+ﬁrst
+Defendant’s ﬁrst name
+last
+Defendant’s last name
+compas screening date
+Day defendant was scored by COMPAS
+sex
+Defendant’s sex
+dob
+Defendant’s date of birth
+age
+Defendant’s age
+age cat
+Age quantization:
+less than 25
+25-45
+greater than 45
+race
+Defendant’s race:
+African-American
+Asian
+Caucasian
+Hispanic
+Native American
+Other
+juv fel count
+Number of j"
+,,,56,"216
+Fabris, Messina, Silvello, Susto
+VARIABLES
+c jail in
+Date of imprisonment
+c jail out
+Date of release
+c case number
+Alpha-numeric case identiﬁer
+c oﬀense date
+Date on which the oﬀense was committed
+c arrest date
+Date on which defendant was arrested
+c days from compas
+Days elapsed between oﬀense/arrest and the
+date of COMPAS screening
+c charge degree
+Degree of charge:
+F (felony)
+M (misdemeanor)
+c charge desc
+Textual description of charge
+is recid
+Binary indication of recidivism.
+r case number
+Alpha-numeri"
+,,,60,"Algorithmic Fairness Datasets: the Story so Far
+217
+VARIABLES
+violent recid
+Unknown; all nan
+is violent recid
+Binary indication of violent recidivism. If
+true, then is recid is true.
+vr case number
+Alpha-numeric case identiﬁer for violent
+recidivist oﬀense
+vr charge degree
+Degree of violent recidivist oﬀense
+vr oﬀense date
+Date of violent recidivist oﬀense
+vr charge desc
+Textual description of the violent recidivist
+charge
+type of assessment
+Type of COMPAS assessment - all ’Risk of
+Recidivism’.
+decile score"
+D5,Which data biases might lead to discrimination?,"The COMPAS dataset contains several data‑side biases that may lead to discrimination or impact fundamental rights. It includes sensitive protected attributes such as race, sex, and age, with race categories inherited from the Broward County Sheriff’s Office and a demographic distribution heavily skewed toward African‑American defendants (51.46%). Recidivism labels are based on arrests within two years, not convictions, and are therefore shaped by policing practices that disproportionately affect certain communities. Clerical errors produce an estimated 4% mismatch rate between COMPAS scores and criminal records, and ProPublica’s preprocessing introduces a spurious trend in which all defendants screened after April 2014 appear as recidivists. Violent recidivism labels are incomplete (violent_recid is entirely NaN). The dataset includes full names and dates of birth, making individuals directly identifiable. No fairness‑oriented mitigation was applied; the dataset preserves structural biases from historical criminal justice practices, differential policing, and administrative inconsistencies. These factors collectively create biased marginal and joint distributions of protected attributes and targets, raising significant risks of discriminatory outcomes and violations of fundamental rights.",11,"ncies in the dataset?
+Yes. Clerical errors in records caused incorrect matches between individuals’ COMPAS
+scores and their criminal records, leading to an error rate close to 4% (Larson et al.,
+2016). Moreover, an important temporal trend was spuriously introduced by ProPub-
+lica’s preprocessing in compas-scores-two-years.csv and compas-scores-two-years-violent.csv,
+due to which defendants with a screening date after April 2014 are all recidivists
+(Barenstein, 2019). In terms of redundancies, compas-scores"
+,,,13,"y.
+– Does the dataset contain data that, if viewed directly, might be oﬀensive,
+insulting, threatening, or might otherwise cause anxiety?
+Yes. The column vr charge desc describing violent recidivism charges is one such ex-
+ample.
+– Does the dataset identify any subpopulations (e.g., by age, gender)?
+Yes. The dataset identiﬁes population by age, sex and race. The curators of the COM-
+PAS dataset maintained the race classiﬁcations used by the Broward County Sheriﬀ’s
+Oﬃce, identifying individuals as Asian, Bla"
+,,,14,"ward County Sheriﬀ’s
+Oﬃce, identifying individuals as Asian, Black, Hispanic, Native American and White
+(Larson et al., 2016). Age is reported as an integer, sex as either Male or Female. A
+distribution along these dimensions is reported in Table 15 which summarizes data in
+compas-scores-two-years.csv. Distributions in remaining ﬁles are similar.
+– Is it possible to identify individuals , either directly or indirectly from the
+dataset?
+Yes. The dataset reports defendants’ ﬁrst name, last name and date of bi"
+,,,18,"0%
+Percentage of people belonging to other races
+5.56%
+Percentage of people under-19 years old
+0.42%
+Percentage of people between 20-29 years old
+42.41%
+Percentage of people between 30-39 years old
+28.04%
+Percentage of people between 40-49 years old
+14.60%
+Percentage of people between 50-59 years old
+11.00%
+Percentage of people between 60-69 years old
+3.01%
+Percentage of people over-70 years old
+0.51%
+Table 15: Demographic Characteristics of compas-scores-two-years.
+and last names. The dataset was augmented"
+,,,37," deviating from a default course of action (Mishler et al., 2021). From
+a broader perspective, the data is likely inﬂuenced by historical biases in criminal jus-
+tice, with diﬀerential impact on diﬀerent communities (Holmes et al., 2008; Xie and
+Lauritsen, 2012; Angwin et al., 2016). Zooming out further, the use of automated risk
+assessment tools in pretrial decisions is the subject of controversial debate (Barabas
+et al., 2019) which cannot be overlooked.
+– Are there tasks for which the dataset should not "
+D6,What data gaps and shortcomings are there in the data?,"The COMPAS dataset contains several severe data gaps and inaccuracies. The most critical issues include a spurious preprocessing artifact that labels all defendants screened after April 2014 as recidivists, missing pretrial release/detention status, missing internal COMPAS risk factors, a 4% clerical mismatch rate between COMPAS scores and criminal records, and the complete absence of the violent recidivism variable (violent_recid). Moderate issues include missing offense and incarceration dates, the dataset’s convenience‑sample nature, a screening anomaly in June–July 2013, missing relational information, and the use of arrest‑based labels rather than convictions. Low‑severity issues include redundant columns, lack of recommended data splits, and minor inconsistencies in textual fields. Collectively, these shortcomings range from moderate to severe and significantly affect the dataset’s accuracy, completeness, and suitability for fairness‑critical analysis.",8,"ions by Northpointe (Brennan et al., 2009; Angwin et al., 2016).
+
+208
+Fabris, Messina, Silvello, Susto
+– Is any information missing from individual instances?
+Yes. There are several columns where data is missing for one or more instances, in-
+cluding dates when defendants committed the oﬀense (c oﬀense date) were incarcerated
+(c jail in) or released (c jail out). Missingness in this dataset is not surprising as its cu-
+ration was a complex endeavour that required cross-referencing information from three
+sep"
+,,,9,"avour that required cross-referencing information from three
+separate sources, namely Broward County Sheriﬀ’s Oﬃce, Broward County Clerk’s Of-
+ﬁce and Florida Department of Corrections. Moreover, Northpointe’s response to the
+ProPublica’s study points out important risk factors considered by the COMPAS algo-
+rithm that are not present in the dataset, among which the criminal involvement scale,
+drug problems sub-scale, age at ﬁrst adjudication, arrest rate and vocational educa-
+tional scale (Dieterich et al."
+,,,10,"arrest rate and vocational educa-
+tional scale (Dieterich et al., 2016). Finally, a clear indication of whether defendants
+were released or detained pretrial seems to be missing.
+– Are relationships between individual instances made explicit?
+No. While it is plausile for some Broward County defendants to be connected, this
+information is not available.
+– Are there recommended data splits?
+No.
+– Are there any errors, sources of noise, or redundancies in the dataset?
+Yes. Clerical errors in records caused inc"
+,,,11,"ncies in the dataset?
+Yes. Clerical errors in records caused incorrect matches between individuals’ COMPAS
+scores and their criminal records, leading to an error rate close to 4% (Larson et al.,
+2016). Moreover, an important temporal trend was spuriously introduced by ProPub-
+lica’s preprocessing in compas-scores-two-years.csv and compas-scores-two-years-violent.csv,
+due to which defendants with a screening date after April 2014 are all recidivists
+(Barenstein, 2019). In terms of redundancies, compas-scores"
+,,,21,"ent tool, this dataset represents a conve-
+nience sample, focused on a single county and scoring period 2013–2014. Considering a
+single county in a state with strong open-records laws reduced the data cross-referencing
+overhead. Concentrating on recent scores predating the study by 2–3 years kept the study
+timely and permitted a measurement of recidivism aligned with the one by Northpointe.
+The fact that Northpointe’s response to the ProPublica study only contains minor crit-
+icism of the sample (concerning"

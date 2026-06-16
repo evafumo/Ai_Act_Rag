@@ -1,0 +1,126 @@
+D1 What is the purpose and origin of the data?
+    • D1.1 
+        ◦ Purpose for original data collection 
+        ◦ Example: patient records originally collected for treatment
+        ◦ Origin: datasheets, 1
+        ◦ Covers: Art. 10(2)(b) — original purpose of data collection
+    • D1.2 
+        ◦ People and organizations involved in the data collection process
+        ◦ Example: hospital staff, crowdworkers, contracted annotation agencies
+        ◦ Origin: datasheets, 24
+        ◦ Covers: Art. 10(2)(b) — data collection processes
+    • D1.3
+        ◦ Mechanisms or procedures used to collect the data
+        ◦ Example: clinical sensors, web scraping via API
+        ◦ Origin: datasheets, 22
+        ◦ Covers: Art. 10(2)(b) — data collection processes
+
+D2 What is the context in which the data was created?
+    • D2.1
+        ◦ Timeframe of data collection
+        ◦ Example: January 2020 – December 2024
+        ◦ Origin: datasheets, 25
+        ◦ Covers: Art. 10(4) – contextual relevance
+    • D2.2 
+        ◦ Geographical area of data collection
+        ◦ Example: three university hospitals in the Netherlands and Belgium
+        ◦ Origin: new
+        ◦ Covers: Art. 10(4) – geographical relevance
+    • D2.3 
+        ◦ Context of data collection
+        ◦ Example: routine outpatient care; data collected during scheduled follow-up visits, not during acute episodes
+        ◦ Origin: new
+        ◦ Covers: Art. 10(4) – contextual relevance
+
+D3 What data-preparation processing operations took place, including annotation, labelling, cleaning, updating, enrichment and aggregation?
+    • D3.1
+        ◦ Sampling strategy
+        ◦ Example: stratified random sampling by age group and diagnosis; convenience sampling in phase 2
+        ◦ Origin: datasheet, 23
+        ◦ Covers: Art. 10(2)(c)
+    • D3.2
+        ◦ Data preprocessing
+        ◦ Example: age binned into decade brackets; free-text notes tokenized using clinical NLP pipeline
+        ◦ Origin: datasheet, 33
+        ◦ Covers: Art. 10(2)(c)
+    • D3.3
+        ◦ Data cleaning
+        ◦ Example: duplicate records removed; missing lab values imputed using median per diagnostic group
+        ◦ Origin: datasheet, 33
+        ◦ Covers: Art. 10(2)(c)
+    • D3.4
+        ◦ Data labeling and annotation
+        ◦ Example: diagnosis labels assigned by attending physician; secondary review by specialist for ambiguous cases
+        ◦ Origin: datasheet, 33
+        ◦ Covers: Art. 10(2)(c)
+
+D4 What does the data (supposedly) measure and represent?
+    • D4.1
+        ◦ Available features (or covariates) and their explanation
+        ◦ Example: 'age' = age of individual at time of data collection, in full years
+        ◦ Origin: datasheet, 8
+        ◦ Covers: Art. 10(2)(d) — what the data measures
+    • D4.2 
+        ◦ Target variable(s) and their explanation
+        ◦ Example: 'readmission_30d' = binary indicator of hospital readmission within 30 days of discharge
+        ◦ Origin: datasheet, 8
+        ◦ Covers: Art. 10(2)(d) — what the data measures
+    • D4.3
+        ◦ Dataset size
+        ◦ Example: 12,400 instances
+        ◦ Origin: datasheet, 6
+        ◦ Covers: Art. 10(2)(e) — quantity; Art. 10(3) — statistical properties
+    • D4.4
+        ◦ Assumptions about what the data represents
+        ◦ Example: the dataset is assumed to represent the general adult population at secondary care; this assumption may not hold for primary care or community settings
+        ◦ Origin: new
+        ◦ Covers: Art. 10(2)(d), 10(3)  – what the data is supposed to represent
+
+D5 Which data biases might lead to discrimination or otherwise impact fundamental rights?
+    • D5.1
+        ◦ Which attributes are salient or at risk of discrimination
+        ◦ Example: 'sex' and 'ethnicity' are relevant because both correlate with care-seeking behaviour and diagnostic patterns
+        ◦ Origin: Venus, 5; datasheet, 17
+        ◦ Covers: Art. 10(2)(f), Art. 10(3)
+    • D5.2
+        ◦ Marginal distribution of protected attributes
+        ◦ Example: 58% male, 42% female; 74% white, 12% South Asian, 14% other
+        ◦ Origin: Venus, 5
+        ◦ Covers: Art. 10(2)(f), Art. 10(3)
+    • D5.3
+        ◦ Joint distribution of protected and target
+        ◦ Example: 30-day readmission rate is 18% for men and 11% for women
+        ◦ Origin: Venus, 5
+        ◦ Covers: Art. 10(2)(f), Art. 10(3)
+    • D5.4
+        ◦ Expected distributions
+        ◦ Example: lower prevalence of sickle cell disease in white patients is expected and reflects epidemiology, not a data collection artefact
+        ◦ Origin: Venus, 5
+        ◦ Covers: Art. 10(2)(f), Art. 10(3)
+    • D5.5
+        ◦ Label provenance
+        ◦ Example: 'ethnicity' was self-reported at registration; 'sex' was recorded by administrative staff and may conflate biological sex with gender
+        ◦ Origin: Venus, 5
+        ◦ Covers: Art. 10(2)(f), Art. 10(3)
+    • D5.6
+        ◦ Data-side bias mitigation applied
+        ◦ Example: the South Asian subgroup was oversampled in the final dataset to correct for underrepresentation identified in D5.2; targeted re-annotation was performed for cases where inter-annotator agreement was below 0.6
+        ◦ Origin: new
+        ◦ Covers: Art. 10(2)(g) — data-level measures to detect, prevent and mitigate bias
+
+D6 What data gaps and shortcomings are there in the data?
+    • D6.1
+        ◦ Plausible sources of inaccuracy
+        ◦ Example: diagnosis labels may be noisy due to inconsistent coding practices across contributing hospitals
+        ◦ Origin: Venus 5,6
+        ◦ Covers: Art. 10(2)(h), Art. 10(3)
+    • D6.2
+        ◦ Gaps in the data
+        ◦ Example: patients over 80 are likely underrepresented due to exclusion from the originating clinical trial
+        ◦ Origin: Venus, 5
+        ◦ Covers: Art. 10(2)(h), Art. 10(3)
+    • D6.3
+        ◦ Severity of inaccuracy
+        ◦ Example: inter-annotator agreement for diagnosis labels is κ = 0.61; signal-to-noise ratio for sensor readings is 14 dB
+        ◦ Origin: Venus, 5
+        ◦ Covers: Art. 10(2)(h), Art. 10(3)
