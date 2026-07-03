@@ -22,7 +22,7 @@ from chunker import (
     hybrid_chunking,
 )
 from retrievers import build_retriever_combo, unified_retrieval
-from eval import load_ground_truth, evaluate_retriever
+from eval import load_ground_truth, evaluate_retriever, append_to_combined_csv
 from llm import generate_answer
 from langchain_core.documents import Document
 
@@ -88,41 +88,52 @@ def auto_select_ground_truth(pdf_path: str, chunking: str) -> str | None:
     NOTE:
         - Usa convenzioni di naming: GT_B_Adult_Fixed.jsonl, ecc.
     """
+
     name = Path(pdf_path).stem.lower()
 
+    # Mappa: keyword nel nome PDF → prefisso GT + cartella dataset
     dataset_map = {
-        "adult": "GT_B_Adult",
-        "compas": "GT_B_COMPAS",
-        "german": "GT_B_German",
+        "adult":  ("GT_B_Adult",   "datasets/B_Adults/GT"),
+        "compas": ("GT_C_COMPAS",  "datasets/C_COMPASS/GT"),
+        "german": ("GT_D_German",  "datasets/D_German/GT"),
+        "ehsrql": ("GT_EHSRQL",    "datasets/EHSRQL/GT"),
     }
 
     chunk_map = {
         "fixed": "Fixed",
         "sliding": "Sliding",
-        "hybrid": "Hybrid",
-        "semantic": "Semantic",
+        "hybrid": "Hybrid"
     }
 
     dataset_key = None
-    for key in dataset_map:
+    dataset_dir = None
+
+    # Identifica dataset dal nome del PDF
+    for key, (prefix, folder) in dataset_map.items():
         if key in name:
-            dataset_key = dataset_map[key]
+            dataset_key = prefix
+            dataset_dir = folder
             break
 
     if dataset_key is None:
+        print("[WARN] Dataset non riconosciuto dal nome del PDF.")
         return None
 
     if chunking not in chunk_map:
+        print("[WARN] Chunking non riconosciuto:", chunking)
         return None
 
     suffix = chunk_map[chunking]
-    gt_file = Path("datasets/B_Adults/GT") / f"{dataset_key}_{suffix}.jsonl"
 
-    if Path(gt_file).exists():
+    # Costruzione percorso dinamico
+    gt_file = Path(dataset_dir) / f"{dataset_key}_{suffix}.jsonl"
+
+    if gt_file.exists():
         return gt_file
 
     print(f"[WARN] Ground truth non trovato: {gt_file}")
     return None
+
 
 
 # ============================================================
@@ -222,8 +233,21 @@ def main():
             def retrieve_fn(q):
                 return unified_retrieval(retrievers, q, k=20)
 
-            evaluate_retriever(gt, retrieve_fn, json_path= output_dir / f"eval_{pdf_name}.json")
-            print(f"  Evaluation salvata in eval_{pdf_name}.json")
+            eval_json_path = output_dir / f"eval_{pdf_name}_{args.retriever}_{args.chunking}.json"
+            evaluate_retriever(gt, retrieve_fn, json_path=eval_json_path)
+            print(f"  Evaluation salvata in {eval_json_path}")
+            
+            # Accumula il risultato nel CSV combinato (persiste tra run diversi,
+            # non viene mai sovrascritto per intero: solo la combinazione
+            # model+dataset+chunking di QUESTO run viene aggiornata)
+            
+            append_to_combined_csv(
+            	json_path=eval_json_path,
+            	model=args.retriever,
+            	dataset=pdf_name,
+            	chunking=args.chunking,
+            	combined_csv="output/eval_results_combined.csv",
+            )
 
     # ============================================================
     #  Answer generation 
