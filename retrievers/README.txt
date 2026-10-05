@@ -111,4 +111,140 @@ Supporta anche modalità debug.
 - I chunk devono avere metadata["chunk_id"].
 
 
+------------------------------------------------------------
+MULTI-QUERY RETRIEVAL (multi_queries.py)
+------------------------------------------------------------
+
+Questo modulo implementa due strategie di Multi-Query Retrieval
+basate sulla decomposizione della query originale in più
+sottodomande.
+
+Le due strategie differiscono principalmente per il momento
+in cui viene effettuato il reranking.
+
+Funzioni disponibili:
+
+  _doc_key()
+  multi_query_retrieval_rerank_once()
+  multi_query_retrieval_rerank_each()
+
+------------------------------------------------------------
+IDENTIFICAZIONE DOCUMENTI
+------------------------------------------------------------
+
+_doc_key(doc)
+
+Genera una chiave univoca per l'identificazione del documento.
+
+La chiave è composta da:
+
+  (chunk_id, source)
+
+e viene utilizzata per:
+
+  - deduplicazione
+  - fusione RRF
+  - aggregazione dei ranking
+
+Due documenti sono considerati identici solo se coincidono
+sia chunk_id che source.
+
+------------------------------------------------------------
+MULTI-QUERY: RERANK ONCE
+------------------------------------------------------------
+
+multi_query_retrieval_rerank_once()
+
+Implementa una strategia di retrieval con un unico reranking
+finale.
+
+Pipeline:
+
+  per ogni sottodomanda:
+
+      retrieval grezzo
+
+  successivamente:
+
+      merge dei risultati
+      deduplicazione
+      reranking finale
+      selezione top-k
+
+Il retrieval viene eseguito mediante:
+
+  retrieve_raw()
+
+Il reranking finale viene eseguito mediante:
+
+  rerank_with_bge()
+
+utilizzando la query originale.
+
+Output:
+
+  list[Document]
+
+contenente al massimo k_final documenti.
+
+Vantaggi:
+
+  - un solo reranking
+  - costo computazionale ridotto
+  - maggiore coerenza con la query originale
+
+------------------------------------------------------------
+MULTI-QUERY: RERANK EACH
+------------------------------------------------------------
+
+multi_query_retrieval_rerank_each()
+
+Implementa una strategia di retrieval con reranking
+indipendente per ogni sottodomanda.
+
+Pipeline:
+
+  per ogni sottodomanda:
+
+      retrieval
+      eventuale fusione RRF
+      reranking locale
+
+  successivamente:
+
+      fusione RRF delle classifiche
+      selezione top-k
+
+La funzione utilizza:
+
+  unified_retrieval()
+
+che gestisce:
+
+  - retrieval singolo
+  - retrieval multiplo
+  - fusione RRF
+  - reranking
+
+Per ogni sottodomanda viene quindi ottenuta una classifica
+già rerankata.
+
+Le classifiche generate vengono fuse mediante Reciprocal
+Rank Fusion:
+
+    score += 1 / (rrf_k + rank + 1)
+
+Non viene effettuato alcun reranking finale.
+
+Output:
+
+  list[Document]
+
+contenente al massimo k_final documenti.
+
+Vantaggi:
+
+  - maggiore diversità dei risultati
+  - migliore copertura informativa
+  - valorizzazione delle singole sottodomande
 

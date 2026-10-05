@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Ground Truth Viewer</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: system-ui, sans-serif;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 260px;
+      background: #1e293b;
+      border-right: 1px solid #334155;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+      color: #38bdf8;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .sidebar-list details {
+      margin-bottom: 12px;
+    }
+
+    .sidebar-list summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #38bdf8;
+      font-size: 15px;
+    }
+
+    .sidebar-list a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 4px 8px;
+      display: block;
+      border-radius: 6px;
+      margin-left: 10px;
+    }
+
+    .sidebar-list a:hover {
+      background: #334155;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 260px;
+      width: calc(100% - 260px);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    #openBtn {
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    #openBtn:hover {
+      background: #7dd3fc;
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      background: #020617;
+      color: #e2e8f0;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    /* Domande */
+    .item {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 20px;
+    }
+
+    .item.highlight {
+      border: 2px solid #38bdf8;
+      box-shadow: 0 0 12px #38bdf8;
+    }
+
+    .qid {
+      font-size: 14px;
+      color: #38bdf8;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .qtext {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .subitem {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 20px;
+    }
+
+    .answer {
+      background: #0f172a;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      margin-bottom: 14px;
+      line-height: 1.45;
+    }
+
+    details {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #38bdf8;
+    }
+
+    .chunk {
+      margin-top: 10px;
+      padding: 14px;
+      background: #243447;
+      border-radius: 6px;
+      border: 1px solid #475569;
+      font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
+      font-size: 15px;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      letter-spacing: 0.3px;
+    }
+
+    /* Header */
+    #fileHeader {
+      position: fixed;
+      top: 0;
+      left: 260px;
+      right: 0;
+      height: 50px;
+      background: #1e293b;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      font-size: 16px;
+      color: #22c55e;
+      font-weight: 600;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="fileHeader">Nessun file aperto</div>
+
+<div class="sidebar">
+  <h2>Indice</h2>
+  <ul id="questionIndex" class="sidebar-list"></ul>
+</div>
+
+<div class="main" style="margin-top:60px;">
+  <div class="container">
+
+    <h1>Ground Truth Viewer</h1>
+
+    <button id="openBtn" onclick="document.getElementById('filePicker').click()">
+      Apri file JSONL
+    </button>
+
+    <input type="file" id="filePicker" accept=".jsonl,.json" style="display:none" onchange="loadLocalJSON()">
+
+    <p>Oppure incolla manualmente il contenuto JSONL:</p>
+    <textarea id="jsonInput"></textarea>
+
+    <button onclick="render()">Render</button>
+
+    <div id="output"></div>
+  </div>
+</div>
+
+<script>
+
+function updateFileHeader(name) {
+  document.getElementById("fileHeader").textContent = name;
+}
+
+function loadLocalJSON() {
+  const fileInput = document.getElementById("filePicker");
+  const textarea = document.getElementById("jsonInput");
+
+  const file = fileInput.files[0];
+  if (!file) return;
+
+  updateFileHeader(file.name);
+
+  const reader = new FileReader();
+  reader.onload = e => textarea.value = e.target.result;
+  reader.readAsText(file);
+}
+
+function render() {
+  const raw = document.getElementById("jsonInput").value.trim();
+  const output = document.getElementById("output");
+  const index = document.getElementById("questionIndex");
+
+  const lines = raw.split("\n").filter(l => l.trim() !== "");
+  let data;
+
+  try {
+    data = lines.map(line => JSON.parse(line));
+  } catch (e) {
+    output.innerHTML = "<p style='color:#f87171'>JSONL non valido: " + e.message + "</p>";
+    return;
+  }
+
+  output.innerHTML = "";
+  index.innerHTML = "";
+
+  // Raggruppa per question_id
+  const groups = {};
+  data.forEach(item => {
+    if (!groups[item.question_id]) groups[item.question_id] = [];
+    groups[item.question_id].push(item);
+  });
+
+  // Sidebar
+  Object.keys(groups).forEach(qid => {
+    const details = document.createElement("details");
+    const summary = document.createElement("summary");
+    summary.textContent = qid;
+    details.appendChild(summary);
+
+    groups[qid].forEach(sub => {
+      const a = document.createElement("a");
+      const anchorId = "q_" + sub.subquestion_id;
+      a.href = "#" + anchorId;
+      a.textContent = sub.subquestion_id;
+      a.onclick = () => highlight(anchorId);
+      details.appendChild(a);
+    });
+
+    index.appendChild(details);
+  });
+
+  // Main content
+  Object.keys(groups).forEach(qid => {
+    const block = document.createElement("div");
+    block.className = "item";
+    block.id = "q_" + qid;
+
+    block.innerHTML = `
+      <div class="qid">Question ID: ${qid}</div>
+      <div class="qtext">${groups[qid][0].question_text}</div>
+    `;
+
+    groups[qid].forEach(sub => {
+      const subDiv = document.createElement("div");
+      subDiv.className = "subitem";
+      subDiv.id = "q_" + sub.subquestion_id;
+
+      subDiv.innerHTML = `
+        <div class="qid">Subquestion: ${sub.subquestion_id}</div>
+        <div class="qtext">${sub.subquestion_text}</div>
+        <div class="answer">${sub.answer_summary}</div>
+
+        <details>
+          <summary>Relevant Chunks (${sub.relevant_chunks.length})</summary>
+          ${sub.relevant_chunks.map(c => `
+            <div class="chunk">
+              <strong>Chunk ${c.chunk_id} (${c.source})</strong><br>
+              ${c.text}
+            </div>
+          `).join("")}
+        </details>
+      `;
+
+      block.appendChild(subDiv);
+    });
+
+    output.appendChild(block);
+  });
+}
+
+function highlight(id) {
+  document.querySelectorAll(".item, .subitem").forEach(el => el.classList.remove("highlight"));
+  const el = document.getElementById(id);
+  if (el) el.classList.add("highlight");
+}
+
+</script>
+
+</body>
+</html>
+
