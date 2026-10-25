@@ -1,0 +1,5892 @@
+{
+  "summary": {
+    "MAP": 0.08360631261348965,
+    "macro_metrics": {
+      "@5": {
+        "precision": 0.045454545454545456,
+        "recall": 0.13636363636363635,
+        "ndcg": 0.09444691741351964
+      },
+      "@10": {
+        "precision": 0.03636363636363636,
+        "recall": 0.21212121212121213,
+        "ndcg": 0.12349471622077036
+      },
+      "@20": {
+        "precision": 0.02727272727272727,
+        "recall": 0.3143939393939394,
+        "ndcg": 0.15301589784344752
+      }
+    }
+  },
+  "by_parent": {
+    "D1": {
+      "MAP": 0.2825396825396826,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.20000000000000004,
+          "recall": 0.5555555555555555,
+          "ndcg": 0.36951781902489184
+        },
+        "@10": {
+          "precision": 0.13333333333333333,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.42165989969408696
+        },
+        "@20": {
+          "precision": 0.06666666666666667,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.42165989969408696
+        }
+      }
+    },
+    "D2": {
+      "MAP": 0.03149920255183413,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "@20": {
+          "precision": 0.05000000000000001,
+          "recall": 0.4166666666666667,
+          "ndcg": 0.14059858233398148
+        }
+      }
+    },
+    "D3": {
+      "MAP": 0.08333333333333333,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.05,
+          "recall": 0.25,
+          "ndcg": 0.125
+        },
+        "@10": {
+          "precision": 0.025,
+          "recall": 0.25,
+          "ndcg": 0.125
+        },
+        "@20": {
+          "precision": 0.0125,
+          "recall": 0.25,
+          "ndcg": 0.125
+        }
+      }
+    },
+    "D4": {
+      "MAP": 0.013888888888888888,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "@10": {
+          "precision": 0.025,
+          "recall": 0.08333333333333333,
+          "ndcg": 0.04179011374155057
+        },
+        "@20": {
+          "precision": 0.0125,
+          "recall": 0.08333333333333333,
+          "ndcg": 0.04179011374155057
+        }
+      }
+    },
+    "D5": {
+      "MAP": 0.034999999999999996,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "@10": {
+          "precision": 0.02,
+          "recall": 0.2,
+          "ndcg": 0.06309297535714575
+        },
+        "@20": {
+          "precision": 0.02,
+          "recall": 0.4,
+          "ndcg": 0.10862702509653635
+        }
+      }
+    },
+    "D6": {
+      "MAP": 0.1111111111111111,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.06666666666666667,
+          "recall": 0.1111111111111111,
+          "ndcg": 0.15642624200758548
+        },
+        "@10": {
+          "precision": 0.03333333333333333,
+          "recall": 0.1111111111111111,
+          "ndcg": 0.15642624200758548
+        },
+        "@20": {
+          "precision": 0.016666666666666666,
+          "recall": 0.1111111111111111,
+          "ndcg": 0.15642624200758548
+        }
+      }
+    }
+  },
+  "per_query": [
+    {
+      "question_id": "D1.1",
+      "parent_id": "D1",
+      "query": "Purpose for original data collection",
+      "relevant_ids": [
+        [
+          "0",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "0",
+          "EHSRQL"
+        ],
+        [
+          "11",
+          "EHSRQL"
+        ],
+        [
+          "13",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "10",
+          "EHSRQL"
+        ],
+        [
+          "16",
+          "EHSRQL"
+        ],
+        [
+          "21",
+          "EHSRQL"
+        ],
+        [
+          "20",
+          "EHSRQL"
+        ],
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "137",
+          "EHSRQL"
+        ],
+        [
+          "8",
+          "EHSRQL"
+        ],
+        [
+          "118",
+          "EHSRQL"
+        ],
+        [
+          "119",
+          "EHSRQL"
+        ],
+        [
+          "129",
+          "EHSRQL"
+        ],
+        [
+          "81",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.5,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.6309297535714575,
+          "retrieved_ids_at_k": [
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.6309297535714575,
+          "retrieved_ids_at_k": [
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "21",
+              "EHSRQL"
+            ],
+            [
+              "20",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 0.6309297535714575,
+          "retrieved_ids_at_k": [
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "21",
+              "EHSRQL"
+            ],
+            [
+              "20",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "118",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ],
+            [
+              "129",
+              "EHSRQL"
+            ],
+            [
+              "81",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D1.2",
+      "parent_id": "D1",
+      "query": "People and organizations involved in the data collection process",
+      "relevant_ids": [
+        [
+          "0",
+          "EHSRQL"
+        ],
+        [
+          "1",
+          "EHSRQL"
+        ],
+        [
+          "9",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "13",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "11",
+          "EHSRQL"
+        ],
+        [
+          "16",
+          "EHSRQL"
+        ],
+        [
+          "10",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "0",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "24",
+          "EHSRQL"
+        ],
+        [
+          "3",
+          "EHSRQL"
+        ],
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "8",
+          "EHSRQL"
+        ],
+        [
+          "23",
+          "EHSRQL"
+        ],
+        [
+          "14",
+          "EHSRQL"
+        ],
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "114",
+          "EHSRQL"
+        ],
+        [
+          "113",
+          "EHSRQL"
+        ],
+        [
+          "26",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.047619047619047616,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.15642624200758548,
+          "retrieved_ids_at_k": [
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.15642624200758548,
+          "retrieved_ids_at_k": [
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "23",
+              "EHSRQL"
+            ],
+            [
+              "14",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "113",
+              "EHSRQL"
+            ],
+            [
+              "26",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D1.3",
+      "parent_id": "D1",
+      "query": "Mechanisms or procedures used to collect the data",
+      "relevant_ids": [
+        [
+          "9",
+          "EHSRQL"
+        ],
+        [
+          "10",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "11",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "10",
+          "EHSRQL"
+        ],
+        [
+          "16",
+          "EHSRQL"
+        ],
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "20",
+          "EHSRQL"
+        ],
+        [
+          "3",
+          "EHSRQL"
+        ],
+        [
+          "115",
+          "EHSRQL"
+        ],
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "24",
+          "EHSRQL"
+        ],
+        [
+          "23",
+          "EHSRQL"
+        ],
+        [
+          "114",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "8",
+          "EHSRQL"
+        ],
+        [
+          "6",
+          "EHSRQL"
+        ],
+        [
+          "73",
+          "EHSRQL"
+        ],
+        [
+          "74",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.3,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.4776237035032179,
+          "retrieved_ids_at_k": [
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.4776237035032179,
+          "retrieved_ids_at_k": [
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "20",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.4776237035032179,
+          "retrieved_ids_at_k": [
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "20",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "115",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "23",
+              "EHSRQL"
+            ],
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "6",
+              "EHSRQL"
+            ],
+            [
+              "73",
+              "EHSRQL"
+            ],
+            [
+              "74",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.1",
+      "parent_id": "D2",
+      "query": "Timeframe of data collection",
+      "relevant_ids": [
+        [
+          "14",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "16",
+          "EHSRQL"
+        ],
+        [
+          "11",
+          "EHSRQL"
+        ],
+        [
+          "13",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "10",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "98",
+          "EHSRQL"
+        ],
+        [
+          "92",
+          "EHSRQL"
+        ],
+        [
+          "3",
+          "EHSRQL"
+        ],
+        [
+          "8",
+          "EHSRQL"
+        ],
+        [
+          "23",
+          "EHSRQL"
+        ],
+        [
+          "0",
+          "EHSRQL"
+        ],
+        [
+          "24",
+          "EHSRQL"
+        ],
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "28",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.02631578947368421,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.14186890186599416,
+          "retrieved_ids_at_k": [
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "23",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "28",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.2",
+      "parent_id": "D2",
+      "query": "Geographical area of data collection",
+      "relevant_ids": [
+        [
+          "9",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "10",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "16",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "11",
+          "EHSRQL"
+        ],
+        [
+          "13",
+          "EHSRQL"
+        ],
+        [
+          "3",
+          "EHSRQL"
+        ],
+        [
+          "0",
+          "EHSRQL"
+        ],
+        [
+          "8",
+          "EHSRQL"
+        ],
+        [
+          "23",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "24",
+          "EHSRQL"
+        ],
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "98",
+          "EHSRQL"
+        ],
+        [
+          "92",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "28",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.045454545454545456,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "23",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.1710330840677181,
+          "retrieved_ids_at_k": [
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "23",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "28",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.3",
+      "parent_id": "D2",
+      "query": "Context of data collection",
+      "relevant_ids": [
+        [
+          "9",
+          "EHSRQL"
+        ],
+        [
+          "14",
+          "EHSRQL"
+        ],
+        [
+          "6",
+          "EHSRQL"
+        ],
+        [
+          "8",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "10",
+          "EHSRQL"
+        ],
+        [
+          "11",
+          "EHSRQL"
+        ],
+        [
+          "13",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "16",
+          "EHSRQL"
+        ],
+        [
+          "3",
+          "EHSRQL"
+        ],
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "0",
+          "EHSRQL"
+        ],
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "8",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "24",
+          "EHSRQL"
+        ],
+        [
+          "23",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "92",
+          "EHSRQL"
+        ],
+        [
+          "98",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "28",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.022727272727272728,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.25,
+          "ndcg": 0.10889376106823218,
+          "retrieved_ids_at_k": [
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "23",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "28",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.1",
+      "parent_id": "D3",
+      "query": "Sampling strategy",
+      "relevant_ids": [
+        [
+          "11",
+          "EHSRQL"
+        ],
+        [
+          "114",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "54",
+          "EHSRQL"
+        ],
+        [
+          "51",
+          "EHSRQL"
+        ],
+        [
+          "50",
+          "EHSRQL"
+        ],
+        [
+          "57",
+          "EHSRQL"
+        ],
+        [
+          "58",
+          "EHSRQL"
+        ],
+        [
+          "56",
+          "EHSRQL"
+        ],
+        [
+          "48",
+          "EHSRQL"
+        ],
+        [
+          "63",
+          "EHSRQL"
+        ],
+        [
+          "49",
+          "EHSRQL"
+        ],
+        [
+          "170",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "46",
+          "EHSRQL"
+        ],
+        [
+          "55",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "53",
+          "EHSRQL"
+        ],
+        [
+          "45",
+          "EHSRQL"
+        ],
+        [
+          "47",
+          "EHSRQL"
+        ],
+        [
+          "60",
+          "EHSRQL"
+        ],
+        [
+          "52",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "54",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "54",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "63",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "54",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "63",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "46",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "53",
+              "EHSRQL"
+            ],
+            [
+              "45",
+              "EHSRQL"
+            ],
+            [
+              "47",
+              "EHSRQL"
+            ],
+            [
+              "60",
+              "EHSRQL"
+            ],
+            [
+              "52",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.2",
+      "parent_id": "D3",
+      "query": "Data preprocessing",
+      "relevant_ids": [
+        [
+          "114",
+          "EHSRQL"
+        ],
+        [
+          "115",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "1",
+          "EHSRQL"
+        ],
+        [
+          "137",
+          "EHSRQL"
+        ],
+        [
+          "2",
+          "EHSRQL"
+        ],
+        [
+          "136",
+          "EHSRQL"
+        ],
+        [
+          "135",
+          "EHSRQL"
+        ],
+        [
+          "170",
+          "EHSRQL"
+        ],
+        [
+          "53",
+          "EHSRQL"
+        ],
+        [
+          "48",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "55",
+          "EHSRQL"
+        ],
+        [
+          "49",
+          "EHSRQL"
+        ],
+        [
+          "50",
+          "EHSRQL"
+        ],
+        [
+          "56",
+          "EHSRQL"
+        ],
+        [
+          "51",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "57",
+          "EHSRQL"
+        ],
+        [
+          "58",
+          "EHSRQL"
+        ],
+        [
+          "54",
+          "EHSRQL"
+        ],
+        [
+          "47",
+          "EHSRQL"
+        ],
+        [
+          "52",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "1",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "136",
+              "EHSRQL"
+            ],
+            [
+              "135",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "1",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "136",
+              "EHSRQL"
+            ],
+            [
+              "135",
+              "EHSRQL"
+            ],
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "53",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "1",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "136",
+              "EHSRQL"
+            ],
+            [
+              "135",
+              "EHSRQL"
+            ],
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "53",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "54",
+              "EHSRQL"
+            ],
+            [
+              "47",
+              "EHSRQL"
+            ],
+            [
+              "52",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.3",
+      "parent_id": "D3",
+      "query": "Data cleaning",
+      "relevant_ids": [
+        [
+          "114",
+          "EHSRQL"
+        ],
+        [
+          "118",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "2",
+          "EHSRQL"
+        ],
+        [
+          "137",
+          "EHSRQL"
+        ],
+        [
+          "1",
+          "EHSRQL"
+        ],
+        [
+          "170",
+          "EHSRQL"
+        ],
+        [
+          "135",
+          "EHSRQL"
+        ],
+        [
+          "136",
+          "EHSRQL"
+        ],
+        [
+          "55",
+          "EHSRQL"
+        ],
+        [
+          "48",
+          "EHSRQL"
+        ],
+        [
+          "51",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "50",
+          "EHSRQL"
+        ],
+        [
+          "49",
+          "EHSRQL"
+        ],
+        [
+          "58",
+          "EHSRQL"
+        ],
+        [
+          "57",
+          "EHSRQL"
+        ],
+        [
+          "56",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "53",
+          "EHSRQL"
+        ],
+        [
+          "54",
+          "EHSRQL"
+        ],
+        [
+          "47",
+          "EHSRQL"
+        ],
+        [
+          "52",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "1",
+              "EHSRQL"
+            ],
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "135",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "1",
+              "EHSRQL"
+            ],
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "135",
+              "EHSRQL"
+            ],
+            [
+              "136",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "1",
+              "EHSRQL"
+            ],
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "135",
+              "EHSRQL"
+            ],
+            [
+              "136",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "53",
+              "EHSRQL"
+            ],
+            [
+              "54",
+              "EHSRQL"
+            ],
+            [
+              "47",
+              "EHSRQL"
+            ],
+            [
+              "52",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.4",
+      "parent_id": "D3",
+      "query": "Data labeling and annotation",
+      "relevant_ids": [
+        [
+          "12",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "20",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "114",
+          "EHSRQL"
+        ],
+        [
+          "137",
+          "EHSRQL"
+        ],
+        [
+          "24",
+          "EHSRQL"
+        ],
+        [
+          "14",
+          "EHSRQL"
+        ],
+        [
+          "113",
+          "EHSRQL"
+        ],
+        [
+          "2",
+          "EHSRQL"
+        ],
+        [
+          "1",
+          "EHSRQL"
+        ],
+        [
+          "109",
+          "EHSRQL"
+        ],
+        [
+          "120",
+          "EHSRQL"
+        ],
+        [
+          "160",
+          "EHSRQL"
+        ],
+        [
+          "135",
+          "EHSRQL"
+        ],
+        [
+          "119",
+          "EHSRQL"
+        ],
+        [
+          "136",
+          "EHSRQL"
+        ],
+        [
+          "142",
+          "EHSRQL"
+        ],
+        [
+          "121",
+          "EHSRQL"
+        ],
+        [
+          "118",
+          "EHSRQL"
+        ],
+        [
+          "84",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.3333333333333333,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.5,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "20",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.5,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "20",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "14",
+              "EHSRQL"
+            ],
+            [
+              "113",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "1",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 0.5,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "20",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "14",
+              "EHSRQL"
+            ],
+            [
+              "113",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "1",
+              "EHSRQL"
+            ],
+            [
+              "109",
+              "EHSRQL"
+            ],
+            [
+              "120",
+              "EHSRQL"
+            ],
+            [
+              "160",
+              "EHSRQL"
+            ],
+            [
+              "135",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ],
+            [
+              "136",
+              "EHSRQL"
+            ],
+            [
+              "142",
+              "EHSRQL"
+            ],
+            [
+              "121",
+              "EHSRQL"
+            ],
+            [
+              "118",
+              "EHSRQL"
+            ],
+            [
+              "84",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.1",
+      "parent_id": "D4",
+      "query": "Available features (or covariates) and their explanation",
+      "relevant_ids": [
+        [
+          "2",
+          "EHSRQL"
+        ],
+        [
+          "3",
+          "EHSRQL"
+        ],
+        [
+          "103",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "118",
+          "EHSRQL"
+        ],
+        [
+          "120",
+          "EHSRQL"
+        ],
+        [
+          "105",
+          "EHSRQL"
+        ],
+        [
+          "160",
+          "EHSRQL"
+        ],
+        [
+          "109",
+          "EHSRQL"
+        ],
+        [
+          "2",
+          "EHSRQL"
+        ],
+        [
+          "158",
+          "EHSRQL"
+        ],
+        [
+          "119",
+          "EHSRQL"
+        ],
+        [
+          "108",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "95",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "142",
+          "EHSRQL"
+        ],
+        [
+          "121",
+          "EHSRQL"
+        ],
+        [
+          "84",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "87",
+          "EHSRQL"
+        ],
+        [
+          "114",
+          "EHSRQL"
+        ],
+        [
+          "85",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.05555555555555555,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "118",
+              "EHSRQL"
+            ],
+            [
+              "120",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "160",
+              "EHSRQL"
+            ],
+            [
+              "109",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.16716045496620227,
+          "retrieved_ids_at_k": [
+            [
+              "118",
+              "EHSRQL"
+            ],
+            [
+              "120",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "160",
+              "EHSRQL"
+            ],
+            [
+              "109",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "158",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ],
+            [
+              "108",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.16716045496620227,
+          "retrieved_ids_at_k": [
+            [
+              "118",
+              "EHSRQL"
+            ],
+            [
+              "120",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "160",
+              "EHSRQL"
+            ],
+            [
+              "109",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "158",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ],
+            [
+              "108",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "95",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "142",
+              "EHSRQL"
+            ],
+            [
+              "121",
+              "EHSRQL"
+            ],
+            [
+              "84",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "87",
+              "EHSRQL"
+            ],
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "85",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.2",
+      "parent_id": "D4",
+      "query": "Target variable(s) and their explanation",
+      "relevant_ids": [
+        [
+          "3",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "109",
+          "EHSRQL"
+        ],
+        [
+          "120",
+          "EHSRQL"
+        ],
+        [
+          "108",
+          "EHSRQL"
+        ],
+        [
+          "119",
+          "EHSRQL"
+        ],
+        [
+          "142",
+          "EHSRQL"
+        ],
+        [
+          "105",
+          "EHSRQL"
+        ],
+        [
+          "158",
+          "EHSRQL"
+        ],
+        [
+          "160",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "95",
+          "EHSRQL"
+        ],
+        [
+          "118",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "2",
+          "EHSRQL"
+        ],
+        [
+          "87",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "1",
+          "EHSRQL"
+        ],
+        [
+          "85",
+          "EHSRQL"
+        ],
+        [
+          "84",
+          "EHSRQL"
+        ],
+        [
+          "121",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "109",
+              "EHSRQL"
+            ],
+            [
+              "120",
+              "EHSRQL"
+            ],
+            [
+              "108",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ],
+            [
+              "142",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "109",
+              "EHSRQL"
+            ],
+            [
+              "120",
+              "EHSRQL"
+            ],
+            [
+              "108",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ],
+            [
+              "142",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "158",
+              "EHSRQL"
+            ],
+            [
+              "160",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "95",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "109",
+              "EHSRQL"
+            ],
+            [
+              "120",
+              "EHSRQL"
+            ],
+            [
+              "108",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ],
+            [
+              "142",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "158",
+              "EHSRQL"
+            ],
+            [
+              "160",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "95",
+              "EHSRQL"
+            ],
+            [
+              "118",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "87",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "1",
+              "EHSRQL"
+            ],
+            [
+              "85",
+              "EHSRQL"
+            ],
+            [
+              "84",
+              "EHSRQL"
+            ],
+            [
+              "121",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.3",
+      "parent_id": "D4",
+      "query": "Dataset size",
+      "relevant_ids": [
+        [
+          "2",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "170",
+          "EHSRQL"
+        ],
+        [
+          "140",
+          "EHSRQL"
+        ],
+        [
+          "45",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "62",
+          "EHSRQL"
+        ],
+        [
+          "60",
+          "EHSRQL"
+        ],
+        [
+          "46",
+          "EHSRQL"
+        ],
+        [
+          "56",
+          "EHSRQL"
+        ],
+        [
+          "53",
+          "EHSRQL"
+        ],
+        [
+          "51",
+          "EHSRQL"
+        ],
+        [
+          "49",
+          "EHSRQL"
+        ],
+        [
+          "58",
+          "EHSRQL"
+        ],
+        [
+          "44",
+          "EHSRQL"
+        ],
+        [
+          "50",
+          "EHSRQL"
+        ],
+        [
+          "47",
+          "EHSRQL"
+        ],
+        [
+          "48",
+          "EHSRQL"
+        ],
+        [
+          "57",
+          "EHSRQL"
+        ],
+        [
+          "54",
+          "EHSRQL"
+        ],
+        [
+          "55",
+          "EHSRQL"
+        ],
+        [
+          "52",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "140",
+              "EHSRQL"
+            ],
+            [
+              "45",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "62",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "140",
+              "EHSRQL"
+            ],
+            [
+              "45",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "62",
+              "EHSRQL"
+            ],
+            [
+              "60",
+              "EHSRQL"
+            ],
+            [
+              "46",
+              "EHSRQL"
+            ],
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "53",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "140",
+              "EHSRQL"
+            ],
+            [
+              "45",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "62",
+              "EHSRQL"
+            ],
+            [
+              "60",
+              "EHSRQL"
+            ],
+            [
+              "46",
+              "EHSRQL"
+            ],
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "53",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "44",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "47",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "54",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ],
+            [
+              "52",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.4",
+      "parent_id": "D4",
+      "query": "Assumptions about what the data represents",
+      "relevant_ids": [
+        [
+          "3",
+          "EHSRQL"
+        ],
+        [
+          "103",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "114",
+          "EHSRQL"
+        ],
+        [
+          "2",
+          "EHSRQL"
+        ],
+        [
+          "10",
+          "EHSRQL"
+        ],
+        [
+          "118",
+          "EHSRQL"
+        ],
+        [
+          "119",
+          "EHSRQL"
+        ],
+        [
+          "109",
+          "EHSRQL"
+        ],
+        [
+          "0",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "21",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "11",
+          "EHSRQL"
+        ],
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "16",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "108",
+          "EHSRQL"
+        ],
+        [
+          "115",
+          "EHSRQL"
+        ],
+        [
+          "155",
+          "EHSRQL"
+        ],
+        [
+          "42",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "118",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "118",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ],
+            [
+              "109",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "21",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "2",
+              "EHSRQL"
+            ],
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "118",
+              "EHSRQL"
+            ],
+            [
+              "119",
+              "EHSRQL"
+            ],
+            [
+              "109",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "21",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "108",
+              "EHSRQL"
+            ],
+            [
+              "115",
+              "EHSRQL"
+            ],
+            [
+              "155",
+              "EHSRQL"
+            ],
+            [
+              "42",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.1",
+      "parent_id": "D5",
+      "query": "Which attributes are salient or at risk of discrimination",
+      "relevant_ids": [
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "6",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "134",
+          "EHSRQL"
+        ],
+        [
+          "105",
+          "EHSRQL"
+        ],
+        [
+          "101",
+          "EHSRQL"
+        ],
+        [
+          "136",
+          "EHSRQL"
+        ],
+        [
+          "129",
+          "EHSRQL"
+        ],
+        [
+          "137",
+          "EHSRQL"
+        ],
+        [
+          "106",
+          "EHSRQL"
+        ],
+        [
+          "9",
+          "EHSRQL"
+        ],
+        [
+          "102",
+          "EHSRQL"
+        ],
+        [
+          "162",
+          "EHSRQL"
+        ],
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "130",
+          "EHSRQL"
+        ],
+        [
+          "117",
+          "EHSRQL"
+        ],
+        [
+          "114",
+          "EHSRQL"
+        ],
+        [
+          "23",
+          "EHSRQL"
+        ],
+        [
+          "3",
+          "EHSRQL"
+        ],
+        [
+          "20",
+          "EHSRQL"
+        ],
+        [
+          "24",
+          "EHSRQL"
+        ],
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "22",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "134",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "101",
+              "EHSRQL"
+            ],
+            [
+              "136",
+              "EHSRQL"
+            ],
+            [
+              "129",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "134",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "101",
+              "EHSRQL"
+            ],
+            [
+              "136",
+              "EHSRQL"
+            ],
+            [
+              "129",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "106",
+              "EHSRQL"
+            ],
+            [
+              "9",
+              "EHSRQL"
+            ],
+            [
+              "102",
+              "EHSRQL"
+            ],
+            [
+              "162",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "134",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "101",
+              "EHSRQL"
+            ],
+            [
+              "136",
+              "EHSRQL"
+            ],
+            [
+              "129",
+              "EHSRQL"
+            ],
+            [
+              "137",
+              "EHSRQL"
+            ],
+            [
+              "106",
+              "EHSRQL"
+            ],
+            [
+              "9",
+              "EHSRQL"
+            ],
+            [
+              "102",
+              "EHSRQL"
+            ],
+            [
+              "162",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "130",
+              "EHSRQL"
+            ],
+            [
+              "117",
+              "EHSRQL"
+            ],
+            [
+              "114",
+              "EHSRQL"
+            ],
+            [
+              "23",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "20",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "22",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.2",
+      "parent_id": "D5",
+      "query": "Marginal distribution of protected attributes",
+      "relevant_ids": [
+        [
+          "7",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "104",
+          "EHSRQL"
+        ],
+        [
+          "105",
+          "EHSRQL"
+        ],
+        [
+          "98",
+          "EHSRQL"
+        ],
+        [
+          "97",
+          "EHSRQL"
+        ],
+        [
+          "92",
+          "EHSRQL"
+        ],
+        [
+          "90",
+          "EHSRQL"
+        ],
+        [
+          "31",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "38",
+          "EHSRQL"
+        ],
+        [
+          "28",
+          "EHSRQL"
+        ],
+        [
+          "66",
+          "EHSRQL"
+        ],
+        [
+          "63",
+          "EHSRQL"
+        ],
+        [
+          "46",
+          "EHSRQL"
+        ],
+        [
+          "32",
+          "EHSRQL"
+        ],
+        [
+          "42",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "29",
+          "EHSRQL"
+        ],
+        [
+          "41",
+          "EHSRQL"
+        ],
+        [
+          "40",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.125,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "97",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.31546487678572877,
+          "retrieved_ids_at_k": [
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "97",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "90",
+              "EHSRQL"
+            ],
+            [
+              "31",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "38",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 0.31546487678572877,
+          "retrieved_ids_at_k": [
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "97",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "90",
+              "EHSRQL"
+            ],
+            [
+              "31",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "38",
+              "EHSRQL"
+            ],
+            [
+              "28",
+              "EHSRQL"
+            ],
+            [
+              "66",
+              "EHSRQL"
+            ],
+            [
+              "63",
+              "EHSRQL"
+            ],
+            [
+              "46",
+              "EHSRQL"
+            ],
+            [
+              "32",
+              "EHSRQL"
+            ],
+            [
+              "42",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "29",
+              "EHSRQL"
+            ],
+            [
+              "41",
+              "EHSRQL"
+            ],
+            [
+              "40",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.3",
+      "parent_id": "D5",
+      "query": "Joint distribution of protected and target",
+      "relevant_ids": [
+        [
+          "7",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "104",
+          "EHSRQL"
+        ],
+        [
+          "4",
+          "EHSRQL"
+        ],
+        [
+          "169",
+          "EHSRQL"
+        ],
+        [
+          "105",
+          "EHSRQL"
+        ],
+        [
+          "98",
+          "EHSRQL"
+        ],
+        [
+          "92",
+          "EHSRQL"
+        ],
+        [
+          "90",
+          "EHSRQL"
+        ],
+        [
+          "28",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "38",
+          "EHSRQL"
+        ],
+        [
+          "132",
+          "EHSRQL"
+        ],
+        [
+          "1",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "32",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "46",
+          "EHSRQL"
+        ],
+        [
+          "29",
+          "EHSRQL"
+        ],
+        [
+          "42",
+          "EHSRQL"
+        ],
+        [
+          "41",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.05,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "4",
+              "EHSRQL"
+            ],
+            [
+              "169",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "4",
+              "EHSRQL"
+            ],
+            [
+              "169",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "90",
+              "EHSRQL"
+            ],
+            [
+              "28",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "38",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 0.227670248696953,
+          "retrieved_ids_at_k": [
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "4",
+              "EHSRQL"
+            ],
+            [
+              "169",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "90",
+              "EHSRQL"
+            ],
+            [
+              "28",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "38",
+              "EHSRQL"
+            ],
+            [
+              "132",
+              "EHSRQL"
+            ],
+            [
+              "1",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "32",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "46",
+              "EHSRQL"
+            ],
+            [
+              "29",
+              "EHSRQL"
+            ],
+            [
+              "42",
+              "EHSRQL"
+            ],
+            [
+              "41",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.5",
+      "parent_id": "D5",
+      "query": "Label provenance",
+      "relevant_ids": [
+        [
+          "12",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "56",
+          "EHSRQL"
+        ],
+        [
+          "57",
+          "EHSRQL"
+        ],
+        [
+          "58",
+          "EHSRQL"
+        ],
+        [
+          "49",
+          "EHSRQL"
+        ],
+        [
+          "51",
+          "EHSRQL"
+        ],
+        [
+          "50",
+          "EHSRQL"
+        ],
+        [
+          "42",
+          "EHSRQL"
+        ],
+        [
+          "48",
+          "EHSRQL"
+        ],
+        [
+          "55",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "54",
+          "EHSRQL"
+        ],
+        [
+          "170",
+          "EHSRQL"
+        ],
+        [
+          "47",
+          "EHSRQL"
+        ],
+        [
+          "46",
+          "EHSRQL"
+        ],
+        [
+          "53",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "52",
+          "EHSRQL"
+        ],
+        [
+          "60",
+          "EHSRQL"
+        ],
+        [
+          "45",
+          "EHSRQL"
+        ],
+        [
+          "44",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "42",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "42",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "54",
+              "EHSRQL"
+            ],
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "47",
+              "EHSRQL"
+            ],
+            [
+              "46",
+              "EHSRQL"
+            ],
+            [
+              "53",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "52",
+              "EHSRQL"
+            ],
+            [
+              "60",
+              "EHSRQL"
+            ],
+            [
+              "45",
+              "EHSRQL"
+            ],
+            [
+              "44",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.6",
+      "parent_id": "D5",
+      "query": "Data-side bias mitigation applied",
+      "relevant_ids": [
+        [
+          "8",
+          "EHSRQL"
+        ],
+        [
+          "118",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "170",
+          "EHSRQL"
+        ],
+        [
+          "56",
+          "EHSRQL"
+        ],
+        [
+          "50",
+          "EHSRQL"
+        ],
+        [
+          "49",
+          "EHSRQL"
+        ],
+        [
+          "51",
+          "EHSRQL"
+        ],
+        [
+          "55",
+          "EHSRQL"
+        ],
+        [
+          "48",
+          "EHSRQL"
+        ],
+        [
+          "57",
+          "EHSRQL"
+        ],
+        [
+          "58",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "47",
+          "EHSRQL"
+        ],
+        [
+          "54",
+          "EHSRQL"
+        ],
+        [
+          "53",
+          "EHSRQL"
+        ],
+        [
+          "52",
+          "EHSRQL"
+        ],
+        [
+          "42",
+          "EHSRQL"
+        ],
+        [
+          "46",
+          "EHSRQL"
+        ],
+        [
+          "60",
+          "EHSRQL"
+        ],
+        [
+          "44",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "45",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "170",
+              "EHSRQL"
+            ],
+            [
+              "56",
+              "EHSRQL"
+            ],
+            [
+              "50",
+              "EHSRQL"
+            ],
+            [
+              "49",
+              "EHSRQL"
+            ],
+            [
+              "51",
+              "EHSRQL"
+            ],
+            [
+              "55",
+              "EHSRQL"
+            ],
+            [
+              "48",
+              "EHSRQL"
+            ],
+            [
+              "57",
+              "EHSRQL"
+            ],
+            [
+              "58",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "47",
+              "EHSRQL"
+            ],
+            [
+              "54",
+              "EHSRQL"
+            ],
+            [
+              "53",
+              "EHSRQL"
+            ],
+            [
+              "52",
+              "EHSRQL"
+            ],
+            [
+              "42",
+              "EHSRQL"
+            ],
+            [
+              "46",
+              "EHSRQL"
+            ],
+            [
+              "60",
+              "EHSRQL"
+            ],
+            [
+              "44",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "45",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.1",
+      "parent_id": "D6",
+      "query": "Plausible sources of inaccuracy",
+      "relevant_ids": [
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "107",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "104",
+          "EHSRQL"
+        ],
+        [
+          "97",
+          "EHSRQL"
+        ],
+        [
+          "98",
+          "EHSRQL"
+        ],
+        [
+          "105",
+          "EHSRQL"
+        ],
+        [
+          "92",
+          "EHSRQL"
+        ],
+        [
+          "90",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "38",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "40",
+          "EHSRQL"
+        ],
+        [
+          "16",
+          "EHSRQL"
+        ],
+        [
+          "42",
+          "EHSRQL"
+        ],
+        [
+          "46",
+          "EHSRQL"
+        ],
+        [
+          "63",
+          "EHSRQL"
+        ],
+        [
+          "41",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "29",
+          "EHSRQL"
+        ],
+        [
+          "28",
+          "EHSRQL"
+        ],
+        [
+          "32",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.3333333333333333,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.46927872602275644,
+          "retrieved_ids_at_k": [
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "97",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.46927872602275644,
+          "retrieved_ids_at_k": [
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "97",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "90",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "38",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.46927872602275644,
+          "retrieved_ids_at_k": [
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "97",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "90",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "38",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "40",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "42",
+              "EHSRQL"
+            ],
+            [
+              "46",
+              "EHSRQL"
+            ],
+            [
+              "63",
+              "EHSRQL"
+            ],
+            [
+              "41",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "29",
+              "EHSRQL"
+            ],
+            [
+              "28",
+              "EHSRQL"
+            ],
+            [
+              "32",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.2",
+      "parent_id": "D6",
+      "query": "Gaps in the data",
+      "relevant_ids": [
+        [
+          "4",
+          "EHSRQL"
+        ],
+        [
+          "107",
+          "EHSRQL"
+        ],
+        [
+          "108",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "10",
+          "EHSRQL"
+        ],
+        [
+          "5",
+          "EHSRQL"
+        ],
+        [
+          "25",
+          "EHSRQL"
+        ],
+        [
+          "8",
+          "EHSRQL"
+        ],
+        [
+          "3",
+          "EHSRQL"
+        ],
+        [
+          "24",
+          "EHSRQL"
+        ],
+        [
+          "0",
+          "EHSRQL"
+        ],
+        [
+          "19",
+          "EHSRQL"
+        ],
+        [
+          "18",
+          "EHSRQL"
+        ],
+        [
+          "7",
+          "EHSRQL"
+        ],
+        [
+          "12",
+          "EHSRQL"
+        ],
+        [
+          "23",
+          "EHSRQL"
+        ],
+        [
+          "17",
+          "EHSRQL"
+        ],
+        [
+          "11",
+          "EHSRQL"
+        ],
+        [
+          "13",
+          "EHSRQL"
+        ],
+        [
+          "16",
+          "EHSRQL"
+        ],
+        [
+          "115",
+          "EHSRQL"
+        ],
+        [
+          "81",
+          "EHSRQL"
+        ],
+        [
+          "30",
+          "EHSRQL"
+        ],
+        [
+          "29",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "10",
+              "EHSRQL"
+            ],
+            [
+              "5",
+              "EHSRQL"
+            ],
+            [
+              "25",
+              "EHSRQL"
+            ],
+            [
+              "8",
+              "EHSRQL"
+            ],
+            [
+              "3",
+              "EHSRQL"
+            ],
+            [
+              "24",
+              "EHSRQL"
+            ],
+            [
+              "0",
+              "EHSRQL"
+            ],
+            [
+              "19",
+              "EHSRQL"
+            ],
+            [
+              "18",
+              "EHSRQL"
+            ],
+            [
+              "7",
+              "EHSRQL"
+            ],
+            [
+              "12",
+              "EHSRQL"
+            ],
+            [
+              "23",
+              "EHSRQL"
+            ],
+            [
+              "17",
+              "EHSRQL"
+            ],
+            [
+              "11",
+              "EHSRQL"
+            ],
+            [
+              "13",
+              "EHSRQL"
+            ],
+            [
+              "16",
+              "EHSRQL"
+            ],
+            [
+              "115",
+              "EHSRQL"
+            ],
+            [
+              "81",
+              "EHSRQL"
+            ],
+            [
+              "30",
+              "EHSRQL"
+            ],
+            [
+              "29",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.3",
+      "parent_id": "D6",
+      "query": "Severity of inaccuracy",
+      "relevant_ids": [
+        [
+          "107",
+          "EHSRQL"
+        ],
+        [
+          "118",
+          "EHSRQL"
+        ],
+        [
+          "5",
+          "EHSRQL"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "104",
+          "EHSRQL"
+        ],
+        [
+          "105",
+          "EHSRQL"
+        ],
+        [
+          "98",
+          "EHSRQL"
+        ],
+        [
+          "97",
+          "EHSRQL"
+        ],
+        [
+          "92",
+          "EHSRQL"
+        ],
+        [
+          "90",
+          "EHSRQL"
+        ],
+        [
+          "31",
+          "EHSRQL"
+        ],
+        [
+          "66",
+          "EHSRQL"
+        ],
+        [
+          "38",
+          "EHSRQL"
+        ],
+        [
+          "59",
+          "EHSRQL"
+        ],
+        [
+          "132",
+          "EHSRQL"
+        ],
+        [
+          "40",
+          "EHSRQL"
+        ],
+        [
+          "28",
+          "EHSRQL"
+        ],
+        [
+          "46",
+          "EHSRQL"
+        ],
+        [
+          "42",
+          "EHSRQL"
+        ],
+        [
+          "61",
+          "EHSRQL"
+        ],
+        [
+          "41",
+          "EHSRQL"
+        ],
+        [
+          "63",
+          "EHSRQL"
+        ],
+        [
+          "29",
+          "EHSRQL"
+        ],
+        [
+          "32",
+          "EHSRQL"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "97",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "97",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "90",
+              "EHSRQL"
+            ],
+            [
+              "31",
+              "EHSRQL"
+            ],
+            [
+              "66",
+              "EHSRQL"
+            ],
+            [
+              "38",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "104",
+              "EHSRQL"
+            ],
+            [
+              "105",
+              "EHSRQL"
+            ],
+            [
+              "98",
+              "EHSRQL"
+            ],
+            [
+              "97",
+              "EHSRQL"
+            ],
+            [
+              "92",
+              "EHSRQL"
+            ],
+            [
+              "90",
+              "EHSRQL"
+            ],
+            [
+              "31",
+              "EHSRQL"
+            ],
+            [
+              "66",
+              "EHSRQL"
+            ],
+            [
+              "38",
+              "EHSRQL"
+            ],
+            [
+              "59",
+              "EHSRQL"
+            ],
+            [
+              "132",
+              "EHSRQL"
+            ],
+            [
+              "40",
+              "EHSRQL"
+            ],
+            [
+              "28",
+              "EHSRQL"
+            ],
+            [
+              "46",
+              "EHSRQL"
+            ],
+            [
+              "42",
+              "EHSRQL"
+            ],
+            [
+              "61",
+              "EHSRQL"
+            ],
+            [
+              "41",
+              "EHSRQL"
+            ],
+            [
+              "63",
+              "EHSRQL"
+            ],
+            [
+              "29",
+              "EHSRQL"
+            ],
+            [
+              "32",
+              "EHSRQL"
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

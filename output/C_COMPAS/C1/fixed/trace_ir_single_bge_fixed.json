@@ -1,0 +1,5650 @@
+{
+  "D1": {
+    "parent_id": "D1",
+    "question": "What is the purpose and origin of the data? What is the purpose for original data collection? Which people and organizations are involved in the data collection process? What are the mechanisms or procedures used to collect the data? ",
+    "n_relevant": 5,
+    "gt_subquestions": [
+      {
+        "id": "D1.1",
+        "text": "Purpose for original data collection"
+      },
+      {
+        "id": "D1.2",
+        "text": "People and organizations involved"
+      },
+      {
+        "id": "D1.3",
+        "text": "Mechanisms or procedures used to collect the data"
+      }
+    ],
+    "llm_subquestions": [
+      "What is the purpose and origin of the data?",
+      "What is the purpose for original data collection?",
+      "Which people and organizations are involved in the data collection process?",
+      "What are the mechanisms or procedures used to collect the data?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.27999999999999997,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.34519134224686937,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.4660026449463635,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.4660026449463635
+        },
+        "retrieved": [
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "43",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "28",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "30",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D1.1": {
+        "metrics_vs_own": {
+          "AP": 0.3333333333333333,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 0.5,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.5,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.5
+        },
+        "metrics_vs_union": {
+          "AP": 0.28787878787878785,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.4,
+          "P@10": 0.2,
+          "nDCG@10": 0.38356636737133565,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.478172714078
+        },
+        "retrieved": [
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "28",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "24",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D1.2": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.03333333333333333,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.2,
+          "P@10": 0.1,
+          "nDCG@10": 0.1208113026994942,
+          "R@20": 0.2,
+          "P@20": 0.05,
+          "nDCG@20": 0.1208113026994942
+        },
+        "retrieved": [
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "18",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "16",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "28",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D1.3": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.6131471927654584,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.6131471927654584,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.6131471927654584
+        },
+        "metrics_vs_union": {
+          "AP": 0.22666666666666666,
+          "R@5": 0.2,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.2,
+          "P@10": 0.1,
+          "nDCG@10": 0.3391602052736161,
+          "R@20": 0.4,
+          "P@20": 0.1,
+          "nDCG@20": 0.4239502565920201
+        },
+        "retrieved": [
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "28",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "24",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.27999999999999997,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.34519134224686937,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.4660026449463635,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.4660026449463635
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 0.6666666666666666,
+          "D1.3": 0.5
+        },
+        "final": [
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "43",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "28",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "30",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.18898989898989899,
+          "R@5": 0.2,
+          "P@5": 0.2,
+          "nDCG@5": 0.14606834984270645,
+          "R@10": 0.4,
+          "P@10": 0.2,
+          "nDCG@10": 0.24816574496561808,
+          "R@20": 0.8,
+          "P@20": 0.2,
+          "nDCG@20": 0.4199887799550363
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 0.5
+        },
+        "final": [
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "28",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "24",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "1",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.35238095238095235,
+          "R@5": 0.2,
+          "P@5": 0.2,
+          "nDCG@5": 0.21398626473452756,
+          "R@10": 0.8,
+          "P@10": 0.4,
+          "nDCG@10": 0.5548441015591575,
+          "R@20": 0.8,
+          "P@20": 0.2,
+          "nDCG@20": 0.5548441015591575
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 0.5
+        },
+        "final": [
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "43",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "1",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "24",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.04690760546642899,
+          "P@5": 0.060000000000000005,
+          "R@5": 0.060000000000000005,
+          "nDCG@5": 0.048522855511632254,
+          "P@10": 0.07,
+          "R@10": 0.14,
+          "nDCG@10": 0.09131696711373492,
+          "P@20": 0.07,
+          "R@20": 0.28,
+          "nDCG@20": 0.1502032550858819
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 0.3,
+          "D1.2": 0.26666666666666666,
+          "D1.3": 0.3
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "0",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D1.1",
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": 4,
+          "ur:orig": 2,
+          "raw:sq1": 1,
+          "ur:sq1": 1,
+          "raw:sq2": 10,
+          "ur:sq2": 4,
+          "raw:sq3": 11,
+          "ur:sq3": 16,
+          "raw:sq4": 14,
+          "ur:sq4": 17
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 4,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "1",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": 17,
+          "ur:sq1": 2,
+          "raw:sq2": null,
+          "ur:sq2": null,
+          "raw:sq3": 17,
+          "ur:sq3": 11,
+          "raw:sq4": null,
+          "ur:sq4": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": 20,
+          "rerank_once": 8
+        }
+      },
+      {
+        "key": [
+          "2",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": 10,
+          "ur:orig": 6,
+          "raw:sq1": 8,
+          "ur:sq1": 4,
+          "raw:sq2": 16,
+          "ur:sq2": 11,
+          "raw:sq3": 6,
+          "ur:sq3": 7,
+          "raw:sq4": null,
+          "ur:sq4": null
+        },
+        "final_ranks": {
+          "whole_question": 6,
+          "rerank_each": 11,
+          "rerank_once": 7
+        }
+      },
+      {
+        "key": [
+          "16",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D1.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null,
+          "raw:sq2": null,
+          "ur:sq2": null,
+          "raw:sq3": null,
+          "ur:sq3": null,
+          "raw:sq4": null,
+          "ur:sq4": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "19",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D1.3"
+        ],
+        "ranks": {
+          "raw:orig": 17,
+          "ur:orig": 5,
+          "raw:sq1": null,
+          "ur:sq1": null,
+          "raw:sq2": 14,
+          "ur:sq2": 2,
+          "raw:sq3": 15,
+          "ur:sq3": 10,
+          "raw:sq4": 11,
+          "ur:sq4": 1
+        },
+        "final_ranks": {
+          "whole_question": 5,
+          "rerank_each": 9,
+          "rerank_once": 6
+        }
+      }
+    ]
+  },
+  "D2": {
+    "parent_id": "D2",
+    "question": "What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area of data collection? What is the Context of data collection?",
+    "n_relevant": 4,
+    "gt_subquestions": [
+      {
+        "id": "D2.1",
+        "text": "Timeframe of data collection"
+      },
+      {
+        "id": "D2.2",
+        "text": "Geographical area"
+      },
+      {
+        "id": "D2.3",
+        "text": "Context of data collection"
+      }
+    ],
+    "llm_subquestions": [
+      "What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area of data collection? What is the Context of data collection?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.3125,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.3903800499921017,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.5135312443624667,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.5135312443624667
+        },
+        "retrieved": [
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "41",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "42",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D2.1": {
+        "metrics_vs_own": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 1.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.5,
+          "R@5": 0.5,
+          "P@5": 0.4,
+          "nDCG@5": 0.6366824387328317,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.6366824387328317,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.6366824387328317
+        },
+        "retrieved": [
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "3",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "62",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D2.2": {
+        "metrics_vs_own": {
+          "AP": 0.0625,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.19342640361727081,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.19342640361727081
+        },
+        "metrics_vs_union": {
+          "AP": 0.03125,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.25,
+          "P@10": 0.1,
+          "nDCG@10": 0.123151194370365,
+          "R@20": 0.25,
+          "P@20": 0.05,
+          "nDCG@20": 0.123151194370365
+        },
+        "retrieved": [
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "47",
+            "C_COMPAS"
+          ],
+          [
+            "69",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "25",
+            "C_COMPAS"
+          ],
+          [
+            "4",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "70",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "46",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D2.3": {
+        "metrics_vs_own": {
+          "AP": 0.16666666666666666,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.3562071871080222,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.3562071871080222
+        },
+        "metrics_vs_union": {
+          "AP": 0.13333333333333333,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.15101961822780524,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.29007579773858083,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.29007579773858083
+        },
+        "retrieved": [
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.3125,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.3903800499921017,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.5135312443624667,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.5135312443624667
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 1.0,
+          "D2.2": 0.0,
+          "D2.3": 1.0
+        },
+        "final": [
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "41",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "42",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.3125,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.3903800499921017,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.5135312443624667,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.5135312443624667
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 1.0,
+          "D2.2": 0.0,
+          "D2.3": 1.0
+        },
+        "final": [
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "41",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "42",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.3125,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.3903800499921017,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.5135312443624667,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.5135312443624667
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 1.0,
+          "D2.2": 0.0,
+          "D2.3": 1.0
+        },
+        "final": [
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "41",
+            "C_COMPAS"
+          ],
+          [
+            "19",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "42",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.0625,
+          "P@5": 0.04,
+          "R@5": 0.05,
+          "nDCG@5": 0.058557007498815254,
+          "P@10": 0.07,
+          "R@10": 0.175,
+          "nDCG@10": 0.12275009275068607,
+          "P@20": 0.04,
+          "R@20": 0.2,
+          "nDCG@20": 0.13193998708755153
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.2,
+          "D2.2": 0.15,
+          "D2.3": 0.3
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "26",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D2.1"
+        ],
+        "ranks": {
+          "raw:orig": 3,
+          "ur:orig": 1,
+          "raw:sq1": 3,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "3",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D2.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "4",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D2.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "27",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D2.3"
+        ],
+        "ranks": {
+          "raw:orig": 7,
+          "ur:orig": 8,
+          "raw:sq1": 7,
+          "ur:sq1": 8
+        },
+        "final_ranks": {
+          "whole_question": 8,
+          "rerank_each": 8,
+          "rerank_once": 8
+        }
+      }
+    ]
+  },
+  "D3": {
+    "parent_id": "D3",
+    "question": "What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and data cleaning is done? What are the data labeling and annotation?",
+    "n_relevant": 7,
+    "gt_subquestions": [
+      {
+        "id": "D3.1",
+        "text": "Sampling strategy"
+      },
+      {
+        "id": "D3.2",
+        "text": "Data preprocessing"
+      },
+      {
+        "id": "D3.3",
+        "text": "Data cleaning"
+      },
+      {
+        "id": "D3.4",
+        "text": "Data labeling and annotation"
+      }
+    ],
+    "llm_subquestions": [
+      "What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and data cleaning is done? What are the data labeling and annotation?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.15714285714285717,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.3374574959897939
+        },
+        "retrieved": [
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "36",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D3.1": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "24",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "3",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "71",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "70",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D3.2": {
+        "metrics_vs_own": {
+          "AP": 0.125,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.24630238874073,
+          "R@10": 0.25,
+          "P@10": 0.1,
+          "nDCG@10": 0.24630238874073,
+          "R@20": 0.25,
+          "P@20": 0.05,
+          "nDCG@20": 0.24630238874073
+        },
+        "metrics_vs_union": {
+          "AP": 0.07142857142857142,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.21398626473452756,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.17342765698823945,
+          "R@20": 0.14285714285714285,
+          "P@20": 0.05,
+          "nDCG@20": 0.17342765698823945
+        },
+        "retrieved": [
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "1",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "48",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D3.3": {
+        "metrics_vs_own": {
+          "AP": 0.0625,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.24465054211822604
+        },
+        "metrics_vs_union": {
+          "AP": 0.16071428571428573,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.34212497677724213
+        },
+        "retrieved": [
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "48",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D3.4": {
+        "metrics_vs_own": {
+          "AP": 0.2,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 0.38685280723454163,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.38685280723454163,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.38685280723454163
+        },
+        "metrics_vs_union": {
+          "AP": 0.19999999999999998,
+          "R@5": 0.2857142857142857,
+          "P@5": 0.4,
+          "nDCG@5": 0.4703652827859579,
+          "R@10": 0.2857142857142857,
+          "P@10": 0.2,
+          "nDCG@10": 0.38121301394452073,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.38121301394452073
+        },
+        "retrieved": [
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "6",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "50",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.15714285714285717,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.3374574959897939
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.0,
+          "D3.2": 0.5,
+          "D3.3": 1.0,
+          "D3.4": 0.0
+        },
+        "final": [
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "36",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.15714285714285717,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.3374574959897939
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.0,
+          "D3.2": 0.5,
+          "D3.3": 1.0,
+          "D3.4": 0.0
+        },
+        "final": [
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "36",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.15714285714285717,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.3374574959897939
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.0,
+          "D3.2": 0.5,
+          "D3.3": 1.0,
+          "D3.4": 0.0
+        },
+        "final": [
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "36",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.049489795918367344,
+          "P@5": 0.060000000000000005,
+          "R@5": 0.04285714285714286,
+          "nDCG@5": 0.04233417771977547,
+          "P@10": 0.14,
+          "R@10": 0.19999999999999998,
+          "nDCG@10": 0.13221585405591973,
+          "P@20": 0.085,
+          "R@20": 0.24285714285714285,
+          "nDCG@20": 0.15277408597657807
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.15,
+          "D3.2": 0.275,
+          "D3.3": 0.2,
+          "D3.4": 0.3
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "4",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D3.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "5",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D3.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "9",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D3.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "10",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D3.2",
+          "D3.3"
+        ],
+        "ranks": {
+          "raw:orig": 20,
+          "ur:orig": 20,
+          "raw:sq1": 20,
+          "ur:sq1": 20
+        },
+        "final_ranks": {
+          "whole_question": 20,
+          "rerank_each": 20,
+          "rerank_once": 20
+        }
+      },
+      {
+        "key": [
+          "30",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D3.2"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 1,
+          "raw:sq1": 1,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "31",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D3.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "6",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D3.4"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      }
+    ]
+  },
+  "D4": {
+    "parent_id": "D4",
+    "question": "What does the data measure and represent? What are the available features (or covariates) and their explanation? Which are the target variable(s) and their explanation? Which is the dataset size? And what are the assumptions about what the data represents?",
+    "n_relevant": 6,
+    "gt_subquestions": [
+      {
+        "id": "D4.1",
+        "text": "Available features"
+      },
+      {
+        "id": "D4.2",
+        "text": "Target variables"
+      },
+      {
+        "id": "D4.3",
+        "text": "Dataset size"
+      },
+      {
+        "id": "D4.4",
+        "text": "Assumptions about representation"
+      }
+    ],
+    "llm_subquestions": [
+      "What does the data measure and represent? What are the available features (or covariates) and their explanation? Which are the target variable(s) and their explanation? Which is the dataset size? And what are the assumptions about what the data represents?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.22385620915032678,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.3422220729283414,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.41478990409896144
+        },
+        "retrieved": [
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "3",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "43",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "41",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D4.1": {
+        "metrics_vs_own": {
+          "AP": 0.020833333333333332,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.05,
+          "nDCG@20": 0.11480929472601784
+        },
+        "metrics_vs_union": {
+          "AP": 0.010416666666666666,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.16666666666666666,
+          "P@20": 0.05,
+          "nDCG@20": 0.0740318445087683
+        },
+        "retrieved": [
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "47",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "7",
+            "C_COMPAS"
+          ],
+          [
+            "69",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "46",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "71",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ],
+          [
+            "65",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "70",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D4.2": {
+        "metrics_vs_own": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 1.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.5,
+          "R@5": 0.5,
+          "P@5": 0.6,
+          "nDCG@5": 0.7227265726449519,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.644824486427155,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.644824486427155
+        },
+        "retrieved": [
+          [
+            "6",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "59",
+            "C_COMPAS"
+          ],
+          [
+            "55",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "47",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "69",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "48",
+            "C_COMPAS"
+          ],
+          [
+            "4",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D4.3": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 0.6309297535714575,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.6309297535714575,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.6309297535714575
+        },
+        "metrics_vs_union": {
+          "AP": 0.12037037037037036,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.21398626473452756,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.28201326940239274,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.1,
+          "nDCG@20": 0.28201326940239274
+        },
+        "retrieved": [
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "3",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "40",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ],
+          [
+            "43",
+            "C_COMPAS"
+          ],
+          [
+            "50",
+            "C_COMPAS"
+          ],
+          [
+            "41",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D4.4": {
+        "metrics_vs_own": {
+          "AP": 0.2,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 0.38685280723454163,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.38685280723454163,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.38685280723454163
+        },
+        "metrics_vs_union": {
+          "AP": 0.12013888888888889,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.13120507751234178,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.22485174766247445,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.2988835921712428
+        },
+        "retrieved": [
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "6",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "55",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.22385620915032678,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.3422220729283414,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.41478990409896144
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.3333333333333333,
+          "D4.2": 0.0,
+          "D4.3": 1.0,
+          "D4.4": 1.0
+        },
+        "final": [
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "3",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "43",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "41",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.22385620915032678,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.3422220729283414,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.41478990409896144
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.3333333333333333,
+          "D4.2": 0.0,
+          "D4.3": 1.0,
+          "D4.4": 1.0
+        },
+        "final": [
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "3",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "43",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "41",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.22385620915032678,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.3422220729283414,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.41478990409896144
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.3333333333333333,
+          "D4.2": 0.0,
+          "D4.3": 1.0,
+          "D4.4": 1.0
+        },
+        "final": [
+          [
+            "2",
+            "C_COMPAS"
+          ],
+          [
+            "3",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "43",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "41",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.060297873422873426,
+          "P@5": 0.060000000000000005,
+          "R@5": 0.049999999999999996,
+          "nDCG@5": 0.08243887603899387,
+          "P@10": 0.060000000000000005,
+          "R@10": 0.09999999999999999,
+          "nDCG@10": 0.10149601813991349,
+          "P@20": 0.065,
+          "R@20": 0.21666666666666665,
+          "nDCG@20": 0.1556859474015578
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.19999999999999998,
+          "D4.2": 0.4,
+          "D4.3": 0.1,
+          "D4.4": 0.2
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "52",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": 18,
+          "ur:orig": 17,
+          "raw:sq1": 18,
+          "ur:sq1": 17
+        },
+        "final_ranks": {
+          "whole_question": 17,
+          "rerank_each": 17,
+          "rerank_once": 17
+        }
+      },
+      {
+        "key": [
+          "56",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "60",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "6",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D4.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "3",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D4.3"
+        ],
+        "ranks": {
+          "raw:orig": 6,
+          "ur:orig": 2,
+          "raw:sq1": 6,
+          "ur:sq1": 2
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 2,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "5",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D4.4"
+        ],
+        "ranks": {
+          "raw:orig": 14,
+          "ur:orig": 3,
+          "raw:sq1": 14,
+          "ur:sq1": 3
+        },
+        "final_ranks": {
+          "whole_question": 3,
+          "rerank_each": 3,
+          "rerank_once": 3
+        }
+      }
+    ]
+  },
+  "D5": {
+    "parent_id": "D5",
+    "question": "Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the marginal distribution of protected attributes? And what about the joint distribution of protected and target? What are the expected distributions? What is the label provenance?",
+    "n_relevant": 4,
+    "gt_subquestions": [
+      {
+        "id": "D5.1",
+        "text": "Attributes at risk"
+      },
+      {
+        "id": "D5.2",
+        "text": "Marginal distribution"
+      },
+      {
+        "id": "D5.3",
+        "text": "Joint distribution"
+      },
+      {
+        "id": "D5.5",
+        "text": "Label provenance"
+      }
+    ],
+    "llm_subquestions": [
+      "Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the marginal distribution of protected attributes? And what about the joint distribution of protected and target? What are the expected distributions? What is the label provenance?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.4583333333333333,
+          "R@5": 0.5,
+          "P@5": 0.4,
+          "nDCG@5": 0.5585075862632192,
+          "R@10": 0.75,
+          "P@10": 0.3,
+          "nDCG@10": 0.6760236910196463,
+          "R@20": 0.75,
+          "P@20": 0.15,
+          "nDCG@20": 0.6760236910196463
+        },
+        "retrieved": [
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "6",
+            "C_COMPAS"
+          ],
+          [
+            "36",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D5.1": {
+        "metrics_vs_own": {
+          "AP": 0.041666666666666664,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.16569576576522954
+        },
+        "metrics_vs_union": {
+          "AP": 0.09166666666666667,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.15101961822780524,
+          "R@10": 0.25,
+          "P@10": 0.1,
+          "nDCG@10": 0.15101961822780524,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.25651520246291565
+        },
+        "retrieved": [
+          [
+            "70",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "63",
+            "C_COMPAS"
+          ],
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "69",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "6",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "7",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D5.2": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 0.6309297535714575,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.6309297535714575,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.6309297535714575
+        },
+        "metrics_vs_union": {
+          "AP": 0.6583333333333333,
+          "R@5": 0.5,
+          "P@5": 0.4,
+          "nDCG@5": 0.6366824387328317,
+          "R@10": 0.75,
+          "P@10": 0.3,
+          "nDCG@10": 0.7495275800817669,
+          "R@20": 1.0,
+          "P@20": 0.2,
+          "nDCG@20": 0.8550231643168773
+        },
+        "retrieved": [
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "18",
+            "C_COMPAS"
+          ],
+          [
+            "47",
+            "C_COMPAS"
+          ],
+          [
+            "7",
+            "C_COMPAS"
+          ],
+          [
+            "25",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "48",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D5.3": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.25,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.3903800499921017,
+          "R@10": 0.25,
+          "P@10": 0.1,
+          "nDCG@10": 0.3903800499921017,
+          "R@20": 0.25,
+          "P@20": 0.05,
+          "nDCG@20": 0.3903800499921017
+        },
+        "retrieved": [
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "7",
+            "C_COMPAS"
+          ],
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "3",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "70",
+            "C_COMPAS"
+          ],
+          [
+            "69",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "48",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "46",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D5.5": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "51",
+            "C_COMPAS"
+          ],
+          [
+            "6",
+            "C_COMPAS"
+          ],
+          [
+            "50",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "30",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "45",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "32",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "48",
+            "C_COMPAS"
+          ],
+          [
+            "20",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "40",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "43",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "42",
+            "C_COMPAS"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.4583333333333333,
+          "R@5": 0.5,
+          "P@5": 0.4,
+          "nDCG@5": 0.5585075862632192,
+          "R@10": 0.75,
+          "P@10": 0.3,
+          "nDCG@10": 0.6760236910196463,
+          "R@20": 0.75,
+          "P@20": 0.15,
+          "nDCG@20": 0.6760236910196463
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 1.0,
+          "D5.2": 0.0,
+          "D5.3": 1.0,
+          "D5.5": 1.0
+        },
+        "final": [
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "6",
+            "C_COMPAS"
+          ],
+          [
+            "36",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.4583333333333333,
+          "R@5": 0.5,
+          "P@5": 0.4,
+          "nDCG@5": 0.5585075862632192,
+          "R@10": 0.75,
+          "P@10": 0.3,
+          "nDCG@10": 0.6760236910196463,
+          "R@20": 0.75,
+          "P@20": 0.15,
+          "nDCG@20": 0.6760236910196463
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 1.0,
+          "D5.2": 0.0,
+          "D5.3": 1.0,
+          "D5.5": 1.0
+        },
+        "final": [
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "6",
+            "C_COMPAS"
+          ],
+          [
+            "36",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.4583333333333333,
+          "R@5": 0.5,
+          "P@5": 0.4,
+          "nDCG@5": 0.5585075862632192,
+          "R@10": 0.75,
+          "P@10": 0.3,
+          "nDCG@10": 0.6760236910196463,
+          "R@20": 0.75,
+          "P@20": 0.15,
+          "nDCG@20": 0.6760236910196463
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 1.0,
+          "D5.2": 0.0,
+          "D5.3": 1.0,
+          "D5.5": 1.0
+        },
+        "final": [
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "39",
+            "C_COMPAS"
+          ],
+          [
+            "34",
+            "C_COMPAS"
+          ],
+          [
+            "15",
+            "C_COMPAS"
+          ],
+          [
+            "14",
+            "C_COMPAS"
+          ],
+          [
+            "35",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "6",
+            "C_COMPAS"
+          ],
+          [
+            "36",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.058538510101010105,
+          "P@5": 0.060000000000000005,
+          "R@5": 0.075,
+          "nDCG@5": 0.06436243957092652,
+          "P@10": 0.060000000000000005,
+          "R@10": 0.15,
+          "nDCG@10": 0.10083708579179114,
+          "P@20": 0.055,
+          "R@20": 0.275,
+          "nDCG@20": 0.14824260993535673
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.3,
+          "D5.2": 0.2,
+          "D5.3": 0.3,
+          "D5.5": 0.2
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "13",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D5.1",
+          "D5.5"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 4,
+          "raw:sq1": 2,
+          "ur:sq1": 4
+        },
+        "final_ranks": {
+          "whole_question": 4,
+          "rerank_each": 4,
+          "rerank_once": 4
+        }
+      },
+      {
+        "key": [
+          "14",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D5.1"
+        ],
+        "ranks": {
+          "raw:orig": 5,
+          "ur:orig": 9,
+          "raw:sq1": 5,
+          "ur:sq1": 9
+        },
+        "final_ranks": {
+          "whole_question": 9,
+          "rerank_each": 9,
+          "rerank_once": 9
+        }
+      },
+      {
+        "key": [
+          "18",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D5.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "37",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D5.3"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 1,
+          "raw:sq1": 1,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      }
+    ]
+  },
+  "D6": {
+    "parent_id": "D6",
+    "question": "What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps in the data? Which is the severity of inaccuracy?",
+    "n_relevant": 5,
+    "gt_subquestions": [
+      {
+        "id": "D6.1",
+        "text": "Plausible sources of inaccuracy"
+      },
+      {
+        "id": "D6.2",
+        "text": "Gaps in the data"
+      },
+      {
+        "id": "D6.3",
+        "text": "Errors, noise, redundancies"
+      }
+    ],
+    "llm_subquestions": [
+      "What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps in the data? Which is the severity of inaccuracy?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.6445378151260504,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.8,
+          "P@10": 0.4,
+          "nDCG@10": 0.7731930041332795,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.8545278495216991
+        },
+        "retrieved": [
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "11",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "31",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D6.1": {
+        "metrics_vs_own": {
+          "AP": 0.1,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.2890648263178879,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.2890648263178879
+        },
+        "metrics_vs_union": {
+          "AP": 0.29333333333333333,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.48160565320269266,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.48160565320269266
+        },
+        "retrieved": [
+          [
+            "7",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "29",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "51",
+            "C_COMPAS"
+          ],
+          [
+            "23",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "55",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D6.2": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 0.6509209298071326,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.6509209298071326,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.6509209298071326
+        },
+        "metrics_vs_union": {
+          "AP": 0.6833333333333333,
+          "R@5": 0.6,
+          "P@5": 0.6,
+          "nDCG@5": 0.6992148198508501,
+          "R@10": 0.8,
+          "P@10": 0.4,
+          "nDCG@10": 0.8200261225503443,
+          "R@20": 0.8,
+          "P@20": 0.2,
+          "nDCG@20": 0.8200261225503443
+        },
+        "retrieved": [
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "3",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "48",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "D6.3": {
+        "metrics_vs_own": {
+          "AP": 0.31666666666666665,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.38685280723454163,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.38685280723454163,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.5401396054259062
+        },
+        "metrics_vs_union": {
+          "AP": 0.5033333333333333,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.4,
+          "P@10": 0.2,
+          "nDCG@10": 0.5531464700081437,
+          "R@20": 0.8,
+          "P@20": 0.2,
+          "nDCG@20": 0.7295905492548808
+        },
+        "retrieved": [
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "11",
+            "C_COMPAS"
+          ],
+          [
+            "12",
+            "C_COMPAS"
+          ],
+          [
+            "73",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "71",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "33",
+            "C_COMPAS"
+          ],
+          [
+            "70",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "48",
+            "C_COMPAS"
+          ],
+          [
+            "17",
+            "C_COMPAS"
+          ],
+          [
+            "66",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "52",
+            "C_COMPAS"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.6445378151260504,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.8,
+          "P@10": 0.4,
+          "nDCG@10": 0.7731930041332795,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.8545278495216991
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 1.0,
+          "D6.2": 1.0,
+          "D6.3": 1.0
+        },
+        "final": [
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "11",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "31",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.6445378151260504,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.8,
+          "P@10": 0.4,
+          "nDCG@10": 0.7731930041332795,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.8545278495216991
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 1.0,
+          "D6.2": 1.0,
+          "D6.3": 1.0
+        },
+        "final": [
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "11",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "31",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.6445378151260504,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.8,
+          "P@10": 0.4,
+          "nDCG@10": 0.7731930041332795,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.8545278495216991
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 1.0,
+          "D6.2": 1.0,
+          "D6.3": 1.0
+        },
+        "final": [
+          [
+            "8",
+            "C_COMPAS"
+          ],
+          [
+            "10",
+            "C_COMPAS"
+          ],
+          [
+            "54",
+            "C_COMPAS"
+          ],
+          [
+            "37",
+            "C_COMPAS"
+          ],
+          [
+            "58",
+            "C_COMPAS"
+          ],
+          [
+            "72",
+            "C_COMPAS"
+          ],
+          [
+            "11",
+            "C_COMPAS"
+          ],
+          [
+            "9",
+            "C_COMPAS"
+          ],
+          [
+            "22",
+            "C_COMPAS"
+          ],
+          [
+            "13",
+            "C_COMPAS"
+          ],
+          [
+            "26",
+            "C_COMPAS"
+          ],
+          [
+            "0",
+            "C_COMPAS"
+          ],
+          [
+            "31",
+            "C_COMPAS"
+          ],
+          [
+            "68",
+            "C_COMPAS"
+          ],
+          [
+            "38",
+            "C_COMPAS"
+          ],
+          [
+            "5",
+            "C_COMPAS"
+          ],
+          [
+            "21",
+            "C_COMPAS"
+          ],
+          [
+            "64",
+            "C_COMPAS"
+          ],
+          [
+            "67",
+            "C_COMPAS"
+          ],
+          [
+            "27",
+            "C_COMPAS"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.036753501400560225,
+          "P@5": 0.08,
+          "R@5": 0.08,
+          "nDCG@5": 0.05780586075041981,
+          "P@10": 0.07,
+          "R@10": 0.14,
+          "nDCG@10": 0.09099625977929214,
+          "P@20": 0.05,
+          "R@20": 0.2,
+          "nDCG@20": 0.11574223398881647
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.4,
+          "D6.2": 0.15,
+          "D6.3": 0.15
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "8",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D6.1"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 1,
+          "raw:sq1": 1,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "9",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D6.2"
+        ],
+        "ranks": {
+          "raw:orig": 7,
+          "ur:orig": 8,
+          "raw:sq1": 7,
+          "ur:sq1": 8
+        },
+        "final_ranks": {
+          "whole_question": 8,
+          "rerank_each": 8,
+          "rerank_once": 8
+        }
+      },
+      {
+        "key": [
+          "10",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D6.2"
+        ],
+        "ranks": {
+          "raw:orig": 10,
+          "ur:orig": 2,
+          "raw:sq1": 10,
+          "ur:sq1": 2
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 2,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "11",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": 5,
+          "ur:orig": 7,
+          "raw:sq1": 5,
+          "ur:sq1": 7
+        },
+        "final_ranks": {
+          "whole_question": 7,
+          "rerank_each": 7,
+          "rerank_once": 7
+        }
+      },
+      {
+        "key": [
+          "21",
+          "C_COMPAS"
+        ],
+        "gt_subquestions": [
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": 9,
+          "ur:orig": 17,
+          "raw:sq1": 9,
+          "ur:sq1": 17
+        },
+        "final_ranks": {
+          "whole_question": 17,
+          "rerank_each": 17,
+          "rerank_once": 17
+        }
+      }
+    ]
+  },
+  "_grand_summary": {
+    "whole_question": {
+      "MAP": 0.3460617024587613,
+      "R@20": 0.6059523809523809
+    },
+    "rerank_each": {
+      "MAP": 0.3308933522904111,
+      "R@20": 0.6392857142857142
+    },
+    "rerank_once": {
+      "MAP": 0.35812519452225333,
+      "R@20": 0.6392857142857142
+    },
+    "random": {
+      "MAP": 0.05241454771820668,
+      "R@20": 0.23575396825396827
+    }
+  }
+}

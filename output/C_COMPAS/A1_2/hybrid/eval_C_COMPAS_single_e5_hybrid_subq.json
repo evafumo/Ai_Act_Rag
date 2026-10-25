@@ -1,0 +1,5394 @@
+{
+  "summary": {
+    "MAP": 0.10654258752942965,
+    "macro_metrics": {
+      "@5": {
+        "precision": 0.06999999999999999,
+        "recall": 0.15,
+        "ndcg": 0.12435136721337932
+      },
+      "@10": {
+        "precision": 0.045,
+        "recall": 0.19166666666666665,
+        "ndcg": 0.14061537932672835
+      },
+      "@20": {
+        "precision": 0.0375,
+        "recall": 0.2875,
+        "ndcg": 0.17447368148504278
+      }
+    }
+  },
+  "by_parent": {
+    "D1": {
+      "MAP": 0.09722222222222222,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.06666666666666667,
+          "recall": 0.16666666666666666,
+          "ndcg": 0.1289509357448472
+        },
+        "@10": {
+          "precision": 0.06666666666666667,
+          "recall": 0.27777777777777773,
+          "ndcg": 0.17829792090582475
+        },
+        "@20": {
+          "precision": 0.03333333333333333,
+          "recall": 0.27777777777777773,
+          "ndcg": 0.17829792090582475
+        }
+      }
+    },
+    "D2": {
+      "MAP": 0.06471861471861472,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.06666666666666667,
+          "recall": 0.16666666666666666,
+          "ndcg": 0.07906590425643208
+        },
+        "@10": {
+          "precision": 0.03333333333333333,
+          "recall": 0.16666666666666666,
+          "ndcg": 0.07906590425643208
+        },
+        "@20": {
+          "precision": 0.05000000000000001,
+          "recall": 0.4166666666666667,
+          "ndcg": 0.16767713940515275
+        }
+      }
+    },
+    "D3": {
+      "MAP": 0.0,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        }
+      }
+    },
+    "D4": {
+      "MAP": 0.1432017543859649,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.1,
+          "recall": 0.125,
+          "ndcg": 0.15917060968320793
+        },
+        "@10": {
+          "precision": 0.05,
+          "recall": 0.125,
+          "ndcg": 0.15917060968320793
+        },
+        "@20": {
+          "precision": 0.0625,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.23267377373681758
+        }
+      }
+    },
+    "D5": {
+      "MAP": 0.024074074074074078,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "@10": {
+          "precision": 0.03333333333333333,
+          "recall": 0.16666666666666666,
+          "ndcg": 0.05907976226134925
+        },
+        "@20": {
+          "precision": 0.03333333333333333,
+          "recall": 0.27777777777777773,
+          "ndcg": 0.09818632276324561
+        }
+      }
+    },
+    "D6": {
+      "MAP": 0.3333333333333333,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.20000000000000004,
+          "recall": 0.5,
+          "ndcg": 0.40876479517697223
+        },
+        "@10": {
+          "precision": 0.10000000000000002,
+          "recall": 0.5,
+          "ndcg": 0.40876479517697223
+        },
+        "@20": {
+          "precision": 0.05000000000000001,
+          "recall": 0.5,
+          "ndcg": 0.40876479517697223
+        }
+      }
+    }
+  },
+  "per_query": [
+    {
+      "question_id": "D1.1",
+      "parent_id": "D1",
+      "query": "Purpose for original data collection",
+      "relevant_ids": [
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "1",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "22",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "32",
+          "C_COMPAS"
+        ],
+        [
+          "43",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ],
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "38",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "41",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "48",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.25,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "41",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D1.2",
+      "parent_id": "D1",
+      "query": "People and organizations involved in the data collection process",
+      "relevant_ids": [
+        [
+          "1",
+          "C_COMPAS"
+        ],
+        [
+          "2",
+          "C_COMPAS"
+        ],
+        [
+          "16",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "22",
+          "C_COMPAS"
+        ],
+        [
+          "24",
+          "C_COMPAS"
+        ],
+        [
+          "15",
+          "C_COMPAS"
+        ],
+        [
+          "25",
+          "C_COMPAS"
+        ],
+        [
+          "27",
+          "C_COMPAS"
+        ],
+        [
+          "43",
+          "C_COMPAS"
+        ],
+        [
+          "35",
+          "C_COMPAS"
+        ],
+        [
+          "2",
+          "C_COMPAS"
+        ],
+        [
+          "19",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ],
+        [
+          "28",
+          "C_COMPAS"
+        ],
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "14",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "17",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.041666666666666664,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "15",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "27",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.1480409554829326,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "15",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "27",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "2",
+              "C_COMPAS"
+            ],
+            [
+              "19",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.1480409554829326,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "15",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "27",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "2",
+              "C_COMPAS"
+            ],
+            [
+              "19",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "28",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "14",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "17",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D1.3",
+      "parent_id": "D1",
+      "query": "Mechanisms or procedures used to collect the data",
+      "relevant_ids": [
+        [
+          "14",
+          "C_COMPAS"
+        ],
+        [
+          "16",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "19",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ],
+        [
+          "35",
+          "C_COMPAS"
+        ],
+        [
+          "22",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "34",
+          "C_COMPAS"
+        ],
+        [
+          "37",
+          "C_COMPAS"
+        ],
+        [
+          "38",
+          "C_COMPAS"
+        ],
+        [
+          "32",
+          "C_COMPAS"
+        ],
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "27",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "34",
+              "C_COMPAS"
+            ],
+            [
+              "37",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "34",
+              "C_COMPAS"
+            ],
+            [
+              "37",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "27",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.1",
+      "parent_id": "D2",
+      "query": "Timeframe of data collection",
+      "relevant_ids": [
+        [
+          "23",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "67",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "62",
+          "C_COMPAS"
+        ],
+        [
+          "71",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "55",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "59",
+          "C_COMPAS"
+        ],
+        [
+          "57",
+          "C_COMPAS"
+        ],
+        [
+          "65",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "17",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "68",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "56",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "67",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "67",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "62",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "55",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "67",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "62",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "55",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ],
+            [
+              "57",
+              "C_COMPAS"
+            ],
+            [
+              "65",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "17",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "56",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.2",
+      "parent_id": "D2",
+      "query": "Geographical area of data collection",
+      "relevant_ids": [
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "24",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "27",
+          "C_COMPAS"
+        ],
+        [
+          "38",
+          "C_COMPAS"
+        ],
+        [
+          "22",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "24",
+          "C_COMPAS"
+        ],
+        [
+          "25",
+          "C_COMPAS"
+        ],
+        [
+          "2",
+          "C_COMPAS"
+        ],
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "42",
+          "C_COMPAS"
+        ],
+        [
+          "72",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "40",
+          "C_COMPAS"
+        ],
+        [
+          "41",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "46",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.17142857142857143,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.23719771276929622,
+          "retrieved_ids_at_k": [
+            [
+              "27",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.23719771276929622,
+          "retrieved_ids_at_k": [
+            [
+              "27",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "2",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.3941376571472261,
+          "retrieved_ids_at_k": [
+            [
+              "27",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "2",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "42",
+              "C_COMPAS"
+            ],
+            [
+              "72",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "40",
+              "C_COMPAS"
+            ],
+            [
+              "41",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "46",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.3",
+      "parent_id": "D2",
+      "query": "Context of data collection",
+      "relevant_ids": [
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "24",
+          "C_COMPAS"
+        ],
+        [
+          "25",
+          "C_COMPAS"
+        ],
+        [
+          "26",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "22",
+          "C_COMPAS"
+        ],
+        [
+          "38",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "2",
+          "C_COMPAS"
+        ],
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "43",
+          "C_COMPAS"
+        ],
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "24",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "68",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.022727272727272728,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "2",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.25,
+          "ndcg": 0.10889376106823218,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "2",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.1",
+      "parent_id": "D3",
+      "query": "Sampling strategy",
+      "relevant_ids": [
+        [
+          "18",
+          "C_COMPAS"
+        ],
+        [
+          "19",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "22",
+          "C_COMPAS"
+        ],
+        [
+          "24",
+          "C_COMPAS"
+        ],
+        [
+          "25",
+          "C_COMPAS"
+        ],
+        [
+          "35",
+          "C_COMPAS"
+        ],
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "71",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "17",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "69",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "65",
+          "C_COMPAS"
+        ],
+        [
+          "68",
+          "C_COMPAS"
+        ],
+        [
+          "59",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "17",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "69",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "65",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.2",
+      "parent_id": "D3",
+      "query": "Data preprocessing",
+      "relevant_ids": [
+        [
+          "26",
+          "C_COMPAS"
+        ],
+        [
+          "27",
+          "C_COMPAS"
+        ],
+        [
+          "28",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "32",
+          "C_COMPAS"
+        ],
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "43",
+          "C_COMPAS"
+        ],
+        [
+          "25",
+          "C_COMPAS"
+        ],
+        [
+          "48",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "39",
+          "C_COMPAS"
+        ],
+        [
+          "40",
+          "C_COMPAS"
+        ],
+        [
+          "41",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "67",
+          "C_COMPAS"
+        ],
+        [
+          "46",
+          "C_COMPAS"
+        ],
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "59",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "39",
+              "C_COMPAS"
+            ],
+            [
+              "40",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "25",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "39",
+              "C_COMPAS"
+            ],
+            [
+              "40",
+              "C_COMPAS"
+            ],
+            [
+              "41",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "67",
+              "C_COMPAS"
+            ],
+            [
+              "46",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.3",
+      "parent_id": "D3",
+      "query": "Data cleaning",
+      "relevant_ids": [
+        [
+          "26",
+          "C_COMPAS"
+        ],
+        [
+          "27",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ],
+        [
+          "32",
+          "C_COMPAS"
+        ],
+        [
+          "43",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "41",
+          "C_COMPAS"
+        ],
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "22",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "48",
+          "C_COMPAS"
+        ],
+        [
+          "15",
+          "C_COMPAS"
+        ],
+        [
+          "24",
+          "C_COMPAS"
+        ],
+        [
+          "38",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ],
+        [
+          "65",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "41",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "41",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "15",
+              "C_COMPAS"
+            ],
+            [
+              "24",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "65",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.4",
+      "parent_id": "D3",
+      "query": "Data labeling and annotation",
+      "relevant_ids": [
+        [
+          "27",
+          "C_COMPAS"
+        ],
+        [
+          "28",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "32",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "14",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "48",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "43",
+          "C_COMPAS"
+        ],
+        [
+          "59",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ],
+        [
+          "62",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "14",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "14",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "62",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.1",
+      "parent_id": "D4",
+      "query": "Available features (or covariates) and their explanation",
+      "relevant_ids": [
+        [
+          "5",
+          "C_COMPAS"
+        ],
+        [
+          "46",
+          "C_COMPAS"
+        ],
+        [
+          "48",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "35",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ],
+        [
+          "70",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "68",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "56",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ],
+        [
+          "43",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "62",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ],
+        [
+          "41",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0125,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.25,
+          "ndcg": 0.08887792306803073,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "35",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "56",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "62",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ],
+            [
+              "41",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.2",
+      "parent_id": "D4",
+      "query": "Target variable(s) and their explanation",
+      "relevant_ids": [
+        [
+          "5",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "48",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "5",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "60",
+          "C_COMPAS"
+        ],
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "70",
+          "C_COMPAS"
+        ],
+        [
+          "59",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "62",
+          "C_COMPAS"
+        ],
+        [
+          "56",
+          "C_COMPAS"
+        ],
+        [
+          "72",
+          "C_COMPAS"
+        ],
+        [
+          "57",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ],
+        [
+          "69",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.5394736842105263,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 0.5,
+          "ndcg": 0.6366824387328317,
+          "retrieved_ids_at_k": [
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "5",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "60",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.6366824387328317,
+          "retrieved_ids_at_k": [
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "5",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "60",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "62",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.15,
+          "recall": 0.75,
+          "ndcg": 0.7270078771532217,
+          "retrieved_ids_at_k": [
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "5",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "60",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "62",
+              "C_COMPAS"
+            ],
+            [
+              "56",
+              "C_COMPAS"
+            ],
+            [
+              "72",
+              "C_COMPAS"
+            ],
+            [
+              "57",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ],
+            [
+              "69",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.3",
+      "parent_id": "D4",
+      "query": "Dataset size",
+      "relevant_ids": [
+        [
+          "3",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "72",
+          "C_COMPAS"
+        ],
+        [
+          "68",
+          "C_COMPAS"
+        ],
+        [
+          "2",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "67",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "15",
+          "C_COMPAS"
+        ],
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "12",
+          "C_COMPAS"
+        ],
+        [
+          "39",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ],
+        [
+          "43",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "41",
+          "C_COMPAS"
+        ],
+        [
+          "18",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "72",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "2",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "72",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "2",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "67",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "72",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "2",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "67",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "15",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "12",
+              "C_COMPAS"
+            ],
+            [
+              "39",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "41",
+              "C_COMPAS"
+            ],
+            [
+              "18",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.4",
+      "parent_id": "D4",
+      "query": "Assumptions about what the data represents",
+      "relevant_ids": [
+        [
+          "3",
+          "C_COMPAS"
+        ],
+        [
+          "5",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "22",
+          "C_COMPAS"
+        ],
+        [
+          "20",
+          "C_COMPAS"
+        ],
+        [
+          "15",
+          "C_COMPAS"
+        ],
+        [
+          "14",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "1",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "38",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "43",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "41",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.020833333333333332,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "15",
+              "C_COMPAS"
+            ],
+            [
+              "14",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "15",
+              "C_COMPAS"
+            ],
+            [
+              "14",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "1",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.11480929472601784,
+          "retrieved_ids_at_k": [
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "20",
+              "C_COMPAS"
+            ],
+            [
+              "15",
+              "C_COMPAS"
+            ],
+            [
+              "14",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "1",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "43",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "41",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.1",
+      "parent_id": "D5",
+      "query": "Which attributes are salient or at risk of discrimination",
+      "relevant_ids": [
+        [
+          "12",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "70",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ],
+        [
+          "48",
+          "C_COMPAS"
+        ],
+        [
+          "60",
+          "C_COMPAS"
+        ],
+        [
+          "69",
+          "C_COMPAS"
+        ],
+        [
+          "37",
+          "C_COMPAS"
+        ],
+        [
+          "34",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "46",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "68",
+          "C_COMPAS"
+        ],
+        [
+          "17",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.05,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.17723928678404774,
+          "retrieved_ids_at_k": [
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "60",
+              "C_COMPAS"
+            ],
+            [
+              "69",
+              "C_COMPAS"
+            ],
+            [
+              "37",
+              "C_COMPAS"
+            ],
+            [
+              "34",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.17723928678404774,
+          "retrieved_ids_at_k": [
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "60",
+              "C_COMPAS"
+            ],
+            [
+              "69",
+              "C_COMPAS"
+            ],
+            [
+              "37",
+              "C_COMPAS"
+            ],
+            [
+              "34",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "46",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "17",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.2",
+      "parent_id": "D5",
+      "query": "Marginal distribution of protected attributes",
+      "relevant_ids": [
+        [
+          "12",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "22",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "70",
+          "C_COMPAS"
+        ],
+        [
+          "71",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "69",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "72",
+          "C_COMPAS"
+        ],
+        [
+          "68",
+          "C_COMPAS"
+        ],
+        [
+          "60",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "57",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "41",
+          "C_COMPAS"
+        ],
+        [
+          "56",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.022222222222222223,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "69",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "69",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "72",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "60",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.11731968150568911,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "69",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "72",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "60",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "57",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "41",
+              "C_COMPAS"
+            ],
+            [
+              "56",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.5",
+      "parent_id": "D5",
+      "query": "Label provenance",
+      "relevant_ids": [
+        [
+          "12",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "48",
+          "C_COMPAS"
+        ],
+        [
+          "46",
+          "C_COMPAS"
+        ],
+        [
+          "49",
+          "C_COMPAS"
+        ],
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "29",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "32",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "69",
+          "C_COMPAS"
+        ],
+        [
+          "65",
+          "C_COMPAS"
+        ],
+        [
+          "59",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "42",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "46",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "46",
+              "C_COMPAS"
+            ],
+            [
+              "49",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "48",
+              "C_COMPAS"
+            ],
+            [
+              "46",
+              "C_COMPAS"
+            ],
+            [
+              "49",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "29",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "32",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "69",
+              "C_COMPAS"
+            ],
+            [
+              "65",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "42",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.1",
+      "parent_id": "D6",
+      "query": "Plausible sources of inaccuracy",
+      "relevant_ids": [
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "10",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "44",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "59",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "30",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "56",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "62",
+          "C_COMPAS"
+        ],
+        [
+          "49",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.16666666666666666,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.3065735963827292,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "44",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.3065735963827292,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "44",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.3065735963827292,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "44",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "59",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "30",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "56",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "62",
+              "C_COMPAS"
+            ],
+            [
+              "49",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.2",
+      "parent_id": "D6",
+      "query": "Gaps in the data",
+      "relevant_ids": [
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "73",
+          "C_COMPAS"
+        ],
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "68",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "22",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "17",
+          "C_COMPAS"
+        ],
+        [
+          "54",
+          "C_COMPAS"
+        ],
+        [
+          "23",
+          "C_COMPAS"
+        ],
+        [
+          "38",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "72",
+          "C_COMPAS"
+        ],
+        [
+          "58",
+          "C_COMPAS"
+        ],
+        [
+          "66",
+          "C_COMPAS"
+        ],
+        [
+          "33",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "50",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.8333333333333333,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "ndcg": 0.9197207891481876,
+          "retrieved_ids_at_k": [
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "73",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.9197207891481876,
+          "retrieved_ids_at_k": [
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "73",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "17",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.9197207891481876,
+          "retrieved_ids_at_k": [
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "73",
+              "C_COMPAS"
+            ],
+            [
+              "9",
+              "C_COMPAS"
+            ],
+            [
+              "68",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "22",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "17",
+              "C_COMPAS"
+            ],
+            [
+              "54",
+              "C_COMPAS"
+            ],
+            [
+              "23",
+              "C_COMPAS"
+            ],
+            [
+              "38",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "72",
+              "C_COMPAS"
+            ],
+            [
+              "58",
+              "C_COMPAS"
+            ],
+            [
+              "66",
+              "C_COMPAS"
+            ],
+            [
+              "33",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "50",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.3",
+      "parent_id": "D6",
+      "query": "Severity of inaccuracy",
+      "relevant_ids": [
+        [
+          "9",
+          "C_COMPAS"
+        ],
+        [
+          "10",
+          "C_COMPAS"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "7",
+          "C_COMPAS"
+        ],
+        [
+          "73",
+          "C_COMPAS"
+        ],
+        [
+          "61",
+          "C_COMPAS"
+        ],
+        [
+          "71",
+          "C_COMPAS"
+        ],
+        [
+          "63",
+          "C_COMPAS"
+        ],
+        [
+          "37",
+          "C_COMPAS"
+        ],
+        [
+          "31",
+          "C_COMPAS"
+        ],
+        [
+          "6",
+          "C_COMPAS"
+        ],
+        [
+          "60",
+          "C_COMPAS"
+        ],
+        [
+          "70",
+          "C_COMPAS"
+        ],
+        [
+          "21",
+          "C_COMPAS"
+        ],
+        [
+          "13",
+          "C_COMPAS"
+        ],
+        [
+          "62",
+          "C_COMPAS"
+        ],
+        [
+          "51",
+          "C_COMPAS"
+        ],
+        [
+          "45",
+          "C_COMPAS"
+        ],
+        [
+          "56",
+          "C_COMPAS"
+        ],
+        [
+          "52",
+          "C_COMPAS"
+        ],
+        [
+          "0",
+          "C_COMPAS"
+        ],
+        [
+          "8",
+          "C_COMPAS"
+        ],
+        [
+          "49",
+          "C_COMPAS"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "73",
+              "C_COMPAS"
+            ],
+            [
+              "61",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "73",
+              "C_COMPAS"
+            ],
+            [
+              "61",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "37",
+              "C_COMPAS"
+            ],
+            [
+              "31",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "60",
+              "C_COMPAS"
+            ],
+            [
+              "70",
+              "C_COMPAS"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "C_COMPAS"
+            ],
+            [
+              "73",
+              "C_COMPAS"
+            ],
+            [
+              "61",
+              "C_COMPAS"
+            ],
+            [
+              "71",
+              "C_COMPAS"
+            ],
+            [
+              "63",
+              "C_COMPAS"
+            ],
+            [
+              "37",
+              "C_COMPAS"
+            ],
+            [
+              "31",
+              "C_COMPAS"
+            ],
+            [
+              "6",
+              "C_COMPAS"
+            ],
+            [
+              "60",
+              "C_COMPAS"
+            ],
+            [
+              "70",
+              "C_COMPAS"
+            ],
+            [
+              "21",
+              "C_COMPAS"
+            ],
+            [
+              "13",
+              "C_COMPAS"
+            ],
+            [
+              "62",
+              "C_COMPAS"
+            ],
+            [
+              "51",
+              "C_COMPAS"
+            ],
+            [
+              "45",
+              "C_COMPAS"
+            ],
+            [
+              "56",
+              "C_COMPAS"
+            ],
+            [
+              "52",
+              "C_COMPAS"
+            ],
+            [
+              "0",
+              "C_COMPAS"
+            ],
+            [
+              "8",
+              "C_COMPAS"
+            ],
+            [
+              "49",
+              "C_COMPAS"
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5888 @@
+{
+  "summary": {
+    "MAP": 0.4619334579561852,
+    "macro_metrics": {
+      "@5": {
+        "precision": 0.22727272727272735,
+        "recall": 0.5984848484848485,
+        "ndcg": 0.5094440761528909
+      },
+      "@10": {
+        "precision": 0.14090909090909093,
+        "recall": 0.7045454545454545,
+        "ndcg": 0.5537490583747167
+      },
+      "@20": {
+        "precision": 0.07500000000000001,
+        "recall": 0.75,
+        "ndcg": 0.5683417800645373
+      }
+    }
+  },
+  "by_parent": {
+    "D1": {
+      "MAP": 0.3053030303030303,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.20000000000000004,
+          "recall": 0.5,
+          "ndcg": 0.37147100936911515
+        },
+        "@10": {
+          "precision": 0.10000000000000002,
+          "recall": 0.5,
+          "ndcg": 0.37147100936911515
+        },
+        "@20": {
+          "precision": 0.06666666666666667,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.42848203739168783
+        }
+      }
+    },
+    "D2": {
+      "MAP": 0.6666666666666666,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.26666666666666666,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.6666666666666666
+        },
+        "@10": {
+          "precision": 0.13333333333333333,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.6666666666666666
+        },
+        "@20": {
+          "precision": 0.06666666666666667,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.6666666666666666
+        }
+      }
+    },
+    "D3": {
+      "MAP": 0.7,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.75,
+          "ndcg": 0.7193038288345124
+        },
+        "@10": {
+          "precision": 0.125,
+          "recall": 0.875,
+          "ndcg": 0.7636136505305242
+        },
+        "@20": {
+          "precision": 0.0625,
+          "recall": 0.875,
+          "ndcg": 0.7636136505305242
+        }
+      }
+    },
+    "D4": {
+      "MAP": 0.22291666666666665,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.15000000000000002,
+          "recall": 0.375,
+          "ndcg": 0.30929942819232403
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.4583333333333333,
+          "ndcg": 0.3463096670630572
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.4583333333333333,
+          "ndcg": 0.3463096670630572
+        }
+      }
+    },
+    "D5": {
+      "MAP": 0.5097222222222222,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.24,
+          "recall": 0.7,
+          "ndcg": 0.5789995752288097
+        },
+        "@10": {
+          "precision": 0.14,
+          "recall": 0.8,
+          "ndcg": 0.6159147145847234
+        },
+        "@20": {
+          "precision": 0.07999999999999999,
+          "recall": 0.9,
+          "ndcg": 0.6459160732063909
+        }
+      }
+    },
+    "D6": {
+      "MAP": 0.33544973544973544,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5555555555555555,
+          "ndcg": 0.3613152476682869
+        },
+        "@10": {
+          "precision": 0.26666666666666666,
+          "recall": 0.8888888888888888,
+          "ndcg": 0.5162664709461592
+        },
+        "@20": {
+          "precision": 0.13333333333333333,
+          "recall": 0.8888888888888888,
+          "ndcg": 0.5162664709461592
+        }
+      }
+    }
+  },
+  "per_query": [
+    {
+      "question_id": "D1.1",
+      "parent_id": "D1",
+      "query": "Purpose for original data collection",
+      "relevant_ids": [
+        [
+          "0",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "2",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "40",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "29",
+          "D_German"
+        ],
+        [
+          "33",
+          "D_German"
+        ],
+        [
+          "35",
+          "D_German"
+        ],
+        [
+          "32",
+          "D_German"
+        ],
+        [
+          "34",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "2",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "2",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "40",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "29",
+              "D_German"
+            ],
+            [
+              "33",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "32",
+              "D_German"
+            ],
+            [
+              "34",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D1.2",
+      "parent_id": "D1",
+      "query": "People and organizations involved",
+      "relevant_ids": [
+        [
+          "1",
+          "D_German"
+        ],
+        [
+          "2",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "47",
+          "D_German"
+        ],
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "1",
+          "D_German"
+        ],
+        [
+          "3",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "2",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "14",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ],
+        [
+          "31",
+          "D_German"
+        ],
+        [
+          "32",
+          "D_German"
+        ]
+      ],
+      "AP": 0.2159090909090909,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.2640681225725909,
+          "retrieved_ids_at_k": [
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "47",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.2640681225725909,
+          "retrieved_ids_at_k": [
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "47",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.435101206640309,
+          "retrieved_ids_at_k": [
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "47",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "2",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "14",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "31",
+              "D_German"
+            ],
+            [
+              "32",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D1.3",
+      "parent_id": "D1",
+      "query": "Mechanisms or procedures used to collect the data",
+      "relevant_ids": [
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ],
+        [
+          "35",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "1",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "0",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "29",
+          "D_German"
+        ]
+      ],
+      "AP": 0.7,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "ndcg": 0.8503449055347546,
+          "retrieved_ids_at_k": [
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.8503449055347546,
+          "retrieved_ids_at_k": [
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.8503449055347546,
+          "retrieved_ids_at_k": [
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "0",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "29",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.1",
+      "parent_id": "D2",
+      "query": "Timeframe of data collection",
+      "relevant_ids": [
+        [
+          "19",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "2",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "3",
+          "D_German"
+        ],
+        [
+          "33",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "29",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "32",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "0",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "37",
+          "D_German"
+        ]
+      ],
+      "AP": 1.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "2",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "2",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "33",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "2",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "33",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "29",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "32",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "0",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "37",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.2",
+      "parent_id": "D2",
+      "query": "Geographical area",
+      "relevant_ids": [
+        [
+          "0",
+          "D_German"
+        ],
+        [
+          "2",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "13",
+          "D_German"
+        ],
+        [
+          "45",
+          "D_German"
+        ],
+        [
+          "15",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "43",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "52",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "50",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "44",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "14",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "52",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "50",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "52",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "50",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "44",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "14",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.3",
+      "parent_id": "D2",
+      "query": "Context of data collection",
+      "relevant_ids": [
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "2",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "3",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "0",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "29",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "33",
+          "D_German"
+        ],
+        [
+          "32",
+          "D_German"
+        ],
+        [
+          "37",
+          "D_German"
+        ]
+      ],
+      "AP": 1.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "2",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.15,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "2",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "0",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "29",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "33",
+              "D_German"
+            ],
+            [
+              "32",
+              "D_German"
+            ],
+            [
+              "37",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.1",
+      "parent_id": "D3",
+      "query": "Sampling strategy",
+      "relevant_ids": [
+        [
+          "3",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "15",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "52",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ]
+      ],
+      "AP": 0.05,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.17723928678404774,
+          "retrieved_ids_at_k": [
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.17723928678404774,
+          "retrieved_ids_at_k": [
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "52",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.2",
+      "parent_id": "D3",
+      "query": "Data preprocessing",
+      "relevant_ids": [
+        [
+          "22",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "35",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ]
+      ],
+      "AP": 1.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.3",
+      "parent_id": "D3",
+      "query": "Data cleaning",
+      "relevant_ids": [
+        [
+          "22",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "32",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "35",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ]
+      ],
+      "AP": 1.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "32",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "32",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "32",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.4",
+      "parent_id": "D3",
+      "query": "Data labeling and annotation",
+      "relevant_ids": [
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "5",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "35",
+          "D_German"
+        ],
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "1",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "0",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "32",
+          "D_German"
+        ],
+        [
+          "31",
+          "D_German"
+        ]
+      ],
+      "AP": 0.75,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "ndcg": 0.8772153153380493,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.8772153153380493,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.8772153153380493,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "0",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "32",
+              "D_German"
+            ],
+            [
+              "31",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.1",
+      "parent_id": "D4",
+      "query": "Available features",
+      "relevant_ids": [
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "39",
+          "D_German"
+        ],
+        [
+          "47",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "36",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "46",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "48",
+          "D_German"
+        ],
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "44",
+          "D_German"
+        ],
+        [
+          "23",
+          "D_German"
+        ],
+        [
+          "43",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "50",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "3",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ]
+      ],
+      "AP": 0.041666666666666664,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "36",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "46",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.1480409554829326,
+          "retrieved_ids_at_k": [
+            [
+              "36",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "46",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "48",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "44",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.1480409554829326,
+          "retrieved_ids_at_k": [
+            [
+              "36",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "46",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "48",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "44",
+              "D_German"
+            ],
+            [
+              "23",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "50",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.2",
+      "parent_id": "D4",
+      "query": "Target variables",
+      "relevant_ids": [
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "47",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "45",
+          "D_German"
+        ],
+        [
+          "41",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "48",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "39",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "50",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "52",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "23",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ]
+      ],
+      "AP": 0.5,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "41",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "48",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "41",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "48",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "39",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "41",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "48",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "39",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "50",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "52",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "23",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.3",
+      "parent_id": "D4",
+      "query": "Dataset size",
+      "relevant_ids": [
+        [
+          "3",
+          "D_German"
+        ],
+        [
+          "38",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "52",
+          "D_German"
+        ],
+        [
+          "3",
+          "D_German"
+        ],
+        [
+          "1",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "28",
+          "D_German"
+        ],
+        [
+          "2",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ]
+      ],
+      "AP": 0.25,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "52",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "52",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "52",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "28",
+              "D_German"
+            ],
+            [
+              "2",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.4",
+      "parent_id": "D4",
+      "query": "Assumptions about representation",
+      "relevant_ids": [
+        [
+          "3",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "43",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ],
+        [
+          "23",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "14",
+          "D_German"
+        ]
+      ],
+      "AP": 0.1,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.23719771276929622,
+          "retrieved_ids_at_k": [
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.23719771276929622,
+          "retrieved_ids_at_k": [
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.23719771276929622,
+          "retrieved_ids_at_k": [
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "23",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "14",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.1",
+      "parent_id": "D5",
+      "query": "Attributes at risk",
+      "relevant_ids": [
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "47",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "45",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "43",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "48",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ],
+        [
+          "0",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ]
+      ],
+      "AP": 0.1875,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.2640681225725909,
+          "retrieved_ids_at_k": [
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "47",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.2640681225725909,
+          "retrieved_ids_at_k": [
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "47",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.4140749156809287,
+          "retrieved_ids_at_k": [
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "47",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "48",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "0",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.2",
+      "parent_id": "D5",
+      "query": "Marginal distribution",
+      "relevant_ids": [
+        [
+          "13",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "28",
+          "D_German"
+        ],
+        [
+          "13",
+          "D_German"
+        ],
+        [
+          "15",
+          "D_German"
+        ],
+        [
+          "45",
+          "D_German"
+        ],
+        [
+          "14",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "52",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ]
+      ],
+      "AP": 0.3611111111111111,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "28",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "14",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.5714285040141098,
+          "retrieved_ids_at_k": [
+            [
+              "28",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "14",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.5714285040141098,
+          "retrieved_ids_at_k": [
+            [
+              "28",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "14",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "52",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.3",
+      "parent_id": "D5",
+      "query": "Joint distribution",
+      "relevant_ids": [
+        [
+          "9",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "43",
+          "D_German"
+        ],
+        [
+          "45",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "23",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "15",
+          "D_German"
+        ],
+        [
+          "13",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "50",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "14",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ]
+      ],
+      "AP": 0.5,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.6309297535714575,
+          "retrieved_ids_at_k": [
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.6309297535714575,
+          "retrieved_ids_at_k": [
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "23",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 0.6309297535714575,
+          "retrieved_ids_at_k": [
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "45",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "23",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "50",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "14",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.5",
+      "parent_id": "D5",
+      "query": "Label provenance",
+      "relevant_ids": [
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "35",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ]
+      ],
+      "AP": 1.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.6",
+      "parent_id": "D5",
+      "query": "Bias mitigation",
+      "relevant_ids": [
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "3",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "13",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "15",
+          "D_German"
+        ],
+        [
+          "26",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ]
+      ],
+      "AP": 0.5,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "13",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "15",
+              "D_German"
+            ],
+            [
+              "26",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.1",
+      "parent_id": "D6",
+      "query": "Plausible sources of inaccuracy",
+      "relevant_ids": [
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "1",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "43",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "47",
+          "D_German"
+        ],
+        [
+          "37",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "28",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "25",
+          "D_German"
+        ],
+        [
+          "3",
+          "D_German"
+        ],
+        [
+          "35",
+          "D_German"
+        ],
+        [
+          "0",
+          "D_German"
+        ],
+        [
+          "36",
+          "D_German"
+        ]
+      ],
+      "AP": 0.5,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.49818925746641285,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "ndcg": 0.6653497124326151,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.15,
+          "recall": 1.0,
+          "ndcg": 0.6653497124326151,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "1",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "43",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "47",
+              "D_German"
+            ],
+            [
+              "37",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "28",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "25",
+              "D_German"
+            ],
+            [
+              "3",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "0",
+              "D_German"
+            ],
+            [
+              "36",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.2",
+      "parent_id": "D6",
+      "query": "Gaps in the data",
+      "relevant_ids": [
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "42",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "19",
+          "D_German"
+        ],
+        [
+          "11",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "33",
+          "D_German"
+        ],
+        [
+          "35",
+          "D_German"
+        ],
+        [
+          "21",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ]
+      ],
+      "AP": 0.17857142857142858,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.20210734650054757,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.35853358850813305,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.35853358850813305,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "42",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "19",
+              "D_German"
+            ],
+            [
+              "11",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "33",
+              "D_German"
+            ],
+            [
+              "35",
+              "D_German"
+            ],
+            [
+              "21",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.3",
+      "parent_id": "D6",
+      "query": "Errors, noise, redundancies",
+      "relevant_ids": [
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "7",
+          "D_German"
+        ],
+        [
+          "53",
+          "D_German"
+        ],
+        [
+          "23",
+          "D_German"
+        ],
+        [
+          "9",
+          "D_German"
+        ],
+        [
+          "10",
+          "D_German"
+        ],
+        [
+          "4",
+          "D_German"
+        ],
+        [
+          "49",
+          "D_German"
+        ],
+        [
+          "6",
+          "D_German"
+        ],
+        [
+          "8",
+          "D_German"
+        ],
+        [
+          "27",
+          "D_German"
+        ],
+        [
+          "22",
+          "D_German"
+        ],
+        [
+          "5",
+          "D_German"
+        ],
+        [
+          "18",
+          "D_German"
+        ],
+        [
+          "20",
+          "D_German"
+        ],
+        [
+          "16",
+          "D_German"
+        ],
+        [
+          "24",
+          "D_German"
+        ],
+        [
+          "52",
+          "D_German"
+        ],
+        [
+          "12",
+          "D_German"
+        ],
+        [
+          "17",
+          "D_German"
+        ],
+        [
+          "51",
+          "D_German"
+        ]
+      ],
+      "AP": 0.3277777777777778,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.38364913903790027,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "23",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "ndcg": 0.5249161118977292,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "23",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.15,
+          "recall": 1.0,
+          "ndcg": 0.5249161118977292,
+          "retrieved_ids_at_k": [
+            [
+              "7",
+              "D_German"
+            ],
+            [
+              "53",
+              "D_German"
+            ],
+            [
+              "23",
+              "D_German"
+            ],
+            [
+              "9",
+              "D_German"
+            ],
+            [
+              "10",
+              "D_German"
+            ],
+            [
+              "4",
+              "D_German"
+            ],
+            [
+              "49",
+              "D_German"
+            ],
+            [
+              "6",
+              "D_German"
+            ],
+            [
+              "8",
+              "D_German"
+            ],
+            [
+              "27",
+              "D_German"
+            ],
+            [
+              "22",
+              "D_German"
+            ],
+            [
+              "5",
+              "D_German"
+            ],
+            [
+              "18",
+              "D_German"
+            ],
+            [
+              "20",
+              "D_German"
+            ],
+            [
+              "16",
+              "D_German"
+            ],
+            [
+              "24",
+              "D_German"
+            ],
+            [
+              "52",
+              "D_German"
+            ],
+            [
+              "12",
+              "D_German"
+            ],
+            [
+              "17",
+              "D_German"
+            ],
+            [
+              "51",
+              "D_German"
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

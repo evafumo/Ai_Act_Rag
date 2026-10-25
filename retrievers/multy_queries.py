@@ -1,15 +1,8 @@
 from typing import List, Tuple
 from langchain_core.documents import Document
 
-from retrievers.retriever import unified_retrieval, retrieve_raw
+from retrievers.retriever import retrieve_raw, rrf_fuse_rankings, doc_key
 from rerankers.reranker import rerank_with_bge
-
-
-def _doc_key(doc: Document):
-    return (
-        str(doc.metadata.get("chunk_id")),
-        str(doc.metadata.get("source")),
-    )
 
 
 def multi_query_retrieval_rerank_each(
@@ -20,6 +13,7 @@ def multi_query_retrieval_rerank_each(
     k_final: int = 20,
     rrf_k: int = 40,
     debug: bool = False,
+    k_pool: int | None = None,
 ) -> List[Document]:
 
     """
@@ -33,55 +27,55 @@ def multi_query_retrieval_rerank_each(
         k_final (int)
         rrf_k (int)
         debug (bool)
+        k_pool (int | None):
+            Candidati recuperati per sottodomanda PRIMA del reranking
+            (default: 2 * k_per_subquery). Il cross-encoder li riordina
+            e ne tiene i migliori k_per_subquery.
 
     OUTPUT:
         list[Document]
 
     NOTE:
-        Per ogni sottodomanda viene eseguito retrieval con eventuale
-        fusione RRF tra retriever e reranking locale. Le classifiche
-        ottenute vengono poi fuse tramite RRF senza effettuare un
-        reranking finale.
+        Per ogni sottodomanda: retrieval (con eventuale RRF tra retriever)
+        di un pool piu' ampio di k_per_subquery, poi reranking con la
+        sottodomanda e taglio a k_per_subquery. In questo modo il reranker
+        puo' recuperare documenti che il retrieval aveva messo oltre il
+        k_per_subquery-esimo posto. Le classifiche delle sottodomande
+        vengono poi fuse con RRF, senza reranking finale.
+        Nota: il pool e' limitato dal k dei singoli retriever
+        (20 per i single, 40 per le combo).
     """
+
+    if k_pool is None:
+        k_pool = 2 * k_per_subquery
+    k_pool = max(k_pool, k_per_subquery)
 
     per_subquery_ranked = []
 
     for sub_q in sub_questions:
-        docs = unified_retrieval(
+        # 1) pool ampio senza reranking
+        pool = retrieve_raw(
             retrievers,
             sub_q,
-            k=k_per_subquery,
+            k=k_pool,
             rrf_k=rrf_k,
             debug=debug,
         )
 
+        # 2) reranking sulla sottodomanda, taglio a k_per_subquery
+        docs = rerank_with_bge(
+            sub_q,
+            pool,
+            top_n=k_per_subquery,
+        )
+
         per_subquery_ranked.append(docs)
 
-    rrf_scores = {}
-    doc_lookup = {}
-
-    for docs in per_subquery_ranked:
-        for rank, doc in enumerate(docs):
-
-            key = _doc_key(doc)
-
-            doc_lookup[key] = doc
-
-            rrf_scores[key] = (
-                rrf_scores.get(key, 0.0)
-                + 1.0 / (rrf_k + rank + 1)
-            )
-
-    fused_sorted = sorted(
-        rrf_scores.items(),
-        key=lambda x: x[1],
-        reverse=True,
+    # Fusione RRF tra le classifiche delle sottodomande
+    # (chiave (chunk_id, source): sicura con piu' PDF)
+    fused_docs, _, _ = rrf_fuse_rankings(
+        per_subquery_ranked, k=rrf_k, debug=debug, tag="MQ-RRF"
     )
-
-    fused_docs = [
-        doc_lookup[key]
-        for key, _ in fused_sorted
-    ]
 
     return fused_docs[:k_final]
 
@@ -131,7 +125,7 @@ def multi_query_retrieval_rerank_once(
 
         for doc in docs:
 
-            key = _doc_key(doc)
+            key = doc_key(doc)
 
             if key not in seen:
                 seen.add(key)

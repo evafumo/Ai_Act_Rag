@@ -1,0 +1,5694 @@
+{
+  "D1": {
+    "parent_id": "D1",
+    "question": "What is the purpose and origin of the data? What is the purpose for original data collection? Which people and organizations are involved in the data collection process? What are the mechanisms or procedures used to collect the data? ",
+    "n_relevant": 5,
+    "gt_subquestions": [
+      {
+        "id": "D1.1",
+        "text": "Purpose for original data collection"
+      },
+      {
+        "id": "D1.2",
+        "text": "People and organizations involved"
+      },
+      {
+        "id": "D1.3",
+        "text": "Mechanisms or procedures used to collect the data"
+      }
+    ],
+    "llm_subquestions": [
+      "What is the purpose and origin of the data?",
+      "What is the purpose for original data collection?",
+      "Which people and organizations are involved in the data collection process?",
+      "What are the mechanisms or procedures used to collect the data?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.7142857142857142,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 1.0,
+          "P@10": 0.5,
+          "nDCG@10": 0.8850504602968671,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.8850504602968671
+        },
+        "retrieved": [
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D1.1": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 0.6309297535714575,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.6309297535714575,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.6309297535714575
+        },
+        "metrics_vs_union": {
+          "AP": 0.43809523809523804,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.36005461457723403,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.4808659172767282,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.6593307214409875
+        },
+        "retrieved": [
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "10",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D1.2": {
+        "metrics_vs_own": {
+          "AP": 0.3333333333333333,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.2,
+          "nDCG@5": 0.46927872602275644,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.1,
+          "nDCG@10": 0.46927872602275644,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.05,
+          "nDCG@20": 0.46927872602275644
+        },
+        "metrics_vs_union": {
+          "AP": 0.29999999999999993,
+          "R@5": 0.2,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.4,
+          "P@10": 0.2,
+          "nDCG@10": 0.45221360703148816,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.5390243832674144
+        },
+        "retrieved": [
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "54",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "24",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "5",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "60",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D1.3": {
+        "metrics_vs_own": {
+          "AP": 0.7,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 0.8503449055347546,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.8503449055347546,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.8503449055347546
+        },
+        "metrics_vs_union": {
+          "AP": 0.3175,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.4703652827859579,
+          "R@10": 0.4,
+          "P@10": 0.2,
+          "nDCG@10": 0.4703652827859579,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.5533410108710769
+        },
+        "retrieved": [
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "36",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "10",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ],
+          [
+            "46",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ],
+          [
+            "5",
+            "B_Adult"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.7142857142857142,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 1.0,
+          "P@10": 0.5,
+          "nDCG@10": 0.8850504602968671,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.8850504602968671
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 1.0
+        },
+        "final": [
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.372967032967033,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.34519134224686937,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.4432306280782264,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.6191216745323871
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 1.0
+        },
+        "final": [
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.6579365079365078,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.8,
+          "P@10": 0.4,
+          "nDCG@10": 0.7682972668889274,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.8599512948172603
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 1.0
+        },
+        "final": [
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "29",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "5",
+            "B_Adult"
+          ],
+          [
+            "36",
+            "B_Adult"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.08330094930868924,
+          "P@5": 0.04,
+          "R@5": 0.04,
+          "nDCG@5": 0.048522855511632254,
+          "P@10": 0.09,
+          "R@10": 0.18,
+          "nDCG@10": 0.12304178631410445,
+          "P@20": 0.095,
+          "R@20": 0.38,
+          "nDCG@20": 0.20808223397409423
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 0.2,
+          "D1.2": 0.36666666666666664,
+          "D1.3": 0.4
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "6",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D1.1",
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": 4,
+          "ur:orig": 1,
+          "raw:sq1": 1,
+          "ur:sq1": 1,
+          "raw:sq2": 16,
+          "ur:sq2": 1,
+          "raw:sq3": 19,
+          "ur:sq3": 15,
+          "raw:sq4": null,
+          "ur:sq4": null
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 10,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "7",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": 15,
+          "ur:orig": 7,
+          "raw:sq1": 5,
+          "ur:sq1": 2,
+          "raw:sq2": 17,
+          "ur:sq2": 13,
+          "raw:sq3": 11,
+          "ur:sq3": 12,
+          "raw:sq4": null,
+          "ur:sq4": null
+        },
+        "final_ranks": {
+          "whole_question": 7,
+          "rerank_each": 13,
+          "rerank_once": 9
+        }
+      },
+      {
+        "key": [
+          "8",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": 17,
+          "ur:orig": 10,
+          "raw:sq1": 19,
+          "ur:sq1": 6,
+          "raw:sq2": null,
+          "ur:sq2": null,
+          "raw:sq3": 8,
+          "ur:sq3": 9,
+          "raw:sq4": 11,
+          "ur:sq4": 15
+        },
+        "final_ranks": {
+          "whole_question": 10,
+          "rerank_each": 14,
+          "rerank_once": 12
+        }
+      },
+      {
+        "key": [
+          "21",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D1.3"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 2,
+          "raw:sq1": 2,
+          "ur:sq1": 3,
+          "raw:sq2": 1,
+          "ur:sq2": 3,
+          "raw:sq3": 1,
+          "ur:sq3": 4,
+          "raw:sq4": 1,
+          "ur:sq4": 1
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 2,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "22",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D1.3"
+        ],
+        "ranks": {
+          "raw:orig": 7,
+          "ur:orig": 6,
+          "raw:sq1": 11,
+          "ur:sq1": 16,
+          "raw:sq2": 12,
+          "ur:sq2": 8,
+          "raw:sq3": 6,
+          "ur:sq3": 5,
+          "raw:sq4": 4,
+          "ur:sq4": 5
+        },
+        "final_ranks": {
+          "whole_question": 6,
+          "rerank_each": 5,
+          "rerank_once": 7
+        }
+      }
+    ]
+  },
+  "D2": {
+    "parent_id": "D2",
+    "question": "What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area of data collection? What is the Context of data collection?",
+    "n_relevant": 3,
+    "gt_subquestions": [
+      {
+        "id": "D2.1",
+        "text": "Timeframe of data collection"
+      },
+      {
+        "id": "D2.2",
+        "text": "Geographical area"
+      },
+      {
+        "id": "D2.3",
+        "text": "Context of data collection"
+      }
+    ],
+    "llm_subquestions": [
+      "What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area of data collection? What is the Context of data collection?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.5,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.4,
+          "nDCG@5": 0.6713860725233041,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.2,
+          "nDCG@10": 0.6713860725233041,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.1,
+          "nDCG@20": 0.6713860725233041
+        },
+        "retrieved": [
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D2.1": {
+        "metrics_vs_own": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 1.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.6805555555555555,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.4,
+          "nDCG@5": 0.7039180890341347,
+          "R@10": 1.0,
+          "P@10": 0.3,
+          "nDCG@10": 0.8519590445170673,
+          "R@20": 1.0,
+          "P@20": 0.15,
+          "nDCG@20": 0.8519590445170673
+        },
+        "retrieved": [
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "10",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D2.2": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "18",
+            "B_Adult"
+          ],
+          [
+            "61",
+            "B_Adult"
+          ],
+          [
+            "60",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "5",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "56",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "50",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D2.3": {
+        "metrics_vs_own": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 1.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.5,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.4,
+          "nDCG@5": 0.6713860725233041,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.2,
+          "nDCG@10": 0.6713860725233041,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.1,
+          "nDCG@20": 0.6713860725233041
+        },
+        "retrieved": [
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "36",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.5,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.4,
+          "nDCG@5": 0.6713860725233041,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.2,
+          "nDCG@10": 0.6713860725233041,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.1,
+          "nDCG@20": 0.6713860725233041
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 1.0,
+          "D2.2": 0.0,
+          "D2.3": 1.0
+        },
+        "final": [
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.5,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.4,
+          "nDCG@5": 0.6713860725233041,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.2,
+          "nDCG@10": 0.6713860725233041,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.1,
+          "nDCG@20": 0.6713860725233041
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 1.0,
+          "D2.2": 0.0,
+          "D2.3": 1.0
+        },
+        "final": [
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.5,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.4,
+          "nDCG@5": 0.6713860725233041,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.2,
+          "nDCG@10": 0.6713860725233041,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.1,
+          "nDCG@20": 0.6713860725233041
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 1.0,
+          "D2.2": 0.0,
+          "D2.3": 1.0
+        },
+        "final": [
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.01913533834586466,
+          "P@5": 0.04,
+          "R@5": 0.06666666666666667,
+          "nDCG@5": 0.03836491390379002,
+          "P@10": 0.02,
+          "R@10": 0.06666666666666667,
+          "nDCG@10": 0.03836491390379002,
+          "P@20": 0.02,
+          "R@20": 0.13333333333333333,
+          "nDCG@20": 0.06123456679369851
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.0,
+          "D2.2": 0.0,
+          "D2.3": 0.4
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "27",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D2.1"
+        ],
+        "ranks": {
+          "raw:orig": 4,
+          "ur:orig": 1,
+          "raw:sq1": 4,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "10",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D2.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "28",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D2.3"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 4,
+          "raw:sq1": 2,
+          "ur:sq1": 4
+        },
+        "final_ranks": {
+          "whole_question": 4,
+          "rerank_each": 4,
+          "rerank_once": 4
+        }
+      }
+    ]
+  },
+  "D3": {
+    "parent_id": "D3",
+    "question": "What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and data cleaning is done? What are the data labeling and annotation?",
+    "n_relevant": 4,
+    "gt_subquestions": [
+      {
+        "id": "D3.1",
+        "text": "Sampling strategy"
+      },
+      {
+        "id": "D3.2",
+        "text": "Data preprocessing"
+      },
+      {
+        "id": "D3.3",
+        "text": "Data cleaning"
+      },
+      {
+        "id": "D3.4",
+        "text": "Data labeling and annotation"
+      }
+    ],
+    "llm_subquestions": [
+      "What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and data cleaning is done? What are the data labeling and annotation?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.8,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.4,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.2,
+          "nDCG@20": 1.0
+        },
+        "retrieved": [
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "10",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D3.1": {
+        "metrics_vs_own": {
+          "AP": 0.8333333333333333,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 0.9197207891481876,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.9197207891481876,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.9197207891481876
+        },
+        "metrics_vs_union": {
+          "AP": 0.47916666666666663,
+          "R@5": 0.5,
+          "P@5": 0.4,
+          "nDCG@5": 0.5855700749881525,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.5855700749881525,
+          "R@20": 0.75,
+          "P@20": 0.15,
+          "nDCG@20": 0.6910656592232629
+        },
+        "retrieved": [
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "10",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "1",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D3.2": {
+        "metrics_vs_own": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 1.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.6875,
+          "R@5": 0.75,
+          "P@5": 0.6,
+          "nDCG@5": 0.8048099750039491,
+          "R@10": 0.75,
+          "P@10": 0.3,
+          "nDCG@10": 0.8048099750039491,
+          "R@20": 0.75,
+          "P@20": 0.15,
+          "nDCG@20": 0.8048099750039491
+        },
+        "retrieved": [
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "1",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D3.3": {
+        "metrics_vs_own": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 1.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.75,
+          "R@5": 0.75,
+          "P@5": 0.6,
+          "nDCG@5": 0.8318724637288826,
+          "R@10": 0.75,
+          "P@10": 0.3,
+          "nDCG@10": 0.8318724637288826,
+          "R@20": 0.75,
+          "P@20": 0.15,
+          "nDCG@20": 0.8318724637288826
+        },
+        "retrieved": [
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "1",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D3.4": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.25,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.3903800499921017,
+          "R@10": 0.25,
+          "P@10": 0.1,
+          "nDCG@10": 0.3903800499921017,
+          "R@20": 0.25,
+          "P@20": 0.05,
+          "nDCG@20": 0.3903800499921017
+        },
+        "retrieved": [
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "18",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "1",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "60",
+            "B_Adult"
+          ],
+          [
+            "46",
+            "B_Adult"
+          ],
+          [
+            "5",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.8,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.4,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.2,
+          "nDCG@20": 1.0
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 1.0,
+          "D3.2": 1.0,
+          "D3.3": 1.0,
+          "D3.4": 1.0
+        },
+        "final": [
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "10",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.8,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.4,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.2,
+          "nDCG@20": 1.0
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 1.0,
+          "D3.2": 1.0,
+          "D3.3": 1.0,
+          "D3.4": 1.0
+        },
+        "final": [
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "10",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.8,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.4,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.2,
+          "nDCG@20": 1.0
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 1.0,
+          "D3.2": 1.0,
+          "D3.3": 1.0,
+          "D3.4": 1.0
+        },
+        "final": [
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "10",
+            "B_Adult"
+          ],
+          [
+            "21",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "22",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.05857464173253647,
+          "P@5": 0.060000000000000005,
+          "R@5": 0.075,
+          "nDCG@5": 0.07877020569606369,
+          "P@10": 0.05,
+          "R@10": 0.125,
+          "nDCG@10": 0.10353448450477647,
+          "P@20": 0.04,
+          "R@20": 0.2,
+          "nDCG@20": 0.1328124328607512
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.3,
+          "D3.2": 0.1,
+          "D3.3": 0.0,
+          "D3.4": 0.2
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "25",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D3.1"
+        ],
+        "ranks": {
+          "raw:orig": 6,
+          "ur:orig": 2,
+          "raw:sq1": 6,
+          "ur:sq1": 2
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 2,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "26",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D3.1"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 4,
+          "raw:sq1": 2,
+          "ur:sq1": 4
+        },
+        "final_ranks": {
+          "whole_question": 4,
+          "rerank_each": 4,
+          "rerank_once": 4
+        }
+      },
+      {
+        "key": [
+          "33",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D3.2",
+          "D3.3"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 1,
+          "raw:sq1": 1,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "34",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D3.2",
+          "D3.4"
+        ],
+        "ranks": {
+          "raw:orig": 7,
+          "ur:orig": 3,
+          "raw:sq1": 7,
+          "ur:sq1": 3
+        },
+        "final_ranks": {
+          "whole_question": 3,
+          "rerank_each": 3,
+          "rerank_once": 3
+        }
+      }
+    ]
+  },
+  "D4": {
+    "parent_id": "D4",
+    "question": "What does the data measure and represent? What are the available features (or covariates) and their explanation? Which are the target variable(s) and their explanation? Which is the dataset size? And what are the assumptions about what the data represents?",
+    "n_relevant": 9,
+    "gt_subquestions": [
+      {
+        "id": "D4.1",
+        "text": "Available features"
+      },
+      {
+        "id": "D4.2",
+        "text": "Target variable"
+      },
+      {
+        "id": "D4.3",
+        "text": "Dataset size"
+      },
+      {
+        "id": "D4.4",
+        "text": "Assumptions about representation"
+      }
+    ],
+    "llm_subquestions": [
+      "What does the data measure and represent? What are the available features (or covariates) and their explanation? Which are the target variable(s) and their explanation? Which is the dataset size? And what are the assumptions about what the data represents?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.15740740740740738,
+          "R@5": 0.2222222222222222,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.2222222222222222,
+          "P@10": 0.2,
+          "nDCG@10": 0.26582000527739175,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.15,
+          "nDCG@20": 0.3293382807575177
+        },
+        "retrieved": [
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "46",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D4.1": {
+        "metrics_vs_own": {
+          "AP": 0.05555555555555555,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.16958010263680806,
+          "R@10": 0.16666666666666666,
+          "P@10": 0.1,
+          "nDCG@10": 0.15130120674940672,
+          "R@20": 0.16666666666666666,
+          "P@20": 0.05,
+          "nDCG@20": 0.15130120674940672
+        },
+        "metrics_vs_union": {
+          "AP": 0.05291005291005291,
+          "R@5": 0.1111111111111111,
+          "P@5": 0.2,
+          "nDCG@5": 0.16958010263680806,
+          "R@10": 0.1111111111111111,
+          "P@10": 0.1,
+          "nDCG@10": 0.11752277470724268,
+          "R@20": 0.2222222222222222,
+          "P@20": 0.1,
+          "nDCG@20": 0.17768456927571222
+        },
+        "retrieved": [
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "57",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "36",
+            "B_Adult"
+          ],
+          [
+            "1",
+            "B_Adult"
+          ],
+          [
+            "5",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "60",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D4.2": {
+        "metrics_vs_own": {
+          "AP": 0.29166666666666663,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.2640681225725909,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.48247555939075504,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.48247555939075504
+        },
+        "metrics_vs_union": {
+          "AP": 0.13359788359788358,
+          "R@5": 0.1111111111111111,
+          "P@5": 0.2,
+          "nDCG@5": 0.14606834984270645,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.3,
+          "nDCG@10": 0.2557092829325743,
+          "R@20": 0.4444444444444444,
+          "P@20": 0.2,
+          "nDCG@20": 0.3158710775010438
+        },
+        "retrieved": [
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "60",
+            "B_Adult"
+          ],
+          [
+            "58",
+            "B_Adult"
+          ],
+          [
+            "56",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "51",
+            "B_Adult"
+          ],
+          [
+            "49",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "61",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "50",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "1",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D4.3": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 0.6309297535714575,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.6309297535714575,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.6309297535714575
+        },
+        "metrics_vs_union": {
+          "AP": 0.06666666666666667,
+          "R@5": 0.1111111111111111,
+          "P@5": 0.2,
+          "nDCG@5": 0.21398626473452756,
+          "R@10": 0.1111111111111111,
+          "P@10": 0.1,
+          "nDCG@10": 0.1482972305701491,
+          "R@20": 0.2222222222222222,
+          "P@20": 0.1,
+          "nDCG@20": 0.20181010926045692
+        },
+        "retrieved": [
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "6",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "46",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "39",
+            "B_Adult"
+          ],
+          [
+            "7",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D4.4": {
+        "metrics_vs_own": {
+          "AP": 0.25,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.38685280723454163,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.38685280723454163,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.38685280723454163
+        },
+        "metrics_vs_union": {
+          "AP": 0.1861111111111111,
+          "R@5": 0.2222222222222222,
+          "P@5": 0.4,
+          "nDCG@5": 0.34519134224686937,
+          "R@10": 0.4444444444444444,
+          "P@10": 0.4,
+          "nDCG@10": 0.3813172773924932,
+          "R@20": 0.4444444444444444,
+          "P@20": 0.2,
+          "nDCG@20": 0.3813172773924932
+        },
+        "retrieved": [
+          [
+            "57",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "18",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "56",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "38",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "60",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.15740740740740738,
+          "R@5": 0.2222222222222222,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.2222222222222222,
+          "P@10": 0.2,
+          "nDCG@10": 0.26582000527739175,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.15,
+          "nDCG@20": 0.3293382807575177
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.16666666666666666,
+          "D4.2": 0.5,
+          "D4.3": 1.0,
+          "D4.4": 0.5
+        },
+        "final": [
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "46",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.15740740740740738,
+          "R@5": 0.2222222222222222,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.2222222222222222,
+          "P@10": 0.2,
+          "nDCG@10": 0.26582000527739175,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.15,
+          "nDCG@20": 0.3293382807575177
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.16666666666666666,
+          "D4.2": 0.5,
+          "D4.3": 1.0,
+          "D4.4": 0.5
+        },
+        "final": [
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "46",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.15740740740740738,
+          "R@5": 0.2222222222222222,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.2222222222222222,
+          "P@10": 0.2,
+          "nDCG@10": 0.26582000527739175,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.15,
+          "nDCG@20": 0.3293382807575177
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.16666666666666666,
+          "D4.2": 0.5,
+          "D4.3": 1.0,
+          "D4.4": 0.5
+        },
+        "final": [
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "35",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "16",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "46",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.08994074180606688,
+          "P@5": 0.14,
+          "R@5": 0.07777777777777778,
+          "nDCG@5": 0.12497439463685102,
+          "P@10": 0.12000000000000001,
+          "R@10": 0.13333333333333333,
+          "nDCG@10": 0.1262179409058326,
+          "P@20": 0.165,
+          "R@20": 0.36666666666666664,
+          "nDCG@20": 0.24745002978767885
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.35,
+          "D4.2": 0.4,
+          "D4.3": 0.5,
+          "D4.4": 0.4
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "11",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 2,
+          "raw:sq1": 1,
+          "ur:sq1": 2
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 2,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "49",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "50",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "52",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "54",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "56",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D4.1",
+          "D4.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "12",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D4.2"
+        ],
+        "ranks": {
+          "raw:orig": 5,
+          "ur:orig": 12,
+          "raw:sq1": 5,
+          "ur:sq1": 12
+        },
+        "final_ranks": {
+          "whole_question": 12,
+          "rerank_each": 12,
+          "rerank_once": 12
+        }
+      },
+      {
+        "key": [
+          "8",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D4.3",
+          "D4.4"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 3,
+          "raw:sq1": 2,
+          "ur:sq1": 3
+        },
+        "final_ranks": {
+          "whole_question": 3,
+          "rerank_each": 3,
+          "rerank_once": 3
+        }
+      },
+      {
+        "key": [
+          "26",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D4.4"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      }
+    ]
+  },
+  "D5": {
+    "parent_id": "D5",
+    "question": "Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the marginal distribution of protected attributes? And what about the joint distribution of protected and target? What are the expected distributions? What is the label provenance?",
+    "n_relevant": 7,
+    "gt_subquestions": [
+      {
+        "id": "D5.1",
+        "text": "Attributes at risk"
+      },
+      {
+        "id": "D5.2",
+        "text": "Marginal distribution"
+      },
+      {
+        "id": "D5.3",
+        "text": "Joint distribution"
+      },
+      {
+        "id": "D5.5",
+        "text": "Label provenance"
+      }
+    ],
+    "llm_subquestions": [
+      "Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the marginal distribution of protected attributes? And what about the joint distribution of protected and target? What are the expected distributions? What is the label provenance?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.4744897959183673,
+          "R@5": 0.42857142857142855,
+          "P@5": 0.6,
+          "nDCG@5": 0.6992148198508501,
+          "R@10": 0.5714285714285714,
+          "P@10": 0.4,
+          "nDCG@10": 0.6583122271626569,
+          "R@20": 0.5714285714285714,
+          "P@20": 0.2,
+          "nDCG@20": 0.6583122271626569
+        },
+        "retrieved": [
+          [
+            "18",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "39",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D5.1": {
+        "metrics_vs_own": {
+          "AP": 0.05555555555555555,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.18457569677956817,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.18457569677956817
+        },
+        "metrics_vs_union": {
+          "AP": 0.12736152736152737,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.2857142857142857,
+          "P@10": 0.2,
+          "nDCG@10": 0.16220310073808747,
+          "R@20": 0.5714285714285714,
+          "P@20": 0.2,
+          "nDCG@20": 0.31107405576364766
+        },
+        "retrieved": [
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "54",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "51",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "50",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D5.2": {
+        "metrics_vs_own": {
+          "AP": 0.159375,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.16812753627111746,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.28097267762005274,
+          "R@20": 0.75,
+          "P@20": 0.15,
+          "nDCG@20": 0.3764793684827606
+        },
+        "metrics_vs_union": {
+          "AP": 0.3636904761904762,
+          "R@5": 0.2857142857142857,
+          "P@5": 0.4,
+          "nDCG@5": 0.48522855511632257,
+          "R@10": 0.5714285714285714,
+          "P@10": 0.4,
+          "nDCG@10": 0.5554622266077412,
+          "R@20": 0.7142857142857143,
+          "P@20": 0.25,
+          "nDCG@20": 0.6227108704706924
+        },
+        "retrieved": [
+          [
+            "18",
+            "B_Adult"
+          ],
+          [
+            "39",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "60",
+            "B_Adult"
+          ],
+          [
+            "51",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "38",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D5.3": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.3590225563909774,
+          "R@5": 0.2857142857142857,
+          "P@5": 0.4,
+          "nDCG@5": 0.48522855511632257,
+          "R@10": 0.42857142857142855,
+          "P@10": 0.3,
+          "nDCG@10": 0.49117205121962154,
+          "R@20": 0.7142857142857143,
+          "P@20": 0.25,
+          "nDCG@20": 0.6220210898321884
+        },
+        "retrieved": [
+          [
+            "18",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "61",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "60",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "25",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "9",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "46",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D5.5": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.028571428571428574,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.13120507751234178,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.10633668103022985,
+          "R@20": 0.14285714285714285,
+          "P@20": 0.05,
+          "nDCG@20": 0.10633668103022985
+        },
+        "retrieved": [
+          [
+            "46",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "5",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "26",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "40",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.4744897959183673,
+          "R@5": 0.42857142857142855,
+          "P@5": 0.6,
+          "nDCG@5": 0.6992148198508501,
+          "R@10": 0.5714285714285714,
+          "P@10": 0.4,
+          "nDCG@10": 0.6583122271626569,
+          "R@20": 0.5714285714285714,
+          "P@20": 0.2,
+          "nDCG@20": 0.6583122271626569
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 1.0,
+          "D5.2": 0.25,
+          "D5.3": 1.0,
+          "D5.5": 1.0
+        },
+        "final": [
+          [
+            "18",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "39",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.4744897959183673,
+          "R@5": 0.42857142857142855,
+          "P@5": 0.6,
+          "nDCG@5": 0.6992148198508501,
+          "R@10": 0.5714285714285714,
+          "P@10": 0.4,
+          "nDCG@10": 0.6583122271626569,
+          "R@20": 0.5714285714285714,
+          "P@20": 0.2,
+          "nDCG@20": 0.6583122271626569
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 1.0,
+          "D5.2": 0.25,
+          "D5.3": 1.0,
+          "D5.5": 1.0
+        },
+        "final": [
+          [
+            "18",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "39",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.4744897959183673,
+          "R@5": 0.42857142857142855,
+          "P@5": 0.6,
+          "nDCG@5": 0.6992148198508501,
+          "R@10": 0.5714285714285714,
+          "P@10": 0.4,
+          "nDCG@10": 0.6583122271626569,
+          "R@20": 0.5714285714285714,
+          "P@20": 0.2,
+          "nDCG@20": 0.6583122271626569
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 1.0,
+          "D5.2": 0.25,
+          "D5.3": 1.0,
+          "D5.5": 1.0
+        },
+        "final": [
+          [
+            "18",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "39",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "2",
+            "B_Adult"
+          ],
+          [
+            "4",
+            "B_Adult"
+          ],
+          [
+            "31",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "41",
+            "B_Adult"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.09570703161647434,
+          "P@5": 0.12000000000000001,
+          "R@5": 0.08571428571428572,
+          "nDCG@5": 0.12947540431758967,
+          "P@10": 0.13,
+          "R@10": 0.1857142857142857,
+          "nDCG@10": 0.1687190832285727,
+          "P@20": 0.11,
+          "R@20": 0.3142857142857143,
+          "nDCG@20": 0.23095515720100687
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.25,
+          "D5.2": 0.375,
+          "D5.3": 0.2,
+          "D5.5": 0.3
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "17",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D5.1",
+          "D5.5"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 2,
+          "raw:sq1": 1,
+          "ur:sq1": 2
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 2,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "18",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D5.1"
+        ],
+        "ranks": {
+          "raw:orig": 6,
+          "ur:orig": 1,
+          "raw:sq1": 6,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "23",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D5.2"
+        ],
+        "ranks": {
+          "raw:orig": 4,
+          "ur:orig": 4,
+          "raw:sq1": 4,
+          "ur:sq1": 4
+        },
+        "final_ranks": {
+          "whole_question": 4,
+          "rerank_each": 4,
+          "rerank_once": 4
+        }
+      },
+      {
+        "key": [
+          "59",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D5.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "60",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D5.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "61",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D5.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "37",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D5.3"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 7,
+          "raw:sq1": 2,
+          "ur:sq1": 7
+        },
+        "final_ranks": {
+          "whole_question": 7,
+          "rerank_each": 7,
+          "rerank_once": 7
+        }
+      }
+    ]
+  },
+  "D6": {
+    "parent_id": "D6",
+    "question": "What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps in the data? Which is the severity of inaccuracy?",
+    "n_relevant": 5,
+    "gt_subquestions": [
+      {
+        "id": "D6.1",
+        "text": "Plausible sources of inaccuracy"
+      },
+      {
+        "id": "D6.2",
+        "text": "Gaps in the data"
+      },
+      {
+        "id": "D6.3",
+        "text": "Errors, noise, redundancies"
+      }
+    ],
+    "llm_subquestions": [
+      "What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps in the data? Which is the severity of inaccuracy?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.48571428571428565,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.6661998717660157,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.6661998717660157
+        },
+        "retrieved": [
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "29",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "38",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D6.1": {
+        "metrics_vs_own": {
+          "AP": 0.8333333333333333,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 0.9197207891481876,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.9197207891481876,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.9197207891481876
+        },
+        "metrics_vs_union": {
+          "AP": 0.49777777777777776,
+          "R@5": 0.6,
+          "P@5": 0.6,
+          "nDCG@5": 0.639945385422766,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.639945385422766,
+          "R@20": 0.8,
+          "P@20": 0.2,
+          "nDCG@20": 0.719786720803434
+        },
+        "retrieved": [
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "28",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "1",
+            "B_Adult"
+          ],
+          [
+            "5",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "29",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "38",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D6.2": {
+        "metrics_vs_own": {
+          "AP": 0.125,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.2640681225725909,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.2640681225725909,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.2640681225725909
+        },
+        "metrics_vs_union": {
+          "AP": 0.5404761904761904,
+          "R@5": 0.6,
+          "P@5": 0.6,
+          "nDCG@5": 0.6548086577531307,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.6548086577531307,
+          "R@20": 0.8,
+          "P@20": 0.2,
+          "nDCG@20": 0.7416194339890569
+        },
+        "retrieved": [
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "11",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "29",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "23",
+            "B_Adult"
+          ],
+          [
+            "13",
+            "B_Adult"
+          ],
+          [
+            "8",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ]
+        ]
+      },
+      "D6.3": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.6131471927654584,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.6131471927654584,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.6131471927654584
+        },
+        "metrics_vs_union": {
+          "AP": 0.475,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.6601396023754075,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.6601396023754075
+        },
+        "retrieved": [
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "44",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "61",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "1",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "3",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "0",
+            "B_Adult"
+          ],
+          [
+            "42",
+            "B_Adult"
+          ],
+          [
+            "39",
+            "B_Adult"
+          ],
+          [
+            "60",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.48571428571428565,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.6661998717660157,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.6661998717660157
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 1.0,
+          "D6.2": 0.5,
+          "D6.3": 0.5
+        },
+        "final": [
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "29",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "38",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.48571428571428565,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.6661998717660157,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.6661998717660157
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 1.0,
+          "D6.2": 0.5,
+          "D6.3": 0.5
+        },
+        "final": [
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "29",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "38",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.48571428571428565,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.6661998717660157,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.6661998717660157
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 1.0,
+          "D6.2": 0.5,
+          "D6.3": 0.5
+        },
+        "final": [
+          [
+            "15",
+            "B_Adult"
+          ],
+          [
+            "14",
+            "B_Adult"
+          ],
+          [
+            "47",
+            "B_Adult"
+          ],
+          [
+            "19",
+            "B_Adult"
+          ],
+          [
+            "29",
+            "B_Adult"
+          ],
+          [
+            "33",
+            "B_Adult"
+          ],
+          [
+            "12",
+            "B_Adult"
+          ],
+          [
+            "32",
+            "B_Adult"
+          ],
+          [
+            "20",
+            "B_Adult"
+          ],
+          [
+            "37",
+            "B_Adult"
+          ],
+          [
+            "45",
+            "B_Adult"
+          ],
+          [
+            "43",
+            "B_Adult"
+          ],
+          [
+            "30",
+            "B_Adult"
+          ],
+          [
+            "59",
+            "B_Adult"
+          ],
+          [
+            "48",
+            "B_Adult"
+          ],
+          [
+            "38",
+            "B_Adult"
+          ],
+          [
+            "34",
+            "B_Adult"
+          ],
+          [
+            "17",
+            "B_Adult"
+          ],
+          [
+            "27",
+            "B_Adult"
+          ],
+          [
+            "62",
+            "B_Adult"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.05975586255849413,
+          "P@5": 0.060000000000000005,
+          "R@5": 0.060000000000000005,
+          "nDCG@5": 0.048522855511632254,
+          "P@10": 0.060000000000000005,
+          "R@10": 0.12000000000000001,
+          "nDCG@10": 0.08110722760144376,
+          "P@20": 0.09,
+          "R@20": 0.36,
+          "nDCG@20": 0.18402318086733332
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.35,
+          "D6.2": 0.35,
+          "D6.3": 0.4
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "14",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D6.1",
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": 4,
+          "ur:orig": 2,
+          "raw:sq1": 4,
+          "ur:sq1": 2
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 2,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "15",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D6.1"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 1,
+          "raw:sq1": 1,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "12",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D6.2"
+        ],
+        "ranks": {
+          "raw:orig": 11,
+          "ur:orig": 7,
+          "raw:sq1": 11,
+          "ur:sq1": 7
+        },
+        "final_ranks": {
+          "whole_question": 7,
+          "rerank_each": 7,
+          "rerank_once": 7
+        }
+      },
+      {
+        "key": [
+          "18",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D6.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "13",
+          "B_Adult"
+        ],
+        "gt_subquestions": [
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      }
+    ]
+  },
+  "_grand_summary": {
+    "whole_question": {
+      "MAP": 0.5553162005542958,
+      "R@20": 0.6952380952380952
+    },
+    "rerank_each": {
+      "MAP": 0.4984297536678489,
+      "R@20": 0.6952380952380952
+    },
+    "rerank_once": {
+      "MAP": 0.5459246661627614,
+      "R@20": 0.6952380952380952
+    },
+    "random": {
+      "MAP": 0.06773576089468762,
+      "R@20": 0.29238095238095235
+    }
+  }
+}

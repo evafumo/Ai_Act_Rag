@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analisi comparativa RAG — D_German</title>
+<style>
+:root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --line: #e3e3e8;
+    --card: #f6f6f9;
+    --accent: #3b6fd4;
+    --ok: #1a7f4b;
+    --bad: #c0392b;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #17171a;
+        --fg: #ececf0;
+        --muted: #9a9aa3;
+        --line: #2e2e35;
+        --card: #202026;
+        --accent: #6c97ee;
+        --ok: #4cc38a;
+        --bad: #ff7b6b;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 15px/1.55 system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0 0 4px;
+}
+
+h2 {
+    font-size: 21px;
+    margin: 40px 0 12px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 6px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 24px 0 8px;
+}
+
+.meta {
+    color: var(--muted);
+}
+
+.note {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.scroll {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 8px 0 18px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: middle;
+}
+
+th {
+    background: var(--card);
+    font-weight: 600;
+}
+
+table.small {
+    font-size: 13px;
+}
+
+.bar {
+    height: 10px;
+    background: var(--card);
+    border-radius: 5px;
+    min-width: 80px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 5px;
+    background: var(--accent);
+}
+
+.ok {
+    color: var(--ok);
+    font-weight: 600;
+}
+
+.bad {
+    color: var(--bad);
+    font-weight: 600;
+}
+
+.neutral {
+    color: var(--muted);
+}
+
+code {
+    background: var(--card);
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px 18px;
+}
+
+dt {
+    font-weight: 600;
+}
+
+dd {
+    margin: 0;
+}
+
+.steps li {
+    margin: 8px 0;
+}
+
+.take {
+    background: var(--card);
+    padding: 12px 14px 12px 32px;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    margin: 16px 0 32px;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg);
+}
+
+.chart-container canvas {
+    max-width: 100%;
+}
+
+select {
+    max-width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0 16px;
+    color: var(--fg);
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+}
+
+
+
+@media (max-width: 700px) {
+    main {
+        padding: 20px 12px 40px;
+    }
+
+    dl {
+        grid-template-columns: 1fr;
+    }
+
+    dd {
+        margin-bottom: 8px;
+    }
+}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Analisi comparativa RAG — D_German</h1>
+
+<p class="meta">
+Dataset: <b>D_German</b>
+· Generato il 25/10/2026 05:25
+· 72 valutazioni reali
+· 72 baseline
+</p>
+
+<p class="meta">
+Gruppi sperimentali:
+A1_2, B1, B2, root
+</p>
+
+<section><h2>1. Pipeline RAG</h2><ol class="steps"><li><b>1. Estrazione</b> — Il PDF viene convertito in dati strutturati.</li><li><b>2. Chunking</b> — Il testo viene suddiviso in fixed, sliding o hybrid. La valutazione identifica i chunk tramite gli ID e la sorgente.</li><li><b>3. Indicizzazione</b> — I chunk vengono indicizzati con sistemi densi, lessicali o ibridi.</li><li><b>4. Retrieval</b> — I retriever recuperano candidati. Quando previsto, RRF usa k=40. Il reranker dichiarato nella pipeline è cross-encoder/ms-marco-MiniLM-L-6-v2.</li><li><b>5. Decomposizione</b> — La domanda può essere scomposta in sotto-domande. La modalità di fusione determina come vengono combinati i risultati.</li><li><b>6. Generazione</b> — I chunk recuperati vengono utilizzati come contesto per generare la risposta.</li></ol></section>
+
+
+    <section>
+      <h2>2. Componenti valutati</h2>
+
+      <h3>Retriever</h3>
+      <div class="scroll"><table class="small"><thead><tr><th>Retriever</th><th>Componenti</th><th>Candidati</th><th>Fusione</th></tr></thead><tbody><tr><td><code>bm25_bge</code></td><td>Ibrido: BM25 + BGE</td><td>40 + 40</td><td>RRF</td></tr><tr><td><code>bm25_e5</code></td><td>Ibrido: BM25 + E5</td><td>40 + 40</td><td>RRF</td></tr><tr><td><code>dense_bge_e5</code></td><td>Denso: BGE + E5</td><td>40 + 40</td><td>RRF</td></tr><tr><td><code>single_bge</code></td><td>Denso: BAAI/bge-small-en-v1.5 (FAISS)</td><td>20</td><td>—</td></tr><tr><td><code>single_bm25</code></td><td>Lessicale: BM25</td><td>20</td><td>—</td></tr><tr><td><code>single_e5</code></td><td>Denso: intfloat/e5-small-v2 (FAISS)</td><td>20</td><td>—</td></tr></tbody></table></div>
+
+      <h3>Chunking</h3>
+      <div class="scroll"><table class=""><thead><tr><th>Tipo</th><th>Descrizione</th></tr></thead><tbody><tr><td><b>fixed</b></td><td>Chunk di lunghezza fissa. Semplice e prevedibile, ma può spezzare frasi e tabelle.</td></tr><tr><td><b>sliding</b></td><td>Finestre sovrapposte. Riduce la perdita di contesto ai bordi, ma può generare ridondanza.</td></tr><tr><td><b>hybrid</b></td><td>Chunking che rispetta la struttura del documento con regole di lunghezza.</td></tr></tbody></table></div>
+
+      <h3>Modalità di decomposizione</h3>
+      <div class="scroll"><table class=""><thead><tr><th>Modalità</th><th>Descrizione</th></tr></thead><tbody><tr><td>none</td><td>La domanda originale passa direttamente al retrieval standard.</td></tr><tr><td>rerank_each</td><td>Ogni sotto-domanda viene recuperata e riordinata separatamente. Le classifiche vengono poi fuse con RRF.</td></tr></tbody></table></div>
+    </section>
+    
+
+<section><h2>3. Statistiche sui chunk</h2><div class="scroll"><table class=""><thead><tr><th>Chunking</th><th>N. chunk</th><th>Caratteri medi</th><th>Mediana</th><th>Massimo</th><th>Con tabelle</th></tr></thead><tbody><tr><td>fixed</td><td>54</td><td>499.8</td><td>512.0</td><td>1366</td><td>11.1%</td></tr><tr><td>hybrid</td><td>54</td><td>522.3</td><td>512.0</td><td>1568</td><td>11.1%</td></tr><tr><td>sliding</td><td>49</td><td>665.0</td><td>613.0</td><td>1641</td><td>12.2%</td></tr></tbody></table></div><p class='note'>Le strategie di chunking possono produrre corpus di dimensioni differenti.</p></section>
+
+<section><h2>4. Risultati per gruppo sperimentale</h2><h3>A — GT granulare</h3><ul class='take'><li>Migliore configurazione per MAP: <b>bm25_bge · fixed · GT granulare</b> (0.4619).</li><li>Baseline random: 0.0786; Δ MAP = +0.3833.</li><li>Hit@20: 90.9%; query con AP nulla: 2/22.</li></ul><h3>Ranking per MAP</h3><div class="scroll"><table class="rank"><thead><tr><th>#</th><th>Configurazione</th><th>MAP</th><th></th><th>N. query</th><th>Hit@20</th><th>Query AP=0</th></tr></thead><tbody><tr><td>1</td><td>bm25_bge · fixed · GT granulare</td><td>0.4619</td><td><div class="bar"><div class="fill" style="width:100.0%"></div></div></td><td>22</td><td>90.9%</td><td>2/22</td></tr><tr><td>2</td><td>bm25_e5 · fixed · GT granulare</td><td>0.4604</td><td><div class="bar"><div class="fill" style="width:99.7%"></div></div></td><td>22</td><td>81.8%</td><td>4/22</td></tr><tr><td>3</td><td>dense_bge_e5 · fixed · GT granulare</td><td>0.4570</td><td><div class="bar"><div class="fill" style="width:98.9%"></div></div></td><td>22</td><td>86.4%</td><td>3/22</td></tr><tr><td>4</td><td>single_bge · fixed · GT granulare</td><td>0.4454</td><td><div class="bar"><div class="fill" style="width:96.4%"></div></div></td><td>22</td><td>95.5%</td><td>1/22</td></tr><tr><td>5</td><td>single_e5 · fixed · GT granulare</td><td>0.4385</td><td><div class="bar"><div class="fill" style="width:94.9%"></div></div></td><td>22</td><td>81.8%</td><td>4/22</td></tr><tr><td>6</td><td>single_bm25 · fixed · GT granulare</td><td>0.3820</td><td><div class="bar"><div class="fill" style="width:82.7%"></div></div></td><td>22</td><td>59.1%</td><td>9/22</td></tr><tr><td>7</td><td>dense_bge_e5 · sliding · GT granulare</td><td>0.3090</td><td><div class="bar"><div class="fill" style="width:66.9%"></div></div></td><td>22</td><td>86.4%</td><td>3/22</td></tr><tr><td>8</td><td>single_bge · sliding · GT granulare</td><td>0.2987</td><td><div class="bar"><div class="fill" style="width:64.7%"></div></div></td><td>22</td><td>86.4%</td><td>3/22</td></tr><tr><td>9</td><td>single_e5 · sliding · GT granulare</td><td>0.2820</td><td><div class="bar"><div class="fill" style="width:61.0%"></div></div></td><td>22</td><td>86.4%</td><td>3/22</td></tr><tr><td>10</td><td>bm25_bge · sliding · GT granulare</td><td>0.2557</td><td><div class="bar"><div class="fill" style="width:55.4%"></div></div></td><td>22</td><td>86.4%</td><td>3/22</td></tr><tr><td>11</td><td>bm25_e5 · sliding · GT granulare</td><td>0.2496</td><td><div class="bar"><div class="fill" style="width:54.0%"></div></div></td><td>22</td><td>86.4%</td><td>3/22</td></tr><tr><td>12</td><td>bm25_e5 · hybrid · GT granulare</td><td>0.2358</td><td><div class="bar"><div class="fill" style="width:51.1%"></div></div></td><td>22</td><td>77.3%</td><td>5/22</td></tr><tr><td>13</td><td>bm25_bge · hybrid · GT granulare</td><td>0.2267</td><td><div class="bar"><div class="fill" style="width:49.1%"></div></div></td><td>22</td><td>81.8%</td><td>4/22</td></tr><tr><td>14</td><td>dense_bge_e5 · hybrid · GT granulare</td><td>0.2261</td><td><div class="bar"><div class="fill" style="width:49.0%"></div></div></td><td>22</td><td>81.8%</td><td>4/22</td></tr><tr><td>15</td><td>single_e5 · hybrid · GT granulare</td><td>0.2179</td><td><div class="bar"><div class="fill" style="width:47.2%"></div></div></td><td>22</td><td>77.3%</td><td>5/22</td></tr><tr><td>16</td><td>single_bm25 · sliding · GT granulare</td><td>0.2151</td><td><div class="bar"><div class="fill" style="width:46.6%"></div></div></td><td>22</td><td>77.3%</td><td>5/22</td></tr><tr><td>17</td><td>single_bge · hybrid · GT granulare</td><td>0.2035</td><td><div class="bar"><div class="fill" style="width:44.1%"></div></div></td><td>22</td><td>86.4%</td><td>3/22</td></tr><tr><td>18</td><td>single_bm25 · hybrid · GT granulare</td><td>0.2018</td><td><div class="bar"><div class="fill" style="width:43.7%"></div></div></td><td>22</td><td>72.7%</td><td>6/22</td></tr></tbody></table></div><h3>Metriche per k</h3><div class="scroll"><table class="small"><thead><tr><th>Configurazione</th><th>P@5</th><th>R@5</th><th>nDCG@5</th><th>P@10</th><th>R@10</th><th>nDCG@10</th><th>P@20</th><th>R@20</th><th>nDCG@20</th></tr></thead><tbody><tr><td>bm25_bge · fixed · GT granulare</td><td>0.227</td><td>0.598</td><td>0.509</td><td>0.141</td><td>0.705</td><td>0.554</td><td>0.075</td><td>0.750</td><td>0.568</td></tr><tr><td>bm25_e5 · fixed · GT granulare</td><td>0.218</td><td>0.583</td><td>0.504</td><td>0.127</td><td>0.667</td><td>0.539</td><td>0.068</td><td>0.705</td><td>0.551</td></tr><tr><td>dense_bge_e5 · fixed · GT granulare</td><td>0.236</td><td>0.636</td><td>0.511</td><td>0.141</td><td>0.735</td><td>0.552</td><td>0.077</td><td>0.788</td><td>0.570</td></tr><tr><td>single_bge · fixed · GT granulare</td><td>0.227</td><td>0.614</td><td>0.501</td><td>0.132</td><td>0.697</td><td>0.535</td><td>0.075</td><td>0.773</td><td>0.561</td></tr><tr><td>single_e5 · fixed · GT granulare</td><td>0.218</td><td>0.606</td><td>0.491</td><td>0.127</td><td>0.689</td><td>0.526</td><td>0.068</td><td>0.727</td><td>0.538</td></tr><tr><td>single_bm25 · fixed · GT granulare</td><td>0.164</td><td>0.462</td><td>0.416</td><td>0.091</td><td>0.492</td><td>0.430</td><td>0.048</td><td>0.515</td><td>0.437</td></tr><tr><td>dense_bge_e5 · sliding · GT granulare</td><td>0.200</td><td>0.436</td><td>0.342</td><td>0.136</td><td>0.614</td><td>0.416</td><td>0.082</td><td>0.708</td><td>0.451</td></tr><tr><td>single_bge · sliding · GT granulare</td><td>0.191</td><td>0.420</td><td>0.331</td><td>0.132</td><td>0.598</td><td>0.405</td><td>0.077</td><td>0.682</td><td>0.434</td></tr><tr><td>single_e5 · sliding · GT granulare</td><td>0.200</td><td>0.443</td><td>0.345</td><td>0.127</td><td>0.576</td><td>0.399</td><td>0.070</td><td>0.617</td><td>0.415</td></tr><tr><td>bm25_bge · sliding · GT granulare</td><td>0.173</td><td>0.402</td><td>0.299</td><td>0.123</td><td>0.553</td><td>0.364</td><td>0.073</td><td>0.667</td><td>0.398</td></tr><tr><td>bm25_e5 · sliding · GT granulare</td><td>0.182</td><td>0.428</td><td>0.318</td><td>0.118</td><td>0.527</td><td>0.361</td><td>0.066</td><td>0.610</td><td>0.384</td></tr><tr><td>bm25_e5 · hybrid · GT granulare</td><td>0.145</td><td>0.303</td><td>0.248</td><td>0.105</td><td>0.424</td><td>0.301</td><td>0.080</td><td>0.655</td><td>0.377</td></tr><tr><td>bm25_bge · hybrid · GT granulare</td><td>0.155</td><td>0.303</td><td>0.247</td><td>0.109</td><td>0.424</td><td>0.299</td><td>0.082</td><td>0.670</td><td>0.378</td></tr><tr><td>dense_bge_e5 · hybrid · GT granulare</td><td>0.173</td><td>0.379</td><td>0.272</td><td>0.118</td><td>0.492</td><td>0.322</td><td>0.073</td><td>0.602</td><td>0.358</td></tr><tr><td>single_e5 · hybrid · GT granulare</td><td>0.164</td><td>0.364</td><td>0.261</td><td>0.105</td><td>0.447</td><td>0.297</td><td>0.070</td><td>0.606</td><td>0.349</td></tr><tr><td>single_bm25 · sliding · GT granulare</td><td>0.136</td><td>0.333</td><td>0.254</td><td>0.086</td><td>0.428</td><td>0.290</td><td>0.057</td><td>0.542</td><td>0.327</td></tr><tr><td>single_bge · hybrid · GT granulare</td><td>0.145</td><td>0.318</td><td>0.240</td><td>0.114</td><td>0.462</td><td>0.304</td><td>0.068</td><td>0.557</td><td>0.335</td></tr><tr><td>single_bm25 · hybrid · GT granulare</td><td>0.127</td><td>0.265</td><td>0.224</td><td>0.091</td><td>0.360</td><td>0.266</td><td>0.064</td><td>0.549</td><td>0.324</td></tr></tbody></table></div><h3>Confronto con baseline random</h3><div class="scroll"><table class="small"><thead><tr><th>Configurazione</th><th>MAP reale</th><th>MAP random</th><th>Δ MAP</th><th>Rapporto</th><th>Seed</th></tr></thead><tbody><tr><td>bm25_bge · fixed · GT granulare</td><td>0.4619</td><td>0.0786 ± 0.0230</td><td><span class="ok">+0.3833</span></td><td>5.88×</td><td>10 seed</td></tr><tr><td>bm25_e5 · fixed · GT granulare</td><td>0.4604</td><td>0.0786 ± 0.0230</td><td><span class="ok">+0.3818</span></td><td>5.86×</td><td>10 seed</td></tr><tr><td>dense_bge_e5 · fixed · GT granulare</td><td>0.4570</td><td>0.0786 ± 0.0230</td><td><span class="ok">+0.3784</span></td><td>5.81×</td><td>10 seed</td></tr><tr><td>single_bge · fixed · GT granulare</td><td>0.4454</td><td>0.0786 ± 0.0230</td><td><span class="ok">+0.3668</span></td><td>5.67×</td><td>10 seed</td></tr><tr><td>single_e5 · fixed · GT granulare</td><td>0.4385</td><td>0.0786 ± 0.0230</td><td><span class="ok">+0.3599</span></td><td>5.58×</td><td>10 seed</td></tr><tr><td>single_bm25 · fixed · GT granulare</td><td>0.3820</td><td>0.0786 ± 0.0230</td><td><span class="ok">+0.3034</span></td><td>4.86×</td><td>10 seed</td></tr><tr><td>dense_bge_e5 · sliding · GT granulare</td><td>0.3090</td><td>0.0902 ± 0.0311</td><td><span class="ok">+0.2188</span></td><td>3.42×</td><td>10 seed</td></tr><tr><td>single_bge · sliding · GT granulare</td><td>0.2987</td><td>0.0902 ± 0.0311</td><td><span class="ok">+0.2085</span></td><td>3.31×</td><td>10 seed</td></tr><tr><td>single_e5 · sliding · GT granulare</td><td>0.2820</td><td>0.0902 ± 0.0311</td><td><span class="ok">+0.1917</span></td><td>3.13×</td><td>10 seed</td></tr><tr><td>bm25_bge · sliding · GT granulare</td><td>0.2557</td><td>0.0902 ± 0.0311</td><td><span class="ok">+0.1655</span></td><td>2.83×</td><td>10 seed</td></tr><tr><td>bm25_e5 · sliding · GT granulare</td><td>0.2496</td><td>0.0902 ± 0.0311</td><td><span class="ok">+0.1594</span></td><td>2.77×</td><td>10 seed</td></tr><tr><td>bm25_e5 · hybrid · GT granulare</td><td>0.2358</td><td>0.0851 ± 0.0170</td><td><span class="ok">+0.1507</span></td><td>2.77×</td><td>10 seed</td></tr><tr><td>bm25_bge · hybrid · GT granulare</td><td>0.2267</td><td>0.0851 ± 0.0170</td><td><span class="ok">+0.1416</span></td><td>2.66×</td><td>10 seed</td></tr><tr><td>dense_bge_e5 · hybrid · GT granulare</td><td>0.2261</td><td>0.0851 ± 0.0170</td><td><span class="ok">+0.1410</span></td><td>2.66×</td><td>10 seed</td></tr><tr><td>single_e5 · hybrid · GT granulare</td><td>0.2179</td><td>0.0851 ± 0.0170</td><td><span class="ok">+0.1328</span></td><td>2.56×</td><td>10 seed</td></tr><tr><td>single_bm25 · sliding · GT granulare</td><td>0.2151</td><td>0.0902 ± 0.0311</td><td><span class="ok">+0.1249</span></td><td>2.38×</td><td>10 seed</td></tr><tr><td>single_bge · hybrid · GT granulare</td><td>0.2035</td><td>0.0851 ± 0.0170</td><td><span class="ok">+0.1184</span></td><td>2.39×</td><td>10 seed</td></tr><tr><td>single_bm25 · hybrid · GT granulare</td><td>0.2018</td><td>0.0851 ± 0.0170</td><td><span class="ok">+0.1167</span></td><td>2.37×</td><td>10 seed</td></tr></tbody></table></div><h3>Confronto retriever × chunking</h3><div class="scroll"><table class="small"><thead><tr><th>Configurazione</th><th>fixed</th><th>sliding</th><th>hybrid</th><th>Media</th></tr></thead><tbody><tr><td>bm25_bge · GT granulare</td><td><b>0.4619</b></td><td>0.2557</td><td>0.2267</td><td>0.3148</td></tr><tr><td>bm25_e5 · GT granulare</td><td><b>0.4604</b></td><td>0.2496</td><td>0.2358</td><td>0.3153</td></tr><tr><td>dense_bge_e5 · GT granulare</td><td><b>0.4570</b></td><td>0.3090</td><td>0.2261</td><td>0.3307</td></tr><tr><td>single_bge · GT granulare</td><td><b>0.4454</b></td><td>0.2987</td><td>0.2035</td><td>0.3159</td></tr><tr><td>single_bm25 · GT granulare</td><td><b>0.3820</b></td><td>0.2151</td><td>0.2018</td><td>0.2663</td></tr><tr><td>single_e5 · GT granulare</td><td><b>0.4385</b></td><td>0.2820</td><td>0.2179</td><td>0.3128</td></tr></tbody></table></div><p class='note'>La media è descrittiva: i ground truth e i corpus possono differire tra strategie di chunking.</p><h3>MAP per domanda madre</h3><div class="scroll"><table class="small"><thead><tr><th>Domanda</th><th>bm25_bge · fixed · GT granulare</th><th>bm25_e5 · fixed · GT granulare</th><th>dense_bge_e5 · fixed · GT granulare</th><th>single_bge · fixed · GT granulare</th><th>single_e5 · fixed · GT granulare</th><th>single_bm25 · fixed · GT granulare</th><th>dense_bge_e5 · sliding · GT granulare</th><th>single_bge · sliding · GT granulare</th></tr></thead><tbody><tr><td>D1</td><td>0.305</td><td>0.233</td><td>0.300</td><td><b>0.315</b></td><td>0.300</td><td>0.289</td><td>0.304</td><td>0.258</td></tr><tr><td>D2</td><td><b>0.667</b></td><td><b>0.667</b></td><td><b>0.667</b></td><td><b>0.667</b></td><td><b>0.667</b></td><td><b>0.667</b></td><td>0.544</td><td>0.544</td></tr><tr><td>D3</td><td>0.700</td><td><b>0.729</b></td><td>0.688</td><td>0.703</td><td>0.688</td><td>0.688</td><td>0.413</td><td>0.414</td></tr><tr><td>D4</td><td>0.223</td><td>0.280</td><td><b>0.288</b></td><td>0.215</td><td>0.280</td><td>0.000</td><td>0.169</td><td>0.165</td></tr><tr><td>D5</td><td>0.510</td><td><b>0.522</b></td><td>0.418</td><td>0.411</td><td>0.419</td><td>0.480</td><td>0.171</td><td>0.170</td></tr><tr><td>D6</td><td>0.335</td><td>0.261</td><td><b>0.387</b></td><td>0.375</td><td>0.261</td><td>0.129</td><td>0.357</td><td>0.334</td></tr></tbody></table></div><h3>Query più difficili — bm25_bge · fixed · GT granulare</h3><div class="scroll"><table class="small"><thead><tr><th>ID</th><th>Domanda madre</th><th>Query</th><th>AP</th><th>N. rilevanti</th></tr></thead><tbody><tr><td>D1.1</td><td>D1</td><td>Purpose for original data collection</td><td>0.000</td><td>1</td></tr><tr><td>D2.2</td><td>D2</td><td>Geographical area</td><td>0.000</td><td>2</td></tr><tr><td>D4.1</td><td>D4</td><td>Available features</td><td>0.042</td><td>3</td></tr><tr><td>D3.1</td><td>D3</td><td>Sampling strategy</td><td>0.050</td><td>2</td></tr><tr><td>D4.4</td><td>D4</td><td>Assumptions about representation</td><td>0.100</td><td>2</td></tr><tr><td>D6.2</td><td>D6</td><td>Gaps in the data</td><td>0.179</td><td>2</td></tr><tr><td>D5.1</td><td>D5</td><td>Attributes at risk</td><td>0.188</td><td>2</td></tr><tr><td>D1.2</td><td>D1</td><td>People and organizations involved</td><td>0.216</td><td>2</td></tr></tbody></table></div><h3>Coppia B1 — Controllo senza decomposizione</h3><ul class='take'><li>Migliore configurazione per MAP: <b>single_bge · fixed</b> (0.4368).</li><li>Baseline random: 0.0914; Δ MAP = +0.3454.</li><li>Hit@20: 100.0%; query con AP nulla: 0/6.</li></ul><h3>Ranking per MAP</h3><div class="scroll"><table class="rank"><thead><tr><th>#</th><th>Configurazione</th><th>MAP</th><th></th><th>N. query</th><th>Hit@20</th><th>Query AP=0</th></tr></thead><tbody><tr><td>1</td><td>single_bge · fixed</td><td>0.4368</td><td><div class="bar"><div class="fill" style="width:100.0%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>2</td><td>bm25_bge · fixed</td><td>0.4281</td><td><div class="bar"><div class="fill" style="width:98.0%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>3</td><td>bm25_e5 · fixed</td><td>0.4072</td><td><div class="bar"><div class="fill" style="width:93.2%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>4</td><td>dense_bge_e5 · sliding</td><td>0.4027</td><td><div class="bar"><div class="fill" style="width:92.2%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>5</td><td>dense_bge_e5 · fixed</td><td>0.4026</td><td><div class="bar"><div class="fill" style="width:92.2%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>6</td><td>single_e5 · sliding</td><td>0.4012</td><td><div class="bar"><div class="fill" style="width:91.9%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>7</td><td>single_e5 · fixed</td><td>0.3975</td><td><div class="bar"><div class="fill" style="width:91.0%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>8</td><td>single_bge · sliding</td><td>0.3806</td><td><div class="bar"><div class="fill" style="width:87.1%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>9</td><td>bm25_bge · sliding</td><td>0.3719</td><td><div class="bar"><div class="fill" style="width:85.1%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>10</td><td>bm25_e5 · sliding</td><td>0.3583</td><td><div class="bar"><div class="fill" style="width:82.0%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>11</td><td>single_bm25 · fixed</td><td>0.3513</td><td><div class="bar"><div class="fill" style="width:80.4%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>12</td><td>single_bm25 · sliding</td><td>0.3195</td><td><div class="bar"><div class="fill" style="width:73.1%"></div></div></td><td>6</td><td>83.3%</td><td>1/6</td></tr><tr><td>13</td><td>bm25_bge · hybrid</td><td>0.2906</td><td><div class="bar"><div class="fill" style="width:66.5%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>14</td><td>single_bge · hybrid</td><td>0.2721</td><td><div class="bar"><div class="fill" style="width:62.3%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>15</td><td>dense_bge_e5 · hybrid</td><td>0.2695</td><td><div class="bar"><div class="fill" style="width:61.7%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>16</td><td>single_e5 · hybrid</td><td>0.2557</td><td><div class="bar"><div class="fill" style="width:58.5%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>17</td><td>single_bm25 · hybrid</td><td>0.2537</td><td><div class="bar"><div class="fill" style="width:58.1%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>18</td><td>bm25_e5 · hybrid</td><td>0.2326</td><td><div class="bar"><div class="fill" style="width:53.2%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr></tbody></table></div><h3>Metriche per k</h3><div class="scroll"><table class="small"><thead><tr><th>Configurazione</th><th>P@5</th><th>R@5</th><th>nDCG@5</th><th>P@10</th><th>R@10</th><th>nDCG@10</th><th>P@20</th><th>R@20</th><th>nDCG@20</th></tr></thead><tbody><tr><td>single_bge · fixed</td><td>0.367</td><td>0.417</td><td>0.424</td><td>0.283</td><td>0.642</td><td>0.543</td><td>0.150</td><td>0.675</td><td>0.558</td></tr><tr><td>bm25_bge · fixed</td><td>0.333</td><td>0.375</td><td>0.398</td><td>0.267</td><td>0.608</td><td>0.521</td><td>0.158</td><td>0.717</td><td>0.566</td></tr><tr><td>bm25_e5 · fixed</td><td>0.367</td><td>0.417</td><td>0.424</td><td>0.250</td><td>0.575</td><td>0.506</td><td>0.142</td><td>0.642</td><td>0.537</td></tr><tr><td>dense_bge_e5 · sliding</td><td>0.367</td><td>0.392</td><td>0.354</td><td>0.283</td><td>0.608</td><td>0.470</td><td>0.192</td><td>0.817</td><td>0.560</td></tr><tr><td>dense_bge_e5 · fixed</td><td>0.333</td><td>0.375</td><td>0.401</td><td>0.267</td><td>0.608</td><td>0.521</td><td>0.142</td><td>0.642</td><td>0.536</td></tr><tr><td>single_e5 · sliding</td><td>0.367</td><td>0.392</td><td>0.354</td><td>0.300</td><td>0.642</td><td>0.486</td><td>0.192</td><td>0.817</td><td>0.560</td></tr><tr><td>single_e5 · fixed</td><td>0.367</td><td>0.417</td><td>0.430</td><td>0.250</td><td>0.575</td><td>0.511</td><td>0.125</td><td>0.575</td><td>0.511</td></tr><tr><td>single_bge · sliding</td><td>0.367</td><td>0.392</td><td>0.354</td><td>0.283</td><td>0.608</td><td>0.470</td><td>0.175</td><td>0.750</td><td>0.530</td></tr><tr><td>bm25_bge · sliding</td><td>0.400</td><td>0.425</td><td>0.376</td><td>0.300</td><td>0.642</td><td>0.490</td><td>0.167</td><td>0.717</td><td>0.520</td></tr><tr><td>bm25_e5 · sliding</td><td>0.400</td><td>0.425</td><td>0.376</td><td>0.283</td><td>0.608</td><td>0.472</td><td>0.167</td><td>0.717</td><td>0.517</td></tr><tr><td>single_bm25 · fixed</td><td>0.367</td><td>0.417</td><td>0.417</td><td>0.217</td><td>0.492</td><td>0.453</td><td>0.125</td><td>0.567</td><td>0.484</td></tr><tr><td>single_bm25 · sliding</td><td>0.333</td><td>0.358</td><td>0.323</td><td>0.250</td><td>0.542</td><td>0.419</td><td>0.133</td><td>0.583</td><td>0.437</td></tr><tr><td>bm25_bge · hybrid</td><td>0.267</td><td>0.267</td><td>0.213</td><td>0.317</td><td>0.622</td><td>0.410</td><td>0.192</td><td>0.750</td><td>0.466</td></tr><tr><td>single_bge · hybrid</td><td>0.300</td><td>0.300</td><td>0.235</td><td>0.283</td><td>0.556</td><td>0.381</td><td>0.167</td><td>0.656</td><td>0.426</td></tr><tr><td>dense_bge_e5 · hybrid</td><td>0.267</td><td>0.267</td><td>0.215</td><td>0.283</td><td>0.556</td><td>0.377</td><td>0.183</td><td>0.717</td><td>0.448</td></tr><tr><td>single_e5 · hybrid</td><td>0.300</td><td>0.300</td><td>0.241</td><td>0.283</td><td>0.556</td><td>0.386</td><td>0.167</td><td>0.650</td><td>0.427</td></tr><tr><td>single_bm25 · hybrid</td><td>0.300</td><td>0.300</td><td>0.231</td><td>0.283</td><td>0.556</td><td>0.372</td><td>0.167</td><td>0.656</td><td>0.415</td></tr><tr><td>bm25_e5 · hybrid</td><td>0.300</td><td>0.300</td><td>0.235</td><td>0.267</td><td>0.522</td><td>0.358</td><td>0.158</td><td>0.617</td><td>0.401</td></tr></tbody></table></div><h3>Confronto con baseline random</h3><div class="scroll"><table class="small"><thead><tr><th>Configurazione</th><th>MAP reale</th><th>MAP random</th><th>Δ MAP</th><th>Rapporto</th><th>Seed</th></tr></thead><tbody><tr><td>single_bge · fixed</td><td>0.4368</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.3454</span></td><td>4.78×</td><td>10 seed</td></tr><tr><td>bm25_bge · fixed</td><td>0.4281</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.3366</span></td><td>4.68×</td><td>10 seed</td></tr><tr><td>bm25_e5 · fixed</td><td>0.4072</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.3157</span></td><td>4.45×</td><td>10 seed</td></tr><tr><td>dense_bge_e5 · sliding</td><td>0.4027</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.3022</span></td><td>4.00×</td><td>10 seed</td></tr><tr><td>dense_bge_e5 · fixed</td><td>0.4026</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.3112</span></td><td>4.40×</td><td>10 seed</td></tr><tr><td>single_e5 · sliding</td><td>0.4012</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.3007</span></td><td>3.99×</td><td>10 seed</td></tr><tr><td>single_e5 · fixed</td><td>0.3975</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.3060</span></td><td>4.35×</td><td>10 seed</td></tr><tr><td>single_bge · sliding</td><td>0.3806</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2800</span></td><td>3.78×</td><td>10 seed</td></tr><tr><td>bm25_bge · sliding</td><td>0.3719</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2714</span></td><td>3.70×</td><td>10 seed</td></tr><tr><td>bm25_e5 · sliding</td><td>0.3583</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2578</span></td><td>3.56×</td><td>10 seed</td></tr><tr><td>single_bm25 · fixed</td><td>0.3513</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.2598</span></td><td>3.84×</td><td>10 seed</td></tr><tr><td>single_bm25 · sliding</td><td>0.3195</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2189</span></td><td>3.18×</td><td>10 seed</td></tr><tr><td>bm25_bge · hybrid</td><td>0.2906</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1946</span></td><td>3.03×</td><td>10 seed</td></tr><tr><td>single_bge · hybrid</td><td>0.2721</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1761</span></td><td>2.83×</td><td>10 seed</td></tr><tr><td>dense_bge_e5 · hybrid</td><td>0.2695</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1735</span></td><td>2.81×</td><td>10 seed</td></tr><tr><td>single_e5 · hybrid</td><td>0.2557</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1597</span></td><td>2.66×</td><td>10 seed</td></tr><tr><td>single_bm25 · hybrid</td><td>0.2537</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1576</span></td><td>2.64×</td><td>10 seed</td></tr><tr><td>bm25_e5 · hybrid</td><td>0.2326</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1365</span></td><td>2.42×</td><td>10 seed</td></tr></tbody></table></div><h3>Confronto retriever × chunking</h3><div class="scroll"><table class="small"><thead><tr><th>Configurazione</th><th>fixed</th><th>sliding</th><th>hybrid</th><th>Media</th></tr></thead><tbody><tr><td>bm25_bge</td><td><b>0.4281</b></td><td>0.3719</td><td>0.2906</td><td>0.3635</td></tr><tr><td>bm25_e5</td><td><b>0.4072</b></td><td>0.3583</td><td>0.2326</td><td>0.3327</td></tr><tr><td>dense_bge_e5</td><td>0.4026</td><td><b>0.4027</b></td><td>0.2695</td><td>0.3583</td></tr><tr><td>single_bge</td><td><b>0.4368</b></td><td>0.3806</td><td>0.2721</td><td>0.3632</td></tr><tr><td>single_bm25</td><td><b>0.3513</b></td><td>0.3195</td><td>0.2537</td><td>0.3082</td></tr><tr><td>single_e5</td><td>0.3975</td><td><b>0.4012</b></td><td>0.2557</td><td>0.3515</td></tr></tbody></table></div><p class='note'>La media è descrittiva: i ground truth e i corpus possono differire tra strategie di chunking.</p><h3>Query più difficili — single_bge · fixed</h3><div class="scroll"><table class="small"><thead><tr><th>ID</th><th>Domanda madre</th><th>Query</th><th>AP</th><th>N. rilevanti</th></tr></thead><tbody><tr><td>q4</td><td>—</td><td>What does the data measure and represent? What are the available features (or covariates) and their explanation? Which …</td><td>0.022</td><td>5</td></tr><tr><td>q5</td><td>—</td><td>Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the…</td><td>0.136</td><td>5</td></tr><tr><td>q3</td><td>—</td><td>What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and da…</td><td>0.250</td><td>4</td></tr><tr><td>q6</td><td>—</td><td>What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps…</td><td>0.433</td><td>4</td></tr><tr><td>q2</td><td>—</td><td>What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area…</td><td>0.812</td><td>4</td></tr><tr><td>q1</td><td>—</td><td>What is the purpose and origin of the data? What is the purpose for original data collection? Which people and organiza…</td><td>0.967</td><td>5</td></tr></tbody></table></div><h3>Coppia B2 — Con decomposizione</h3><ul class='take'><li>Migliore configurazione per MAP: <b>single_bge · fixed + decomp (rerank_each)</b> (0.3876).</li><li>Baseline random: 0.0914; Δ MAP = +0.2962.</li><li>Hit@20: 100.0%; query con AP nulla: 0/6.</li></ul><h3>Ranking per MAP</h3><div class="scroll"><table class="rank"><thead><tr><th>#</th><th>Configurazione</th><th>MAP</th><th></th><th>N. query</th><th>Hit@20</th><th>Query AP=0</th></tr></thead><tbody><tr><td>1</td><td>single_bge · fixed + decomp (rerank_each)</td><td>0.3876</td><td><div class="bar"><div class="fill" style="width:100.0%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>2</td><td>dense_bge_e5 · sliding + decomp (rerank_each)</td><td>0.3786</td><td><div class="bar"><div class="fill" style="width:97.7%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>3</td><td>bm25_e5 · fixed + decomp (rerank_each)</td><td>0.3753</td><td><div class="bar"><div class="fill" style="width:96.8%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>4</td><td>single_bge · sliding + decomp (rerank_each)</td><td>0.3736</td><td><div class="bar"><div class="fill" style="width:96.4%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>5</td><td>bm25_bge · fixed + decomp (rerank_each)</td><td>0.3730</td><td><div class="bar"><div class="fill" style="width:96.2%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>6</td><td>dense_bge_e5 · fixed + decomp (rerank_each)</td><td>0.3717</td><td><div class="bar"><div class="fill" style="width:95.9%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>7</td><td>single_e5 · sliding + decomp (rerank_each)</td><td>0.3700</td><td><div class="bar"><div class="fill" style="width:95.4%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>8</td><td>bm25_bge · sliding + decomp (rerank_each)</td><td>0.3585</td><td><div class="bar"><div class="fill" style="width:92.5%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>9</td><td>single_e5 · fixed + decomp (rerank_each)</td><td>0.3480</td><td><div class="bar"><div class="fill" style="width:89.8%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>10</td><td>bm25_e5 · sliding + decomp (rerank_each)</td><td>0.3358</td><td><div class="bar"><div class="fill" style="width:86.6%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>11</td><td>single_bm25 · fixed + decomp (rerank_each)</td><td>0.3175</td><td><div class="bar"><div class="fill" style="width:81.9%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>12</td><td>single_bm25 · sliding + decomp (rerank_each)</td><td>0.3018</td><td><div class="bar"><div class="fill" style="width:77.9%"></div></div></td><td>6</td><td>83.3%</td><td>1/6</td></tr><tr><td>13</td><td>bm25_bge · hybrid + decomp (rerank_each)</td><td>0.2573</td><td><div class="bar"><div class="fill" style="width:66.4%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>14</td><td>dense_bge_e5 · hybrid + decomp (rerank_each)</td><td>0.2538</td><td><div class="bar"><div class="fill" style="width:65.5%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>15</td><td>single_bge · hybrid + decomp (rerank_each)</td><td>0.2403</td><td><div class="bar"><div class="fill" style="width:62.0%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>16</td><td>single_e5 · hybrid + decomp (rerank_each)</td><td>0.2269</td><td><div class="bar"><div class="fill" style="width:58.5%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>17</td><td>bm25_e5 · hybrid + decomp (rerank_each)</td><td>0.2167</td><td><div class="bar"><div class="fill" style="width:55.9%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr><tr><td>18</td><td>single_bm25 · hybrid + decomp (rerank_each)</td><td>0.2104</td><td><div class="bar"><div class="fill" style="width:54.3%"></div></div></td><td>6</td><td>100.0%</td><td>0/6</td></tr></tbody></table></div><h3>Metriche per k</h3><div class="scroll"><table class="small"><thead><tr><th>Configurazione</th><th>P@5</th><th>R@5</th><th>nDCG@5</th><th>P@10</th><th>R@10</th><th>nDCG@10</th><th>P@20</th><th>R@20</th><th>nDCG@20</th></tr></thead><tbody><tr><td>single_bge · fixed + decomp (rerank_each)</td><td>0.300</td><td>0.350</td><td>0.371</td><td>0.267</td><td>0.608</td><td>0.508</td><td>0.150</td><td>0.675</td><td>0.537</td></tr><tr><td>dense_bge_e5 · sliding + decomp (rerank_each)</td><td>0.333</td><td>0.358</td><td>0.343</td><td>0.250</td><td>0.542</td><td>0.443</td><td>0.183</td><td>0.783</td><td>0.546</td></tr><tr><td>bm25_e5 · fixed + decomp (rerank_each)</td><td>0.300</td><td>0.350</td><td>0.371</td><td>0.233</td><td>0.542</td><td>0.473</td><td>0.150</td><td>0.675</td><td>0.531</td></tr><tr><td>single_bge · sliding + decomp (rerank_each)</td><td>0.333</td><td>0.358</td><td>0.343</td><td>0.267</td><td>0.575</td><td>0.461</td><td>0.175</td><td>0.750</td><td>0.534</td></tr><tr><td>bm25_bge · fixed + decomp (rerank_each)</td><td>0.300</td><td>0.342</td><td>0.368</td><td>0.233</td><td>0.542</td><td>0.470</td><td>0.158</td><td>0.717</td><td>0.543</td></tr><tr><td>dense_bge_e5 · fixed + decomp (rerank_each)</td><td>0.267</td><td>0.308</td><td>0.348</td><td>0.267</td><td>0.608</td><td>0.507</td><td>0.142</td><td>0.642</td><td>0.522</td></tr><tr><td>single_e5 · sliding + decomp (rerank_each)</td><td>0.333</td><td>0.358</td><td>0.343</td><td>0.250</td><td>0.542</td><td>0.441</td><td>0.183</td><td>0.783</td><td>0.543</td></tr><tr><td>bm25_bge · sliding + decomp (rerank_each)</td><td>0.367</td><td>0.392</td><td>0.365</td><td>0.267</td><td>0.575</td><td>0.463</td><td>0.167</td><td>0.717</td><td>0.521</td></tr><tr><td>single_e5 · fixed + decomp (rerank_each)</td><td>0.300</td><td>0.350</td><td>0.377</td><td>0.217</td><td>0.508</td><td>0.459</td><td>0.125</td><td>0.575</td><td>0.488</td></tr><tr><td>bm25_e5 · sliding + decomp (rerank_each)</td><td>0.400</td><td>0.425</td><td>0.387</td><td>0.233</td><td>0.508</td><td>0.427</td><td>0.167</td><td>0.717</td><td>0.513</td></tr><tr><td>single_bm25 · fixed + decomp (rerank_each)</td><td>0.300</td><td>0.350</td><td>0.366</td><td>0.200</td><td>0.458</td><td>0.420</td><td>0.133</td><td>0.600</td><td>0.477</td></tr><tr><td>single_bm25 · sliding + decomp (rerank_each)</td><td>0.333</td><td>0.358</td><td>0.329</td><td>0.217</td><td>0.475</td><td>0.388</td><td>0.133</td><td>0.583</td><td>0.432</td></tr><tr><td>bm25_bge · hybrid + decomp (rerank_each)</td><td>0.233</td><td>0.233</td><td>0.185</td><td>0.283</td><td>0.556</td><td>0.362</td><td>0.192</td><td>0.750</td><td>0.446</td></tr><tr><td>dense_bge_e5 · hybrid + decomp (rerank_each)</td><td>0.200</td><td>0.200</td><td>0.163</td><td>0.283</td><td>0.556</td><td>0.364</td><td>0.183</td><td>0.717</td><td>0.435</td></tr><tr><td>single_bge · hybrid + decomp (rerank_each)</td><td>0.233</td><td>0.233</td><td>0.182</td><td>0.267</td><td>0.522</td><td>0.346</td><td>0.167</td><td>0.656</td><td>0.405</td></tr><tr><td>single_e5 · hybrid + decomp (rerank_each)</td><td>0.233</td><td>0.233</td><td>0.189</td><td>0.250</td><td>0.489</td><td>0.333</td><td>0.167</td><td>0.650</td><td>0.403</td></tr><tr><td>bm25_e5 · hybrid + decomp (rerank_each)</td><td>0.233</td><td>0.233</td><td>0.182</td><td>0.250</td><td>0.489</td><td>0.326</td><td>0.167</td><td>0.650</td><td>0.396</td></tr><tr><td>single_bm25 · hybrid + decomp (rerank_each)</td><td>0.200</td><td>0.200</td><td>0.156</td><td>0.250</td><td>0.489</td><td>0.313</td><td>0.167</td><td>0.656</td><td>0.384</td></tr></tbody></table></div><h3>Confronto con baseline random</h3><div class="scroll"><table class="small"><thead><tr><th>Configurazione</th><th>MAP reale</th><th>MAP random</th><th>Δ MAP</th><th>Rapporto</th><th>Seed</th></tr></thead><tbody><tr><td>single_bge · fixed + decomp (rerank_each)</td><td>0.3876</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.2962</span></td><td>4.24×</td><td>10 seed</td></tr><tr><td>dense_bge_e5 · sliding + decomp (rerank_each)</td><td>0.3786</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2780</span></td><td>3.76×</td><td>10 seed</td></tr><tr><td>bm25_e5 · fixed + decomp (rerank_each)</td><td>0.3753</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.2839</span></td><td>4.10×</td><td>10 seed</td></tr><tr><td>single_bge · sliding + decomp (rerank_each)</td><td>0.3736</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2730</span></td><td>3.71×</td><td>10 seed</td></tr><tr><td>bm25_bge · fixed + decomp (rerank_each)</td><td>0.3730</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.2815</span></td><td>4.08×</td><td>10 seed</td></tr><tr><td>dense_bge_e5 · fixed + decomp (rerank_each)</td><td>0.3717</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.2802</span></td><td>4.06×</td><td>10 seed</td></tr><tr><td>single_e5 · sliding + decomp (rerank_each)</td><td>0.3700</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2694</span></td><td>3.68×</td><td>10 seed</td></tr><tr><td>bm25_bge · sliding + decomp (rerank_each)</td><td>0.3585</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2580</span></td><td>3.57×</td><td>10 seed</td></tr><tr><td>single_e5 · fixed + decomp (rerank_each)</td><td>0.3480</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.2566</span></td><td>3.81×</td><td>10 seed</td></tr><tr><td>bm25_e5 · sliding + decomp (rerank_each)</td><td>0.3358</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2352</span></td><td>3.34×</td><td>10 seed</td></tr><tr><td>single_bm25 · fixed + decomp (rerank_each)</td><td>0.3175</td><td>0.0914 ± 0.0416</td><td><span class="ok">+0.2260</span></td><td>3.47×</td><td>10 seed</td></tr><tr><td>single_bm25 · sliding + decomp (rerank_each)</td><td>0.3018</td><td>0.1006 ± 0.0475</td><td><span class="ok">+0.2013</span></td><td>3.00×</td><td>10 seed</td></tr><tr><td>bm25_bge · hybrid + decomp (rerank_each)</td><td>0.2573</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1612</span></td><td>2.68×</td><td>10 seed</td></tr><tr><td>dense_bge_e5 · hybrid + decomp (rerank_each)</td><td>0.2538</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1578</span></td><td>2.64×</td><td>10 seed</td></tr><tr><td>single_bge · hybrid + decomp (rerank_each)</td><td>0.2403</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1442</span></td><td>2.50×</td><td>10 seed</td></tr><tr><td>single_e5 · hybrid + decomp (rerank_each)</td><td>0.2269</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1308</span></td><td>2.36×</td><td>10 seed</td></tr><tr><td>bm25_e5 · hybrid + decomp (rerank_each)</td><td>0.2167</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1206</span></td><td>2.26×</td><td>10 seed</td></tr><tr><td>single_bm25 · hybrid + decomp (rerank_each)</td><td>0.2104</td><td>0.0960 ± 0.0305</td><td><span class="ok">+0.1143</span></td><td>2.19×</td><td>10 seed</td></tr></tbody></table></div><h3>Confronto retriever × chunking</h3><div class="scroll"><table class="small"><thead><tr><th>Configurazione</th><th>fixed</th><th>sliding</th><th>hybrid</th><th>Media</th></tr></thead><tbody><tr><td>bm25_bge + rerank_each</td><td><b>0.3730</b></td><td>0.3585</td><td>0.2573</td><td>0.3296</td></tr><tr><td>bm25_e5 + rerank_each</td><td><b>0.3753</b></td><td>0.3358</td><td>0.2167</td><td>0.3093</td></tr><tr><td>dense_bge_e5 + rerank_each</td><td>0.3717</td><td><b>0.3786</b></td><td>0.2538</td><td>0.3347</td></tr><tr><td>single_bge + rerank_each</td><td><b>0.3876</b></td><td>0.3736</td><td>0.2403</td><td>0.3338</td></tr><tr><td>single_bm25 + rerank_each</td><td><b>0.3175</b></td><td>0.3018</td><td>0.2104</td><td>0.2766</td></tr><tr><td>single_e5 + rerank_each</td><td>0.3480</td><td><b>0.3700</b></td><td>0.2269</td><td>0.3149</td></tr></tbody></table></div><p class='note'>La media è descrittiva: i ground truth e i corpus possono differire tra strategie di chunking.</p><h3>Query più difficili — single_bge · fixed + decomp (rerank_each)</h3><div class="scroll"><table class="small"><thead><tr><th>ID</th><th>Domanda madre</th><th>Query</th><th>AP</th><th>N. rilevanti</th></tr></thead><tbody><tr><td>q4</td><td>—</td><td>What does the data measure and represent? What are the available features (or covariates) and their explanation? Which …</td><td>0.022</td><td>5</td></tr><tr><td>q5</td><td>—</td><td>Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the…</td><td>0.136</td><td>5</td></tr><tr><td>q3</td><td>—</td><td>What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and da…</td><td>0.250</td><td>4</td></tr><tr><td>q6</td><td>—</td><td>What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps…</td><td>0.433</td><td>4</td></tr><tr><td>q1</td><td>—</td><td>What is the purpose and origin of the data? What is the purpose for original data collection? Which people and organiza…</td><td>0.671</td><td>5</td></tr><tr><td>q2</td><td>—</td><td>What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area…</td><td>0.812</td><td>4</td></tr></tbody></table></div></section><section><h2>5. Coppia A — Effetto del retriever</h2><p><b>A1:</b> single_bge. <b>A2:</b> dense_bge_e5.</p><p class='note'>Il confronto usa il GT granulare e mantiene costanti chunking e modalità di valutazione. Un Δ positivo favorisce A2.</p><div class="scroll"><table class="small"><thead><tr><th>Chunking</th><th>A1 — single_bge MAP</th><th>A2 — dense_bge_e5 MAP</th><th>Δ MAP (A2 − A1)</th><th>Esito</th></tr></thead><tbody><tr><td>fixed</td><td>0.4454</td><td>0.4570</td><td><span class="ok">+0.0116</span></td><td>A2 migliora</td></tr><tr><td>sliding</td><td>0.2987</td><td>0.3090</td><td><span class="ok">+0.0102</span></td><td>A2 migliora</td></tr><tr><td>hybrid</td><td>0.2035</td><td>0.2261</td><td><span class="ok">+0.0226</span></td><td>A2 migliora</td></tr></tbody></table></div></section><section><h2>6. Coppia B — Effetto della decomposizione</h2><p><b>B1:</b> retrieval standard. <b>B2:</b> decomposizione con rerank_each.</p><p class='note'>Sono confrontati risultati con lo stesso retriever, chunking e GT aggregato. Un Δ positivo favorisce B2.</p><div class="scroll"><table class="small"><thead><tr><th>Retriever</th><th>Chunking</th><th>B1 — MAP</th><th>B2 — MAP</th><th>Δ MAP (B2 − B1)</th><th>Esito</th></tr></thead><tbody><tr><td>bm25_bge</td><td>fixed</td><td>0.4281</td><td>0.3730</td><td><span class="bad">-0.0551</span></td><td>B2 peggiora</td></tr><tr><td>bm25_bge</td><td>hybrid</td><td>0.2906</td><td>0.2573</td><td><span class="bad">-0.0333</span></td><td>B2 peggiora</td></tr><tr><td>bm25_bge</td><td>sliding</td><td>0.3719</td><td>0.3585</td><td><span class="bad">-0.0134</span></td><td>B2 peggiora</td></tr><tr><td>bm25_e5</td><td>fixed</td><td>0.4072</td><td>0.3753</td><td><span class="bad">-0.0319</span></td><td>B2 peggiora</td></tr><tr><td>bm25_e5</td><td>hybrid</td><td>0.2326</td><td>0.2167</td><td><span class="bad">-0.0159</span></td><td>B2 peggiora</td></tr><tr><td>bm25_e5</td><td>sliding</td><td>0.3583</td><td>0.3358</td><td><span class="bad">-0.0226</span></td><td>B2 peggiora</td></tr><tr><td>dense_bge_e5</td><td>fixed</td><td>0.4026</td><td>0.3717</td><td><span class="bad">-0.0310</span></td><td>B2 peggiora</td></tr><tr><td>dense_bge_e5</td><td>hybrid</td><td>0.2695</td><td>0.2538</td><td><span class="bad">-0.0157</span></td><td>B2 peggiora</td></tr><tr><td>dense_bge_e5</td><td>sliding</td><td>0.4027</td><td>0.3786</td><td><span class="bad">-0.0241</span></td><td>B2 peggiora</td></tr><tr><td>single_bge</td><td>fixed</td><td>0.4368</td><td>0.3876</td><td><span class="bad">-0.0492</span></td><td>B2 peggiora</td></tr><tr><td>single_bge</td><td>hybrid</td><td>0.2721</td><td>0.2403</td><td><span class="bad">-0.0319</span></td><td>B2 peggiora</td></tr><tr><td>single_bge</td><td>sliding</td><td>0.3806</td><td>0.3736</td><td><span class="bad">-0.0070</span></td><td>B2 peggiora</td></tr><tr><td>single_bm25</td><td>fixed</td><td>0.3513</td><td>0.3175</td><td><span class="bad">-0.0338</span></td><td>B2 peggiora</td></tr><tr><td>single_bm25</td><td>hybrid</td><td>0.2537</td><td>0.2104</td><td><span class="bad">-0.0433</span></td><td>B2 peggiora</td></tr><tr><td>single_bm25</td><td>sliding</td><td>0.3195</td><td>0.3018</td><td><span class="bad">-0.0177</span></td><td>B2 peggiora</td></tr><tr><td>single_e5</td><td>fixed</td><td>0.3975</td><td>0.3480</td><td><span class="bad">-0.0495</span></td><td>B2 peggiora</td></tr><tr><td>single_e5</td><td>hybrid</td><td>0.2557</td><td>0.2269</td><td><span class="bad">-0.0288</span></td><td>B2 peggiora</td></tr><tr><td>single_e5</td><td>sliding</td><td>0.4012</td><td>0.3700</td><td><span class="bad">-0.0313</span></td><td>B2 peggiora</td></tr></tbody></table></div></section>
+
+<section>
+    <h2>6. Grafici comparativi</h2>
+
+    <p class="note">
+        I grafici utilizzano i risultati reali della valutazione,
+        escludendo le baseline random.
+        I gruppi sperimentali sono identificati dalla cartella
+        che contiene i file JSON.
+    </p>
+
+    <h3>6.1 Ranking dei retriever per MAP</h3>
+
+    <p>
+        Confronta il MAP medio delle configurazioni disponibili.
+        Valori più alti indicano un ranking generalmente migliore.
+    </p>
+
+    <div class="chart-container">
+        <canvas id="chartRetriever"></canvas>
+    </div>
+
+    <h3>6.2 Confronto tra gruppi sperimentali</h3>
+
+    <p>
+        Confronta A1_2, B1 e B2.
+        Per interpretare correttamente il risultato,
+        seleziona configurazioni con lo stesso retriever,
+        chunking e tipo di ground truth.
+    </p>
+
+    <div class="chart-container">
+        <canvas id="chartExperiments"></canvas>
+    </div>
+
+    <h3>6.3 MAP per chunking</h3>
+
+    <p>
+        Mostra come cambiano le prestazioni usando
+        fixed, sliding e hybrid.
+    </p>
+
+    <div class="chart-container">
+        <canvas id="chartChunking"></canvas>
+    </div>
+
+    <h3>6.4 Metriche al variare di k</h3>
+
+    <p>
+        Seleziona una configurazione per confrontare
+        Precision@k, Recall@k e nDCG@k.
+    </p>
+
+    <label for="metricConfig">
+        Configurazione:
+    </label>
+
+    <select id="metricConfig"></select>
+
+    <div class="chart-container">
+        <canvas id="chartMetrics"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+    (() => {
+
+        const runs = [{"experiment": "A1_2", "retriever": "bm25_bge", "chunking": "fixed", "mode": "none", "subq": true, "MAP": 0.4619334579561852, "macro": {"@5": {"precision": 0.22727272727272735, "recall": 0.5984848484848485, "ndcg": 0.5094440761528909}, "@10": {"precision": 0.14090909090909093, "recall": 0.7045454545454545, "ndcg": 0.5537490583747167}, "@20": {"precision": 0.07500000000000001, "recall": 0.75, "ndcg": 0.5683417800645373}}}, {"experiment": "A1_2", "retriever": "bm25_e5", "chunking": "fixed", "mode": "none", "subq": true, "MAP": 0.4604475203159414, "macro": {"@5": {"precision": 0.21818181818181823, "recall": 0.5833333333333334, "ndcg": 0.5036681735992737}, "@10": {"precision": 0.1272727272727273, "recall": 0.6666666666666666, "ndcg": 0.5388739002425657}, "@20": {"precision": 0.06818181818181819, "recall": 0.7045454545454545, "ndcg": 0.5507769762104019}}}, {"experiment": "A1_2", "retriever": "dense_bge_e5", "chunking": "fixed", "mode": "none", "subq": true, "MAP": 0.45697733638910115, "macro": {"@5": {"precision": 0.23636363636363641, "recall": 0.6363636363636364, "ndcg": 0.5113021213343133}, "@10": {"precision": 0.1409090909090909, "recall": 0.7348484848484848, "ndcg": 0.5515383452608575}, "@20": {"precision": 0.07727272727272727, "recall": 0.787878787878788, "ndcg": 0.5695517929883935}}}, {"experiment": "A1_2", "retriever": "single_bge", "chunking": "fixed", "mode": "none", "subq": true, "MAP": 0.4454028925619834, "macro": {"@5": {"precision": 0.22727272727272732, "recall": 0.6136363636363636, "ndcg": 0.5005204071175271}, "@10": {"precision": 0.13181818181818186, "recall": 0.6969696969696969, "ndcg": 0.5347613707327834}, "@20": {"precision": 0.07500000000000001, "recall": 0.7727272727272727, "ndcg": 0.5608110255260121}}}, {"experiment": "A1_2", "retriever": "single_bm25", "chunking": "fixed", "mode": "none", "subq": true, "MAP": 0.382031857031857, "macro": {"@5": {"precision": 0.16363636363636366, "recall": 0.46212121212121215, "ndcg": 0.4156974171439199}, "@10": {"precision": 0.09090909090909091, "recall": 0.49242424242424243, "ndcg": 0.4300247539825169}, "@20": {"precision": 0.04772727272727273, "recall": 0.5151515151515151, "ndcg": 0.4373448823956627}}}, {"experiment": "A1_2", "retriever": "single_e5", "chunking": "fixed", "mode": "none", "subq": true, "MAP": 0.4385327907386731, "macro": {"@5": {"precision": 0.21818181818181823, "recall": 0.6060606060606061, "ndcg": 0.49144999817468027}, "@10": {"precision": 0.1272727272727273, "recall": 0.6893939393939393, "ndcg": 0.5259225281650998}, "@20": {"precision": 0.06818181818181819, "recall": 0.7272727272727272, "ndcg": 0.5383580606144033}}}, {"experiment": "A1_2", "retriever": "bm25_bge", "chunking": "hybrid", "mode": "none", "subq": true, "MAP": 0.22672219987692827, "macro": {"@5": {"precision": 0.15454545454545454, "recall": 0.30303030303030304, "ndcg": 0.2474786701380971}, "@10": {"precision": 0.10909090909090911, "recall": 0.42424242424242425, "ndcg": 0.2994874575176975}, "@20": {"precision": 0.08181818181818183, "recall": 0.6704545454545454, "ndcg": 0.3777337933521782}}}, {"experiment": "A1_2", "retriever": "bm25_e5", "chunking": "hybrid", "mode": "none", "subq": true, "MAP": 0.23582312913863712, "macro": {"@5": {"precision": 0.14545454545454548, "recall": 0.303030303030303, "ndcg": 0.24827036331662902}, "@10": {"precision": 0.10454545454545455, "recall": 0.42424242424242425, "ndcg": 0.30119493920389934}, "@20": {"precision": 0.07954545454545456, "recall": 0.6553030303030304, "ndcg": 0.3774598762777757}}}, {"experiment": "A1_2", "retriever": "dense_bge_e5", "chunking": "hybrid", "mode": "none", "subq": true, "MAP": 0.2261263595743261, "macro": {"@5": {"precision": 0.17272727272727273, "recall": 0.37878787878787884, "ndcg": 0.27226714729854345}, "@10": {"precision": 0.11818181818181818, "recall": 0.49242424242424243, "ndcg": 0.3220684635383882}, "@20": {"precision": 0.07272727272727274, "recall": 0.6022727272727273, "ndcg": 0.3577994347903856}}}, {"experiment": "A1_2", "retriever": "single_bge", "chunking": "hybrid", "mode": "none", "subq": true, "MAP": 0.20349326599326598, "macro": {"@5": {"precision": 0.14545454545454545, "recall": 0.31818181818181823, "ndcg": 0.23975170891717668}, "@10": {"precision": 0.11363636363636366, "recall": 0.4621212121212121, "ndcg": 0.3043775111800974}, "@20": {"precision": 0.06818181818181818, "recall": 0.5568181818181818, "ndcg": 0.3352358210338462}}}, {"experiment": "A1_2", "retriever": "single_bm25", "chunking": "hybrid", "mode": "none", "subq": true, "MAP": 0.2017523381995307, "macro": {"@5": {"precision": 0.1272727272727273, "recall": 0.2651515151515151, "ndcg": 0.22436053530376893}, "@10": {"precision": 0.09090909090909091, "recall": 0.3598484848484848, "ndcg": 0.26586443305569274}, "@20": {"precision": 0.06363636363636366, "recall": 0.5492424242424243, "ndcg": 0.3237467254105556}}}, {"experiment": "A1_2", "retriever": "single_e5", "chunking": "hybrid", "mode": "none", "subq": true, "MAP": 0.21791522871068325, "macro": {"@5": {"precision": 0.16363636363636366, "recall": 0.36363636363636365, "ndcg": 0.26066692379969925}, "@10": {"precision": 0.10454545454545455, "recall": 0.446969696969697, "ndcg": 0.29653442541658404}, "@20": {"precision": 0.07045454545454545, "recall": 0.6060606060606061, "ndcg": 0.349311863887876}}}, {"experiment": "A1_2", "retriever": "bm25_bge", "chunking": "sliding", "mode": "none", "subq": true, "MAP": 0.2557492801810984, "macro": {"@5": {"precision": 0.17272727272727273, "recall": 0.40151515151515144, "ndcg": 0.2990414567182472}, "@10": {"precision": 0.12272727272727275, "recall": 0.553030303030303, "ndcg": 0.3636177432141989}, "@20": {"precision": 0.07272727272727274, "recall": 0.6666666666666665, "ndcg": 0.3981715442594073}}}, {"experiment": "A1_2", "retriever": "bm25_e5", "chunking": "sliding", "mode": "none", "subq": true, "MAP": 0.24963940786309208, "macro": {"@5": {"precision": 0.18181818181818185, "recall": 0.428030303030303, "ndcg": 0.3176494458869834}, "@10": {"precision": 0.11818181818181821, "recall": 0.5265151515151515, "ndcg": 0.36115716604107323}, "@20": {"precision": 0.06590909090909092, "recall": 0.6098484848484849, "ndcg": 0.3841757023945661}}}, {"experiment": "A1_2", "retriever": "dense_bge_e5", "chunking": "sliding", "mode": "none", "subq": true, "MAP": 0.30897444859765427, "macro": {"@5": {"precision": 0.20000000000000007, "recall": 0.43560606060606055, "ndcg": 0.341588691898812}, "@10": {"precision": 0.13636363636363644, "recall": 0.6136363636363635, "ndcg": 0.41610924914495634}, "@20": {"precision": 0.08181818181818182, "recall": 0.7083333333333331, "ndcg": 0.4506812522580535}}}, {"experiment": "A1_2", "retriever": "single_bge", "chunking": "sliding", "mode": "none", "subq": true, "MAP": 0.29874320940497406, "macro": {"@5": {"precision": 0.19090909090909092, "recall": 0.42045454545454536, "ndcg": 0.3309232663073858}, "@10": {"precision": 0.13181818181818186, "recall": 0.5984848484848484, "ndcg": 0.40480632177036285}, "@20": {"precision": 0.07727272727272728, "recall": 0.6818181818181818, "ndcg": 0.43413736645168977}}}, {"experiment": "A1_2", "retriever": "single_bm25", "chunking": "sliding", "mode": "none", "subq": true, "MAP": 0.21513347763347765, "macro": {"@5": {"precision": 0.13636363636363635, "recall": 0.3333333333333333, "ndcg": 0.2544138737565725}, "@10": {"precision": 0.08636363636363639, "recall": 0.428030303030303, "ndcg": 0.29042063843196714}, "@20": {"precision": 0.05681818181818183, "recall": 0.5416666666666666, "ndcg": 0.32734483125901903}}}, {"experiment": "A1_2", "retriever": "single_e5", "chunking": "sliding", "mode": "none", "subq": true, "MAP": 0.28196330184966545, "macro": {"@5": {"precision": 0.20000000000000007, "recall": 0.4431818181818182, "ndcg": 0.34475516937244577}, "@10": {"precision": 0.12727272727272732, "recall": 0.5757575757575757, "ndcg": 0.3992366149203723}, "@20": {"precision": 0.07045454545454546, "recall": 0.6174242424242423, "ndcg": 0.4149928219884732}}}, {"experiment": "B1", "retriever": "bm25_bge", "chunking": "fixed", "mode": "none", "subq": false, "MAP": 0.42807373182373176, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.375, "ndcg": 0.3983966749986836}, "@10": {"precision": 0.26666666666666666, "recall": 0.6083333333333334, "ndcg": 0.5205231516304627}, "@20": {"precision": 0.15833333333333333, "recall": 0.7166666666666667, "ndcg": 0.5659505749626175}}}, {"experiment": "B1", "retriever": "bm25_e5", "chunking": "fixed", "mode": "none", "subq": false, "MAP": 0.40717426092426096, "macro": {"@5": {"precision": 0.36666666666666664, "recall": 0.4166666666666667, "ndcg": 0.42356661136998447}, "@10": {"precision": 0.25, "recall": 0.5750000000000001, "ndcg": 0.5059718534257767}, "@20": {"precision": 0.1416666666666667, "recall": 0.6416666666666666, "ndcg": 0.5365862895799264}}}, {"experiment": "B1", "retriever": "dense_bge_e5", "chunking": "fixed", "mode": "none", "subq": false, "MAP": 0.4026327838827839, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.375, "ndcg": 0.4008738870537443}, "@10": {"precision": 0.26666666666666666, "recall": 0.6083333333333333, "ndcg": 0.5206973352968184}, "@20": {"precision": 0.1416666666666667, "recall": 0.6416666666666667, "ndcg": 0.5355440469998575}}}, {"experiment": "B1", "retriever": "single_bge", "chunking": "fixed", "mode": "none", "subq": false, "MAP": 0.43681267806267804, "macro": {"@5": {"precision": 0.36666666666666664, "recall": 0.4166666666666667, "ndcg": 0.42356661136998447}, "@10": {"precision": 0.2833333333333334, "recall": 0.6416666666666667, "ndcg": 0.542776677776847}, "@20": {"precision": 0.15000000000000002, "recall": 0.6750000000000002, "ndcg": 0.5576233894798861}}}, {"experiment": "B1", "retriever": "single_bm25", "chunking": "fixed", "mode": "none", "subq": false, "MAP": 0.3512799043062201, "macro": {"@5": {"precision": 0.36666666666666664, "recall": 0.4166666666666667, "ndcg": 0.4165789845274348}, "@10": {"precision": 0.21666666666666667, "recall": 0.4916666666666667, "ndcg": 0.4534440645610552}, "@20": {"precision": 0.125, "recall": 0.5666666666666667, "ndcg": 0.48426602874889757}}}, {"experiment": "B1", "retriever": "single_e5", "chunking": "fixed", "mode": "none", "subq": false, "MAP": 0.39745370370370364, "macro": {"@5": {"precision": 0.36666666666666664, "recall": 0.4166666666666667, "ndcg": 0.4299624488907288}, "@10": {"precision": 0.25, "recall": 0.5750000000000001, "ndcg": 0.5112051094531318}, "@20": {"precision": 0.125, "recall": 0.5750000000000001, "ndcg": 0.5112051094531318}}}, {"experiment": "B1", "retriever": "bm25_bge", "chunking": "hybrid", "mode": "none", "subq": false, "MAP": 0.29063712522045854, "macro": {"@5": {"precision": 0.26666666666666666, "recall": 0.26666666666666666, "ndcg": 0.2128789045591747}, "@10": {"precision": 0.31666666666666665, "recall": 0.6222222222222222, "ndcg": 0.41040530194657365}, "@20": {"precision": 0.19166666666666668, "recall": 0.75, "ndcg": 0.46631121615968407}}}, {"experiment": "B1", "retriever": "bm25_e5", "chunking": "hybrid", "mode": "none", "subq": false, "MAP": 0.2325908967575634, "macro": {"@5": {"precision": 0.3, "recall": 0.3, "ndcg": 0.23474641747789834}, "@10": {"precision": 0.26666666666666666, "recall": 0.5222222222222223, "ndcg": 0.35846819280654874}, "@20": {"precision": 0.15833333333333335, "recall": 0.6166666666666667, "ndcg": 0.40141248684043757}}}, {"experiment": "B1", "retriever": "dense_bge_e5", "chunking": "hybrid", "mode": "none", "subq": false, "MAP": 0.2695090865924199, "macro": {"@5": {"precision": 0.26666666666666666, "recall": 0.26666666666666666, "ndcg": 0.21535611661423548}, "@10": {"precision": 0.2833333333333334, "recall": 0.5555555555555555, "ndcg": 0.37727785615279436}, "@20": {"precision": 0.18333333333333335, "recall": 0.7166666666666668, "ndcg": 0.4481391224036974}}}, {"experiment": "B1", "retriever": "single_bge", "chunking": "hybrid", "mode": "none", "subq": false, "MAP": 0.2721301692135025, "macro": {"@5": {"precision": 0.3, "recall": 0.3, "ndcg": 0.23474641747789834}, "@10": {"precision": 0.2833333333333334, "recall": 0.5555555555555557, "ndcg": 0.3812278465780779}, "@20": {"precision": 0.16666666666666666, "recall": 0.6555555555555556, "ndcg": 0.4259739579519617}}}, {"experiment": "B1", "retriever": "single_bm25", "chunking": "hybrid", "mode": "none", "subq": false, "MAP": 0.2536847192768245, "macro": {"@5": {"precision": 0.3, "recall": 0.3, "ndcg": 0.23082779201221473}, "@10": {"precision": 0.2833333333333333, "recall": 0.5555555555555556, "ndcg": 0.37161745329042617}, "@20": {"precision": 0.16666666666666666, "recall": 0.6555555555555556, "ndcg": 0.4148188833600384}}}, {"experiment": "B1", "retriever": "single_e5", "chunking": "hybrid", "mode": "none", "subq": false, "MAP": 0.25571649029982363, "macro": {"@5": {"precision": 0.3, "recall": 0.3, "ndcg": 0.24114225499864272}, "@10": {"precision": 0.28333333333333327, "recall": 0.5555555555555555, "ndcg": 0.38565434905995954}, "@20": {"precision": 0.16666666666666666, "recall": 0.65, "ndcg": 0.42662137943793493}}}, {"experiment": "B1", "retriever": "bm25_bge", "chunking": "sliding", "mode": "none", "subq": false, "MAP": 0.37193452380952374, "macro": {"@5": {"precision": 0.39999999999999997, "recall": 0.42500000000000004, "ndcg": 0.37560903226452336}, "@10": {"precision": 0.3, "recall": 0.6416666666666667, "ndcg": 0.48987981412675463}, "@20": {"precision": 0.16666666666666666, "recall": 0.7166666666666667, "ndcg": 0.5198401877770552}}}, {"experiment": "B1", "retriever": "bm25_e5", "chunking": "sliding", "mode": "none", "subq": false, "MAP": 0.3583448999257823, "macro": {"@5": {"precision": 0.39999999999999997, "recall": 0.42500000000000004, "ndcg": 0.37560903226452336}, "@10": {"precision": 0.2833333333333334, "recall": 0.6083333333333333, "ndcg": 0.47171393204903506}, "@20": {"precision": 0.16666666666666666, "recall": 0.7166666666666667, "ndcg": 0.517205307753181}}}, {"experiment": "B1", "retriever": "dense_bge_e5", "chunking": "sliding", "mode": "none", "subq": false, "MAP": 0.4027167277167277, "macro": {"@5": {"precision": 0.3666666666666667, "recall": 0.39166666666666666, "ndcg": 0.3537415193457998}, "@10": {"precision": 0.2833333333333333, "recall": 0.6083333333333333, "ndcg": 0.4701140643037432}, "@20": {"precision": 0.19166666666666665, "recall": 0.8166666666666668, "ndcg": 0.5595035138228626}}}, {"experiment": "B1", "retriever": "single_bge", "chunking": "sliding", "mode": "none", "subq": false, "MAP": 0.38055555555555554, "macro": {"@5": {"precision": 0.3666666666666667, "recall": 0.39166666666666666, "ndcg": 0.3537415193457998}, "@10": {"precision": 0.2833333333333333, "recall": 0.6083333333333333, "ndcg": 0.4701140643037432}, "@20": {"precision": 0.17499999999999996, "recall": 0.75, "ndcg": 0.5301883394138357}}}, {"experiment": "B1", "retriever": "single_bm25", "chunking": "sliding", "mode": "none", "subq": false, "MAP": 0.3194874338624339, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.3583333333333334, "ndcg": 0.32300095685127095}, "@10": {"precision": 0.25000000000000006, "recall": 0.5416666666666666, "ndcg": 0.4191058566357826}, "@20": {"precision": 0.13333333333333333, "recall": 0.5833333333333334, "ndcg": 0.436688454008301}}}, {"experiment": "B1", "retriever": "single_e5", "chunking": "sliding", "mode": "none", "subq": false, "MAP": 0.40121993746993745, "macro": {"@5": {"precision": 0.3666666666666667, "recall": 0.39166666666666666, "ndcg": 0.3537415193457998}, "@10": {"precision": 0.3, "recall": 0.6416666666666667, "ndcg": 0.48645394527563607}, "@20": {"precision": 0.19166666666666665, "recall": 0.8166666666666668, "ndcg": 0.5603392206236943}}}, {"experiment": "B2", "retriever": "bm25_bge", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.37295701847172436, "macro": {"@5": {"precision": 0.3, "recall": 0.3416666666666666, "ndcg": 0.3676561125041548}, "@10": {"precision": 0.2333333333333333, "recall": 0.5416666666666667, "ndcg": 0.4696473720193515}, "@20": {"precision": 0.15833333333333333, "recall": 0.7166666666666667, "ndcg": 0.5430990656222306}}}, {"experiment": "B2", "retriever": "bm25_e5", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.3753115158262217, "macro": {"@5": {"precision": 0.3, "recall": 0.3499999999999999, "ndcg": 0.370958535956732}, "@10": {"precision": 0.2333333333333333, "recall": 0.5416666666666667, "ndcg": 0.4734989951291066}, "@20": {"precision": 0.15, "recall": 0.6749999999999999, "ndcg": 0.5314985268621795}}}, {"experiment": "B2", "retriever": "dense_bge_e5", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.3716804029304029, "macro": {"@5": {"precision": 0.26666666666666666, "recall": 0.3083333333333333, "ndcg": 0.348265811640492}, "@10": {"precision": 0.26666666666666666, "recall": 0.6083333333333333, "ndcg": 0.5070667106264604}, "@20": {"precision": 0.1416666666666667, "recall": 0.6416666666666667, "ndcg": 0.5219134223294993}}}, {"experiment": "B2", "retriever": "single_bge", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.3876063288563289, "macro": {"@5": {"precision": 0.3, "recall": 0.3499999999999999, "ndcg": 0.370958535956732}, "@10": {"precision": 0.26666666666666666, "recall": 0.6083333333333333, "ndcg": 0.5080007910914719}, "@20": {"precision": 0.15000000000000002, "recall": 0.6750000000000002, "ndcg": 0.5373159655004988}}}, {"experiment": "B2", "retriever": "single_bm25", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.3174592415381889, "macro": {"@5": {"precision": 0.3, "recall": 0.3499999999999999, "ndcg": 0.36644812116924314}, "@10": {"precision": 0.19999999999999998, "recall": 0.4583333333333334, "ndcg": 0.4196530821747564}, "@20": {"precision": 0.13333333333333333, "recall": 0.6, "ndcg": 0.4768609826378945}}}, {"experiment": "B2", "retriever": "single_e5", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.34800315425315426, "macro": {"@5": {"precision": 0.3, "recall": 0.3499999999999999, "ndcg": 0.3773543734774764}, "@10": {"precision": 0.21666666666666667, "recall": 0.5083333333333333, "ndcg": 0.45859703403987934}, "@20": {"precision": 0.125, "recall": 0.5750000000000001, "ndcg": 0.4879122084489062}}}, {"experiment": "B2", "retriever": "bm25_bge", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.2572897862848843, "macro": {"@5": {"precision": 0.2333333333333333, "recall": 0.2333333333333333, "ndcg": 0.18461555411970668}, "@10": {"precision": 0.28333333333333327, "recall": 0.5555555555555555, "ndcg": 0.36200673439052333}, "@20": {"precision": 0.19166666666666668, "recall": 0.75, "ndcg": 0.44593691887435805}}}, {"experiment": "B2", "retriever": "bm25_e5", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.21668403401246536, "macro": {"@5": {"precision": 0.2333333333333333, "recall": 0.2333333333333333, "ndcg": 0.18213834206464594}, "@10": {"precision": 0.25, "recall": 0.48888888888888893, "ndcg": 0.32599533450987866}, "@20": {"precision": 0.16666666666666666, "recall": 0.65, "ndcg": 0.3963247241226906}}}, {"experiment": "B2", "retriever": "dense_bge_e5", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.25379480087813416, "macro": {"@5": {"precision": 0.19999999999999998, "recall": 0.19999999999999998, "ndcg": 0.16274804120098307}, "@10": {"precision": 0.2833333333333334, "recall": 0.5555555555555555, "ndcg": 0.36364723148243633}, "@20": {"precision": 0.18333333333333335, "recall": 0.7166666666666668, "ndcg": 0.43450849773333927}}}, {"experiment": "B2", "retriever": "single_bge", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.24025108424618224, "macro": {"@5": {"precision": 0.2333333333333333, "recall": 0.2333333333333333, "ndcg": 0.18213834206464594}, "@10": {"precision": 0.26666666666666666, "recall": 0.5222222222222223, "ndcg": 0.3464519598927028}, "@20": {"precision": 0.16666666666666666, "recall": 0.6555555555555556, "ndcg": 0.4047538788313232}}}, {"experiment": "B2", "retriever": "single_bm25", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.2103638353677053, "macro": {"@5": {"precision": 0.20000000000000004, "recall": 0.20000000000000004, "ndcg": 0.1563522036802387}, "@10": {"precision": 0.24999999999999997, "recall": 0.4888888888888889, "ndcg": 0.31286511398866507}, "@20": {"precision": 0.16666666666666666, "recall": 0.6555555555555556, "ndcg": 0.3837540268427479}}}, {"experiment": "B2", "retriever": "single_e5", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.22687644145977479, "macro": {"@5": {"precision": 0.2333333333333333, "recall": 0.2333333333333333, "ndcg": 0.18853417958539032}, "@10": {"precision": 0.25, "recall": 0.48888888888888893, "ndcg": 0.3330462736467071}, "@20": {"precision": 0.16666666666666666, "recall": 0.65, "ndcg": 0.4033284784337092}}}, {"experiment": "B2", "retriever": "bm25_bge", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.35854014041514043, "macro": {"@5": {"precision": 0.36666666666666664, "recall": 0.39166666666666666, "ndcg": 0.3650611718277699}, "@10": {"precision": 0.2666666666666667, "recall": 0.5750000000000001, "ndcg": 0.4629920727181083}, "@20": {"precision": 0.16666666666666666, "recall": 0.7166666666666667, "ndcg": 0.5206686061185736}}}, {"experiment": "B2", "retriever": "bm25_e5", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.33576762340113736, "macro": {"@5": {"precision": 0.39999999999999997, "recall": 0.42500000000000004, "ndcg": 0.3869286847464936}, "@10": {"precision": 0.23333333333333336, "recall": 0.5083333333333334, "ndcg": 0.4270399012676256}, "@20": {"precision": 0.16666666666666666, "recall": 0.7166666666666667, "ndcg": 0.513385675953055}}}, {"experiment": "B2", "retriever": "dense_bge_e5", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.3785757379875027, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.35833333333333334, "ndcg": 0.3431936589090463}, "@10": {"precision": 0.25000000000000006, "recall": 0.5416666666666666, "ndcg": 0.44322632289509695}, "@20": {"precision": 0.18333333333333335, "recall": 0.7833333333333332, "ndcg": 0.5461715799789529}}}, {"experiment": "B2", "retriever": "single_bge", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.3735714285714286, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.35833333333333334, "ndcg": 0.3431936589090463}, "@10": {"precision": 0.26666666666666666, "recall": 0.575, "ndcg": 0.46105851162297423}, "@20": {"precision": 0.17499999999999996, "recall": 0.75, "ndcg": 0.5340022347801924}}}, {"experiment": "B2", "retriever": "single_bm25", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.30183079225842385, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.3583333333333334, "ndcg": 0.32939679437201536}, "@10": {"precision": 0.2166666666666667, "recall": 0.47500000000000003, "ndcg": 0.3883502445194593}, "@20": {"precision": 0.13333333333333333, "recall": 0.5833333333333334, "ndcg": 0.4323187781672735}}}, {"experiment": "B2", "retriever": "single_e5", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.36995009620009617, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.35833333333333334, "ndcg": 0.3431936589090463}, "@10": {"precision": 0.25000000000000006, "recall": 0.5416666666666666, "ndcg": 0.4407239702406778}, "@20": {"precision": 0.18333333333333335, "recall": 0.7833333333333332, "ndcg": 0.5425702088226565}}}, {"experiment": "root", "retriever": "bm25_bge", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.38216408591408596, "macro": {"@5": {"precision": 0.26666666666666666, "recall": 0.3083333333333333, "ndcg": 0.3457885995854311}, "@10": {"precision": 0.25, "recall": 0.5750000000000001, "ndcg": 0.4867573098435223}, "@20": {"precision": 0.15833333333333333, "recall": 0.7166666666666667, "ndcg": 0.5470314448787161}}}, {"experiment": "root", "retriever": "bm25_bge", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.2629570275403608, "macro": {"@5": {"precision": 0.19999999999999998, "recall": 0.19999999999999998, "ndcg": 0.16027082914592228}, "@10": {"precision": 0.3, "recall": 0.5888888888888889, "ndcg": 0.37663946015963323}, "@20": {"precision": 0.19166666666666668, "recall": 0.75, "ndcg": 0.44739208607578274}}}, {"experiment": "root", "retriever": "bm25_bge", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.37513558201058195, "macro": {"@5": {"precision": 0.36666666666666664, "recall": 0.39166666666666666, "ndcg": 0.3650611718277699}, "@10": {"precision": 0.3, "recall": 0.6416666666666667, "ndcg": 0.4978404939664709}, "@20": {"precision": 0.16666666666666666, "recall": 0.7166666666666667, "ndcg": 0.5278008676167715}}}, {"experiment": "root", "retriever": "bm25_e5", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.3890423927923928, "macro": {"@5": {"precision": 0.3, "recall": 0.3499999999999999, "ndcg": 0.370958535956732}, "@10": {"precision": 0.25, "recall": 0.5750000000000001, "ndcg": 0.4923412287554186}, "@20": {"precision": 0.15, "recall": 0.6749999999999999, "ndcg": 0.5378023766126073}}}, {"experiment": "root", "retriever": "bm25_e5", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.22713302129968793, "macro": {"@5": {"precision": 0.2333333333333333, "recall": 0.2333333333333333, "ndcg": 0.18213834206464594}, "@10": {"precision": 0.26666666666666666, "recall": 0.5222222222222223, "ndcg": 0.3448375681361906}, "@20": {"precision": 0.16666666666666666, "recall": 0.65, "ndcg": 0.4026285738731185}}}, {"experiment": "root", "retriever": "bm25_e5", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.3596941062749886, "macro": {"@5": {"precision": 0.36666666666666664, "recall": 0.39166666666666666, "ndcg": 0.3650611718277699}, "@10": {"precision": 0.2833333333333334, "recall": 0.6083333333333333, "ndcg": 0.47899826034015897}, "@20": {"precision": 0.16666666666666666, "recall": 0.7166666666666667, "ndcg": 0.5244896360443049}}}, {"experiment": "root", "retriever": "dense_bge_e5", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.3845009157509158, "macro": {"@5": {"precision": 0.26666666666666666, "recall": 0.3083333333333333, "ndcg": 0.348265811640492}, "@10": {"precision": 0.26666666666666666, "recall": 0.6083333333333333, "ndcg": 0.5070667106264604}, "@20": {"precision": 0.15000000000000002, "recall": 0.6750000000000002, "ndcg": 0.5367601340325384}}}, {"experiment": "root", "retriever": "dense_bge_e5", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.26405121113454444, "macro": {"@5": {"precision": 0.19999999999999998, "recall": 0.19999999999999998, "ndcg": 0.16274804120098307}, "@10": {"precision": 0.2833333333333334, "recall": 0.5555555555555555, "ndcg": 0.36364723148243633}, "@20": {"precision": 0.19166666666666668, "recall": 0.75, "ndcg": 0.44935520943637836}}}, {"experiment": "root", "retriever": "dense_bge_e5", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.4059177859177859, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.35833333333333334, "ndcg": 0.3431936589090463}, "@10": {"precision": 0.2833333333333333, "recall": 0.6083333333333333, "ndcg": 0.47807474414345946}, "@20": {"precision": 0.19166666666666665, "recall": 0.8166666666666668, "ndcg": 0.5674641936625788}}}, {"experiment": "root", "retriever": "single_bge", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.3876063288563289, "macro": {"@5": {"precision": 0.3, "recall": 0.3499999999999999, "ndcg": 0.370958535956732}, "@10": {"precision": 0.26666666666666666, "recall": 0.6083333333333333, "ndcg": 0.5080007910914719}, "@20": {"precision": 0.15000000000000002, "recall": 0.6750000000000002, "ndcg": 0.5373159655004988}}}, {"experiment": "root", "retriever": "single_bge", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.24025108424618224, "macro": {"@5": {"precision": 0.2333333333333333, "recall": 0.2333333333333333, "ndcg": 0.18213834206464594}, "@10": {"precision": 0.26666666666666666, "recall": 0.5222222222222223, "ndcg": 0.3464519598927028}, "@20": {"precision": 0.16666666666666666, "recall": 0.6555555555555556, "ndcg": 0.4047538788313232}}}, {"experiment": "root", "retriever": "single_bge", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.3735714285714286, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.35833333333333334, "ndcg": 0.3431936589090463}, "@10": {"precision": 0.26666666666666666, "recall": 0.575, "ndcg": 0.46105851162297423}, "@20": {"precision": 0.17499999999999996, "recall": 0.75, "ndcg": 0.5340022347801924}}}, {"experiment": "root", "retriever": "single_bm25", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.3174592415381889, "macro": {"@5": {"precision": 0.3, "recall": 0.3499999999999999, "ndcg": 0.36644812116924314}, "@10": {"precision": 0.19999999999999998, "recall": 0.4583333333333334, "ndcg": 0.4196530821747564}, "@20": {"precision": 0.13333333333333333, "recall": 0.6, "ndcg": 0.4768609826378945}}}, {"experiment": "root", "retriever": "single_bm25", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.2103638353677053, "macro": {"@5": {"precision": 0.20000000000000004, "recall": 0.20000000000000004, "ndcg": 0.1563522036802387}, "@10": {"precision": 0.24999999999999997, "recall": 0.4888888888888889, "ndcg": 0.31286511398866507}, "@20": {"precision": 0.16666666666666666, "recall": 0.6555555555555556, "ndcg": 0.3837540268427479}}}, {"experiment": "root", "retriever": "single_bm25", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.30183079225842385, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.3583333333333334, "ndcg": 0.32939679437201536}, "@10": {"precision": 0.2166666666666667, "recall": 0.47500000000000003, "ndcg": 0.3883502445194593}, "@20": {"precision": 0.13333333333333333, "recall": 0.5833333333333334, "ndcg": 0.4323187781672735}}}, {"experiment": "root", "retriever": "single_e5", "chunking": "fixed", "mode": "rerank_each", "subq": false, "MAP": 0.34800315425315426, "macro": {"@5": {"precision": 0.3, "recall": 0.3499999999999999, "ndcg": 0.3773543734774764}, "@10": {"precision": 0.21666666666666667, "recall": 0.5083333333333333, "ndcg": 0.45859703403987934}, "@20": {"precision": 0.125, "recall": 0.5750000000000001, "ndcg": 0.4879122084489062}}}, {"experiment": "root", "retriever": "single_e5", "chunking": "hybrid", "mode": "rerank_each", "subq": false, "MAP": 0.22687644145977479, "macro": {"@5": {"precision": 0.2333333333333333, "recall": 0.2333333333333333, "ndcg": 0.18853417958539032}, "@10": {"precision": 0.25, "recall": 0.48888888888888893, "ndcg": 0.3330462736467071}, "@20": {"precision": 0.16666666666666666, "recall": 0.65, "ndcg": 0.4033284784337092}}}, {"experiment": "root", "retriever": "single_e5", "chunking": "sliding", "mode": "rerank_each", "subq": false, "MAP": 0.36995009620009617, "macro": {"@5": {"precision": 0.3333333333333333, "recall": 0.35833333333333334, "ndcg": 0.3431936589090463}, "@10": {"precision": 0.25000000000000006, "recall": 0.5416666666666666, "ndcg": 0.4407239702406778}, "@20": {"precision": 0.18333333333333335, "recall": 0.7833333333333332, "ndcg": 0.5425702088226565}}}];
+
+        const colors = {
+            A1_2: "#2563eb",
+            B1: "#16a34a",
+            B2: "#dc2626",
+            root: "#64748b"
+        };
+
+        const colorFor = (name) =>
+            colors[name] || "#9333ea";
+
+        const average = values => {
+            const valid = values.filter(
+                v => typeof v === "number" && Number.isFinite(v)
+            );
+
+            if (!valid.length) return null;
+
+            return valid.reduce((a, b) => a + b, 0)
+                / valid.length;
+        };
+
+        const makeBar = (
+            canvasId,
+            labels,
+            values,
+            label,
+            color
+        ) => {
+
+            const canvas = document.getElementById(canvasId);
+
+            if (!canvas) return;
+
+            new Chart(canvas, {
+                type: "bar",
+
+                data: {
+                    labels,
+
+                    datasets: [{
+                        label,
+                        data: values,
+                        backgroundColor: color,
+                        borderRadius: 5
+                    }]
+                },
+
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    },
+
+                    plugins: {
+                        legend: {
+                            display: true
+                        }
+                    }
+                }
+            });
+        };
+
+
+        // --------------------------------------------------
+        // 1. Ranking dei retriever
+        // --------------------------------------------------
+
+        const retrieverGroups = {};
+
+        runs.forEach(r => {
+            if (r.MAP == null) return;
+
+            const key =
+                r.experiment + " | " +
+                r.retriever + " | " +
+                r.chunking + " | " +
+                (r.subq ? "granulare" : "aggregato") +
+                " | " + r.mode;
+
+            retrieverGroups[key] = r.MAP;
+        });
+
+        const ranking = Object.entries(retrieverGroups)
+            .sort((a, b) => b[1] - a[1]);
+
+        makeBar(
+            "chartRetriever",
+            ranking.map(x => x[0]),
+            ranking.map(x => x[1]),
+            "MAP",
+            "#3b82f6"
+        );
+
+
+        // --------------------------------------------------
+        // 2. Confronto gruppi sperimentali
+        // --------------------------------------------------
+
+        const experimentGroups = {};
+
+        runs.forEach(r => {
+            if (r.MAP == null) return;
+
+            const key = [
+                r.retriever,
+                r.chunking,
+                r.subq ? "granulare" : "aggregato",
+                r.mode
+            ].join(" | ");
+
+            if (!experimentGroups[key]) {
+                experimentGroups[key] = {};
+            }
+
+            experimentGroups[key][r.experiment] = r.MAP;
+        });
+
+        const comparisonLabels = Object.keys(experimentGroups);
+
+        const experimentNames = [
+            "A1_2",
+            "B1",
+            "B2"
+        ];
+
+        const experimentDatasets = experimentNames.map(name => ({
+            label: name,
+
+            data: comparisonLabels.map(
+                key => experimentGroups[key][name] ?? null
+            ),
+
+            backgroundColor: colorFor(name)
+        }));
+
+        new Chart(
+            document.getElementById("chartExperiments"),
+            {
+                type: "bar",
+
+                data: {
+                    labels: comparisonLabels,
+                    datasets: experimentDatasets
+                },
+
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            }
+        );
+
+
+        // --------------------------------------------------
+        // 3. MAP per chunking
+        // --------------------------------------------------
+
+        const chunkGroups = {};
+
+        runs.forEach(r => {
+            if (r.MAP == null) return;
+
+            const key = [
+                r.experiment,
+                r.retriever,
+                r.subq ? "granulare" : "aggregato",
+                r.mode,
+                r.chunking
+            ].join(" | ");
+
+            chunkGroups[key] = r.MAP;
+        });
+
+        const chunkEntries = Object.entries(chunkGroups)
+            .sort((a, b) => b[1] - a[1]);
+
+        makeBar(
+            "chartChunking",
+            chunkEntries.map(x => x[0]),
+            chunkEntries.map(x => x[1]),
+            "MAP",
+            "#0d9488"
+        );
+
+
+        // --------------------------------------------------
+        // 4. Metriche Precision, Recall e nDCG
+        // --------------------------------------------------
+
+        const select = document.getElementById("metricConfig");
+
+        const metricRuns = runs.filter(
+            r => r.macro && Object.keys(r.macro).length
+        );
+
+        metricRuns.forEach((r, i) => {
+            const option = document.createElement("option");
+
+            option.value = i;
+
+            option.textContent = [
+                r.experiment,
+                r.retriever,
+                r.chunking,
+                r.subq ? "granulare" : "aggregato",
+                r.mode
+            ].join(" | ");
+
+            select.appendChild(option);
+        });
+
+        let metricChart = null;
+
+        function updateMetricChart() {
+
+            const r = metricRuns[Number(select.value)];
+
+            if (!r) return;
+
+            const ks = Object.keys(r.macro)
+                .map(k => Number(String(k).replace("@", "")))
+                .filter(Number.isFinite)
+                .sort((a, b) => a - b);
+
+            const precision = [];
+            const recall = [];
+            const ndcg = [];
+
+            ks.forEach(k => {
+
+                const m = r.macro["@" + k] || {};
+
+                precision.push(m.precision ?? null);
+                recall.push(m.recall ?? null);
+                ndcg.push(m.ndcg ?? null);
+
+            });
+
+            if (metricChart) {
+                metricChart.destroy();
+            }
+
+            metricChart = new Chart(
+                document.getElementById("chartMetrics"),
+                {
+                    type: "line",
+
+                    data: {
+                        labels: ks.map(k => "@" + k),
+
+                        datasets: [
+                            {
+                                label: "Precision",
+                                data: precision,
+                                borderColor: "#2563eb",
+                                tension: 0.2
+                            },
+                            {
+                                label: "Recall",
+                                data: recall,
+                                borderColor: "#16a34a",
+                                tension: 0.2
+                            },
+                            {
+                                label: "nDCG",
+                                data: ndcg,
+                                borderColor: "#dc2626",
+                                tension: 0.2
+                            }
+                        ]
+                    },
+
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 1
+                            }
+                        }
+                    }
+                }
+            );
+        }
+
+        select.addEventListener(
+            "change",
+            updateMetricChart
+        );
+
+        if (metricRuns.length) {
+            updateMetricChart();
+        }
+
+    })();
+    </script>
+</section>
+
+<section><h2>7. Diagnostica IR — C1</h2><p class='note'>Inventario dei risultati di trace_ir.py. Questi file sono distinti dalle valutazioni standard. Le chiavi mostrate provengono direttamente dai JSON.</p><div class="scroll"><table class="small"><thead><tr><th>File</th><th>Chiavi JSON</th><th>Stato</th></tr></thead><tbody><tr><td>C1/hybrid/trace_ir_single_bge_hybrid.json</td><td>D1, D2, D3, D4, D5, D6, _grand_summary</td><td>OK</td></tr><tr><td>C1/hybrid/trace_ir_single_bm25_hybrid.json</td><td>D1, D2, D3, D4, D5, D6, _grand_summary</td><td>OK</td></tr><tr><td>C1/hybrid/trace_ir_single_e5_hybrid.json</td><td>D1, D2, D3, D4, D5, D6, _grand_summary</td><td>OK</td></tr></tbody></table></div></section>
+
+<section><h2>8. Come leggere i risultati</h2><h3>Metriche</h3><dl><dt>MAP</dt><dd>Mean Average Precision: sintetizza precisione e posizione dei risultati rilevanti nelle diverse query.</dd><dt>Precision@k</dt><dd>Quota di risultati rilevanti tra i primi k risultati.</dd><dt>Recall@k</dt><dd>Quota dei risultati rilevanti recuperati nei primi k.</dd><dt>nDCG@k</dt><dd>Qualità del ranking, con maggiore importanza ai risultati rilevanti nelle posizioni più alte.</dd><dt>Hit@20</dt><dd>Percentuale di query per cui almeno un chunk rilevante compare nei primi 20 risultati.</dd><dt>AP=0</dt><dd>Numero di query per cui non è stato recuperato alcun chunk rilevante.</dd><dt>Baseline random</dt><dd>Risultato ottenuto recuperando chunk casualmente. Serve come riferimento, non come misura assoluta di qualità.</dd></dl><h3>Avvertenze</h3><ul><li>Il ground truth può dipendere dal chunking. Il MAP tra strategie diverse non è necessariamente confrontabile a parità di condizioni.</li><li>A1/A2 deve usare lo stesso ground truth granulare e lo stesso corpus per isolare l&#x27;effetto del retriever.</li><li>B1/B2 deve usare lo stesso ground truth aggregato, lo stesso retriever e lo stesso chunking per isolare l&#x27;effetto della decomposizione.</li><li>Una differenza positiva di MAP non dimostra da sola la significatività statistica del miglioramento.</li><li>La baseline random dovrebbe essere calcolata con più seed per ridurre la variabilità.</li></ul></section>
+
+</main>
+</body>
+</html>

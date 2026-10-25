@@ -1,0 +1,6759 @@
+{
+  "D1": {
+    "parent_id": "D1",
+    "question": "What is the purpose and origin of the data? What is the purpose for original data collection? Which people and organizations are involved in the data collection process? What are the mechanisms or procedures used to collect the data?",
+    "n_relevant": 7,
+    "gt_subquestions": [
+      {
+        "id": "D1.1",
+        "text": "Purpose for original data collection"
+      },
+      {
+        "id": "D1.2",
+        "text": "People and organizations involved in the data collection process"
+      },
+      {
+        "id": "D1.3",
+        "text": "Mechanisms or procedures used to collect the data"
+      },
+      {
+        "id": "D1.4",
+        "text": "Data funding and resources"
+      }
+    ],
+    "llm_subquestions": [
+      "What is the purpose and origin of the data?",
+      "What is the purpose for original data collection?",
+      "Which people and organizations are involved in the data collection process?",
+      "What are the mechanisms or procedures used to collect the data?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.6072562358276644,
+          "R@5": 0.42857142857142855,
+          "P@5": 0.6,
+          "nDCG@5": 0.6843515475204855,
+          "R@10": 0.7142857142857143,
+          "P@10": 0.5,
+          "nDCG@10": 0.7352996175880481,
+          "R@20": 0.8571428571428571,
+          "P@20": 0.3,
+          "nDCG@20": 0.8056564208277553
+        },
+        "retrieved": [
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D1.1": {
+        "metrics_vs_own": {
+          "AP": 0.3611111111111111,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.38685280723454163,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.5714285040141098,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.5714285040141098
+        },
+        "metrics_vs_union": {
+          "AP": 0.5210317460317461,
+          "R@5": 0.5714285714285714,
+          "P@5": 0.8,
+          "nDCG@5": 0.6608397947263839,
+          "R@10": 0.7142857142857143,
+          "P@10": 0.5,
+          "nDCG@10": 0.6183313187362977,
+          "R@20": 0.8571428571428571,
+          "P@20": 0.3,
+          "nDCG@20": 0.6855799625992489
+        },
+        "retrieved": [
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "118",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "135",
+            "EHSRQL"
+          ],
+          [
+            "119",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D1.2": {
+        "metrics_vs_own": {
+          "AP": 0.6488095238095237,
+          "R@5": 0.5,
+          "P@5": 0.4,
+          "nDCG@5": 0.5855700749881525,
+          "R@10": 1.0,
+          "P@10": 0.4,
+          "nDCG@10": 0.838847952689218,
+          "R@20": 1.0,
+          "P@20": 0.2,
+          "nDCG@20": 0.838847952689218
+        },
+        "metrics_vs_union": {
+          "AP": 0.7121882086167801,
+          "R@5": 0.42857142857142855,
+          "P@5": 0.6,
+          "nDCG@5": 0.7227265726449519,
+          "R@10": 0.7142857142857143,
+          "P@10": 0.5,
+          "nDCG@10": 0.7640814291585591,
+          "R@20": 1.0,
+          "P@20": 0.35,
+          "nDCG@20": 0.8975088512286915
+        },
+        "retrieved": [
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "130",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "14",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "135",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D1.3": {
+        "metrics_vs_own": {
+          "AP": 0.8666666666666667,
+          "R@5": 1.0,
+          "P@5": 0.6,
+          "nDCG@5": 0.9469024295259745,
+          "R@10": 1.0,
+          "P@10": 0.3,
+          "nDCG@10": 0.9469024295259745,
+          "R@20": 1.0,
+          "P@20": 0.15,
+          "nDCG@20": 0.9469024295259745
+        },
+        "metrics_vs_union": {
+          "AP": 0.46801948051948056,
+          "R@5": 0.42857142857142855,
+          "P@5": 0.6,
+          "nDCG@5": 0.6843515475204855,
+          "R@10": 0.42857142857142855,
+          "P@10": 0.3,
+          "nDCG@10": 0.5546406709327603,
+          "R@20": 0.7142857142857143,
+          "P@20": 0.25,
+          "nDCG@20": 0.6985641287886043
+        },
+        "retrieved": [
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "115",
+            "EHSRQL"
+          ],
+          [
+            "131",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "135",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "80",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D1.4": {
+        "metrics_vs_own": {
+          "AP": 0.75,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 0.8772153153380493,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.8772153153380493,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.8772153153380493
+        },
+        "metrics_vs_union": {
+          "AP": 0.45952380952380956,
+          "R@5": 0.5714285714285714,
+          "P@5": 0.8,
+          "nDCG@5": 0.7860137352654724,
+          "R@10": 0.5714285714285714,
+          "P@10": 0.4,
+          "nDCG@10": 0.6370339733570289,
+          "R@20": 0.5714285714285714,
+          "P@20": 0.2,
+          "nDCG@20": 0.6370339733570289
+        },
+        "retrieved": [
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "117",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "135",
+            "EHSRQL"
+          ],
+          [
+            "151",
+            "EHSRQL"
+          ],
+          [
+            "160",
+            "EHSRQL"
+          ],
+          [
+            "136",
+            "EHSRQL"
+          ],
+          [
+            "139",
+            "EHSRQL"
+          ],
+          [
+            "153",
+            "EHSRQL"
+          ],
+          [
+            "142",
+            "EHSRQL"
+          ],
+          [
+            "119",
+            "EHSRQL"
+          ],
+          [
+            "169",
+            "EHSRQL"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.6072562358276644,
+          "R@5": 0.42857142857142855,
+          "P@5": 0.6,
+          "nDCG@5": 0.6843515475204855,
+          "R@10": 0.7142857142857143,
+          "P@10": 0.5,
+          "nDCG@10": 0.7352996175880481,
+          "R@20": 0.8571428571428571,
+          "P@20": 0.3,
+          "nDCG@20": 0.8056564208277553
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 0.75,
+          "D1.3": 1.0,
+          "D1.4": 0.5
+        },
+        "final": [
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.2460895829316882,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.42857142857142855,
+          "P@10": 0.3,
+          "nDCG@10": 0.26011602608805523,
+          "R@20": 0.8571428571428571,
+          "P@20": 0.3,
+          "nDCG@20": 0.4701946347728458
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 1.0,
+          "D1.4": 0.5
+        },
+        "final": [
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "130",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "134",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.6956916099773244,
+          "R@5": 0.42857142857142855,
+          "P@5": 0.6,
+          "nDCG@5": 0.6843515475204855,
+          "R@10": 0.7142857142857143,
+          "P@10": 0.5,
+          "nDCG@10": 0.7441790405874917,
+          "R@20": 1.0,
+          "P@20": 0.35,
+          "nDCG@20": 0.8831694523315587
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 1.0,
+          "D1.4": 1.0
+        },
+        "final": [
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "22",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.030306122448979594,
+          "P@5": 0.060000000000000005,
+          "R@5": 0.04285714285714286,
+          "nDCG@5": 0.06843515475204855,
+          "P@10": 0.05,
+          "R@10": 0.07142857142857142,
+          "nDCG@10": 0.07280683279209996,
+          "P@20": 0.035,
+          "R@20": 0.09999999999999999,
+          "nDCG@20": 0.08610062942362098
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 0.25,
+          "D1.2": 0.075,
+          "D1.3": 0.03333333333333333,
+          "D1.4": 0.05
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "0",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D1.1",
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": 5,
+          "ur:orig": 1,
+          "raw:sq1": 2,
+          "ur:sq1": 1,
+          "raw:sq2": 3,
+          "ur:sq2": 2,
+          "raw:sq3": 19,
+          "ur:sq3": 8,
+          "raw:sq4": null,
+          "ur:sq4": null
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 12,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "20",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D1.1"
+        ],
+        "ranks": {
+          "raw:orig": 4,
+          "ur:orig": 11,
+          "raw:sq1": 6,
+          "ur:sq1": 4,
+          "raw:sq2": 13,
+          "ur:sq2": 9,
+          "raw:sq3": 14,
+          "ur:sq3": 19,
+          "raw:sq4": 4,
+          "ur:sq4": 11
+        },
+        "final_ranks": {
+          "whole_question": 9,
+          "rerank_each": 6,
+          "rerank_once": 12
+        }
+      },
+      {
+        "key": [
+          "1",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D1.2",
+          "D1.4"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": 3,
+          "ur:sq1": 5,
+          "raw:sq2": null,
+          "ur:sq2": null,
+          "raw:sq3": 28,
+          "ur:sq3": 7,
+          "raw:sq4": null,
+          "ur:sq4": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": 19,
+          "rerank_once": 7
+        }
+      },
+      {
+        "key": [
+          "11",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D1.2",
+          "D1.3"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 2,
+          "raw:sq1": null,
+          "ur:sq1": null,
+          "raw:sq2": 4,
+          "ur:sq2": 3,
+          "raw:sq3": 4,
+          "ur:sq3": 3,
+          "raw:sq4": 1,
+          "ur:sq4": 1
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 9,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "13",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D1.2",
+          "D1.3"
+        ],
+        "ranks": {
+          "raw:orig": 13,
+          "ur:orig": 6,
+          "raw:sq1": null,
+          "ur:sq1": null,
+          "raw:sq2": 8,
+          "ur:sq2": 5,
+          "raw:sq3": 3,
+          "ur:sq3": 1,
+          "raw:sq4": 26,
+          "ur:sq4": 5
+        },
+        "final_ranks": {
+          "whole_question": 6,
+          "rerank_each": 13,
+          "rerank_once": 6
+        }
+      },
+      {
+        "key": [
+          "12",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D1.3"
+        ],
+        "ranks": {
+          "raw:orig": 3,
+          "ur:orig": 5,
+          "raw:sq1": null,
+          "ur:sq1": null,
+          "raw:sq2": 11,
+          "ur:sq2": 4,
+          "raw:sq3": 1,
+          "ur:sq3": 2,
+          "raw:sq4": 2,
+          "ur:sq4": 2
+        },
+        "final_ranks": {
+          "whole_question": 5,
+          "rerank_each": 10,
+          "rerank_once": 5
+        }
+      },
+      {
+        "key": [
+          "7",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D1.4"
+        ],
+        "ranks": {
+          "raw:orig": 8,
+          "ur:orig": 17,
+          "raw:sq1": 11,
+          "ur:sq1": 14,
+          "raw:sq2": 5,
+          "ur:sq2": 20,
+          "raw:sq3": 11,
+          "ur:sq3": null,
+          "raw:sq4": 22,
+          "ur:sq4": null
+        },
+        "final_ranks": {
+          "whole_question": 14,
+          "rerank_each": null,
+          "rerank_once": 18
+        }
+      }
+    ]
+  },
+  "D2": {
+    "parent_id": "D2",
+    "question": "What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area of data collection? What is the Context of data collection?",
+    "n_relevant": 6,
+    "gt_subquestions": [
+      {
+        "id": "D2.1",
+        "text": "Timeframe of data collection"
+      },
+      {
+        "id": "D2.2",
+        "text": "Geographical area of data collection"
+      },
+      {
+        "id": "D2.3",
+        "text": "Context of data collection"
+      },
+      {
+        "id": "D2.4",
+        "text": "Consent and participation"
+      }
+    ],
+    "llm_subquestions": [
+      "What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area of data collection? What is the Context of data collection?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.25,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.48522855511632257,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.4329261794091841,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.1,
+          "nDCG@20": 0.4329261794091841
+        },
+        "retrieved": [
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "22",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "44",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D2.1": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.6131471927654584,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.6131471927654584,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.6131471927654584
+        },
+        "metrics_vs_union": {
+          "AP": 0.38508771929824565,
+          "R@5": 0.5,
+          "P@5": 0.6,
+          "nDCG@5": 0.6164336326286644,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.5499887725471476,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.2,
+          "nDCG@20": 0.6200043782803337
+        },
+        "retrieved": [
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "105",
+            "EHSRQL"
+          ],
+          [
+            "131",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "113",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "110",
+            "EHSRQL"
+          ],
+          [
+            "90",
+            "EHSRQL"
+          ],
+          [
+            "84",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "92",
+            "EHSRQL"
+          ],
+          [
+            "53",
+            "EHSRQL"
+          ],
+          [
+            "132",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D2.2": {
+        "metrics_vs_own": {
+          "AP": 0.125,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.2640681225725909,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.2640681225725909,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.2640681225725909
+        },
+        "metrics_vs_union": {
+          "AP": 0.10833333333333334,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.27727342735504823,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.24738635904833417,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.1,
+          "nDCG@20": 0.24738635904833417
+        },
+        "retrieved": [
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "132",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D2.3": {
+        "metrics_vs_own": {
+          "AP": 0.12179487179487179,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.19519002499605084,
+          "R@10": 0.25,
+          "P@10": 0.1,
+          "nDCG@10": 0.19519002499605084,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.29772316361427276
+        },
+        "metrics_vs_union": {
+          "AP": 0.17735042735042736,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.3156484524795145,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.2816249726597774,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.3611033558663733
+        },
+        "retrieved": [
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "130",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "31",
+            "EHSRQL"
+          ],
+          [
+            "132",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D2.4": {
+        "metrics_vs_own": {
+          "AP": 0.75,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 0.8772153153380493,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.8772153153380493,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.8772153153380493
+        },
+        "metrics_vs_union": {
+          "AP": 0.38925438596491224,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.48522855511632257,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.5283866124986514,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.6672957849694104
+        },
+        "retrieved": [
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "160",
+            "EHSRQL"
+          ],
+          [
+            "83",
+            "EHSRQL"
+          ],
+          [
+            "134",
+            "EHSRQL"
+          ],
+          [
+            "84",
+            "EHSRQL"
+          ],
+          [
+            "142",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "119",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "120",
+            "EHSRQL"
+          ],
+          [
+            "138",
+            "EHSRQL"
+          ],
+          [
+            "169",
+            "EHSRQL"
+          ],
+          [
+            "154",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "8",
+            "EHSRQL"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.25,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.48522855511632257,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.4329261794091841,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.1,
+          "nDCG@20": 0.4329261794091841
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.5,
+          "D2.2": 0.5,
+          "D2.3": 0.5,
+          "D2.4": 0.0
+        },
+        "final": [
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "22",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "44",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.25,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.48522855511632257,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.4329261794091841,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.1,
+          "nDCG@20": 0.4329261794091841
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.5,
+          "D2.2": 0.5,
+          "D2.3": 0.5,
+          "D2.4": 0.0
+        },
+        "final": [
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "22",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "44",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.25,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.48522855511632257,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.4329261794091841,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.1,
+          "nDCG@20": 0.4329261794091841
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.5,
+          "D2.2": 0.5,
+          "D2.3": 0.5,
+          "D2.4": 0.0
+        },
+        "final": [
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "22",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "44",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.025026640026640026,
+          "P@5": 0.04,
+          "R@5": 0.03333333333333333,
+          "nDCG@5": 0.04279725294690551,
+          "P@10": 0.04,
+          "R@10": 0.06666666666666667,
+          "nDCG@10": 0.057018091762554866,
+          "P@20": 0.030000000000000002,
+          "R@20": 0.09999999999999999,
+          "nDCG@20": 0.07340681094146448
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.1,
+          "D2.2": 0.15,
+          "D2.3": 0.125,
+          "D2.4": 0.05
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "16",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D2.1",
+          "D2.3"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 1,
+          "raw:sq1": 1,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "8",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D2.1",
+          "D2.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "11",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D2.2",
+          "D2.3"
+        ],
+        "ranks": {
+          "raw:orig": 15,
+          "ur:orig": 5,
+          "raw:sq1": 15,
+          "ur:sq1": 5
+        },
+        "final_ranks": {
+          "whole_question": 4,
+          "rerank_each": 4,
+          "rerank_once": 4
+        }
+      },
+      {
+        "key": [
+          "18",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D2.3",
+          "D2.4",
+          "D2.4"
+        ],
+        "ranks": {
+          "raw:orig": 23,
+          "ur:orig": 16,
+          "raw:sq1": 23,
+          "ur:sq1": 16
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "134",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D2.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "13",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D2.4"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      }
+    ]
+  },
+  "D3": {
+    "parent_id": "D3",
+    "question": "What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and data cleaning is done? What are the data labeling and annotation?",
+    "n_relevant": 13,
+    "gt_subquestions": [
+      {
+        "id": "D3.1",
+        "text": "Sampling strategy"
+      },
+      {
+        "id": "D3.2",
+        "text": "Data preprocessing"
+      },
+      {
+        "id": "D3.3",
+        "text": "Data cleaning"
+      },
+      {
+        "id": "D3.4",
+        "text": "Data labeling and annotation"
+      },
+      {
+        "id": "D3.5",
+        "text": "De-identification"
+      },
+      {
+        "id": "D3.6",
+        "text": "Time shifting and temporal processing"
+      }
+    ],
+    "llm_subquestions": [
+      "What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and data cleaning is done? What are the data labeling and annotation?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.24395604395604398,
+          "R@5": 0.23076923076923078,
+          "P@5": 0.6,
+          "nDCG@5": 0.6843515475204855,
+          "R@10": 0.3076923076923077,
+          "P@10": 0.4,
+          "nDCG@10": 0.5174612499126158,
+          "R@20": 0.3076923076923077,
+          "P@20": 0.2,
+          "nDCG@20": 0.4390186159930986
+        },
+        "retrieved": [
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D3.1": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 0.5,
+          "P@5": 0.4,
+          "nDCG@5": 0.6366824387328317,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.6366824387328317,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.6366824387328317
+        },
+        "metrics_vs_union": {
+          "AP": 0.23076923076923078,
+          "R@5": 0.23076923076923078,
+          "P@5": 0.6,
+          "nDCG@5": 0.7227265726449519,
+          "R@10": 0.23076923076923078,
+          "P@10": 0.3,
+          "nDCG@10": 0.4690000933206748,
+          "R@20": 0.23076923076923078,
+          "P@20": 0.15,
+          "nDCG@20": 0.3979037500973208
+        },
+        "retrieved": [
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "132",
+            "EHSRQL"
+          ],
+          [
+            "109",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "79",
+            "EHSRQL"
+          ],
+          [
+            "62",
+            "EHSRQL"
+          ],
+          [
+            "80",
+            "EHSRQL"
+          ],
+          [
+            "71",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "51",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "76",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "75",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "77",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D3.2": {
+        "metrics_vs_own": {
+          "AP": 0.1125,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.16812753627111746,
+          "R@10": 0.5,
+          "P@10": 0.2,
+          "nDCG@10": 0.28097267762005274,
+          "R@20": 0.5,
+          "P@20": 0.1,
+          "nDCG@20": 0.28097267762005274
+        },
+        "metrics_vs_union": {
+          "AP": 0.262959262959263,
+          "R@5": 0.15384615384615385,
+          "P@5": 0.4,
+          "nDCG@5": 0.48522855511632257,
+          "R@10": 0.38461538461538464,
+          "P@10": 0.5,
+          "nDCG@10": 0.5181190644203317,
+          "R@20": 0.46153846153846156,
+          "P@20": 0.3,
+          "nDCG@20": 0.4916631043144076
+        },
+        "retrieved": [
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "130",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "136",
+            "EHSRQL"
+          ],
+          [
+            "135",
+            "EHSRQL"
+          ],
+          [
+            "134",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "122",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "56",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "58",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D3.3": {
+        "metrics_vs_own": {
+          "AP": 0.5575757575757575,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.4,
+          "nDCG@5": 0.6508205185601091,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.2,
+          "nDCG@10": 0.6508205185601091,
+          "R@20": 1.0,
+          "P@20": 0.15,
+          "nDCG@20": 0.7817225087283063
+        },
+        "metrics_vs_union": {
+          "AP": 0.24485514485514487,
+          "R@5": 0.15384615384615385,
+          "P@5": 0.4,
+          "nDCG@5": 0.4703652827859579,
+          "R@10": 0.3076923076923077,
+          "P@10": 0.4,
+          "nDCG@10": 0.4422195942380129,
+          "R@20": 0.46153846153846156,
+          "P@20": 0.3,
+          "nDCG@20": 0.4777303015775656
+        },
+        "retrieved": [
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "130",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "135",
+            "EHSRQL"
+          ],
+          [
+            "134",
+            "EHSRQL"
+          ],
+          [
+            "136",
+            "EHSRQL"
+          ],
+          [
+            "71",
+            "EHSRQL"
+          ],
+          [
+            "51",
+            "EHSRQL"
+          ],
+          [
+            "50",
+            "EHSRQL"
+          ],
+          [
+            "49",
+            "EHSRQL"
+          ],
+          [
+            "56",
+            "EHSRQL"
+          ],
+          [
+            "75",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ],
+          [
+            "77",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D3.4": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.24576585695006747,
+          "R@5": 0.15384615384615385,
+          "P@5": 0.4,
+          "nDCG@5": 0.5087403079104241,
+          "R@10": 0.3076923076923077,
+          "P@10": 0.4,
+          "nDCG@10": 0.4721567066247473,
+          "R@20": 0.46153846153846156,
+          "P@20": 0.3,
+          "nDCG@20": 0.4894696337371748
+        },
+        "retrieved": [
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "14",
+            "EHSRQL"
+          ],
+          [
+            "113",
+            "EHSRQL"
+          ],
+          [
+            "134",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "169",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "109",
+            "EHSRQL"
+          ],
+          [
+            "120",
+            "EHSRQL"
+          ],
+          [
+            "135",
+            "EHSRQL"
+          ],
+          [
+            "119",
+            "EHSRQL"
+          ],
+          [
+            "142",
+            "EHSRQL"
+          ],
+          [
+            "121",
+            "EHSRQL"
+          ],
+          [
+            "138",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D3.5": {
+        "metrics_vs_own": {
+          "AP": 0.8333333333333333,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 0.9197207891481876,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.9197207891481876,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.9197207891481876
+        },
+        "metrics_vs_union": {
+          "AP": 0.1282051282051282,
+          "R@5": 0.15384615384615385,
+          "P@5": 0.4,
+          "nDCG@5": 0.5087403079104241,
+          "R@10": 0.15384615384615385,
+          "P@10": 0.2,
+          "nDCG@10": 0.33013764944712026,
+          "R@20": 0.15384615384615385,
+          "P@20": 0.1,
+          "nDCG@20": 0.28009164738802195
+        },
+        "retrieved": [
+          [
+            "134",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "9",
+            "EHSRQL"
+          ],
+          [
+            "122",
+            "EHSRQL"
+          ],
+          [
+            "62",
+            "EHSRQL"
+          ],
+          [
+            "58",
+            "EHSRQL"
+          ],
+          [
+            "54",
+            "EHSRQL"
+          ],
+          [
+            "56",
+            "EHSRQL"
+          ],
+          [
+            "57",
+            "EHSRQL"
+          ],
+          [
+            "55",
+            "EHSRQL"
+          ],
+          [
+            "48",
+            "EHSRQL"
+          ],
+          [
+            "51",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "50",
+            "EHSRQL"
+          ],
+          [
+            "47",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "53",
+            "EHSRQL"
+          ],
+          [
+            "77",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D3.6": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.6131471927654584,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.6131471927654584,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.6131471927654584
+        },
+        "metrics_vs_union": {
+          "AP": 0.16666666666666666,
+          "R@5": 0.15384615384615385,
+          "P@5": 0.4,
+          "nDCG@5": 0.5531464700081437,
+          "R@10": 0.15384615384615385,
+          "P@10": 0.2,
+          "nDCG@10": 0.3589542101716347,
+          "R@20": 0.23076923076923078,
+          "P@20": 0.15,
+          "nDCG@20": 0.34849724787110403
+        },
+        "retrieved": [
+          [
+            "131",
+            "EHSRQL"
+          ],
+          [
+            "130",
+            "EHSRQL"
+          ],
+          [
+            "83",
+            "EHSRQL"
+          ],
+          [
+            "108",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "110",
+            "EHSRQL"
+          ],
+          [
+            "82",
+            "EHSRQL"
+          ],
+          [
+            "106",
+            "EHSRQL"
+          ],
+          [
+            "102",
+            "EHSRQL"
+          ],
+          [
+            "94",
+            "EHSRQL"
+          ],
+          [
+            "158",
+            "EHSRQL"
+          ],
+          [
+            "84",
+            "EHSRQL"
+          ],
+          [
+            "142",
+            "EHSRQL"
+          ],
+          [
+            "141",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "86",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ],
+          [
+            "134",
+            "EHSRQL"
+          ],
+          [
+            "154",
+            "EHSRQL"
+          ],
+          [
+            "169",
+            "EHSRQL"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.24395604395604398,
+          "R@5": 0.23076923076923078,
+          "P@5": 0.6,
+          "nDCG@5": 0.6843515475204855,
+          "R@10": 0.3076923076923077,
+          "P@10": 0.4,
+          "nDCG@10": 0.5174612499126158,
+          "R@20": 0.3076923076923077,
+          "P@20": 0.2,
+          "nDCG@20": 0.4390186159930986
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.5,
+          "D3.2": 0.0,
+          "D3.3": 0.3333333333333333,
+          "D3.4": 0.5,
+          "D3.5": 0.0,
+          "D3.6": 0.0
+        },
+        "final": [
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.24395604395604398,
+          "R@5": 0.23076923076923078,
+          "P@5": 0.6,
+          "nDCG@5": 0.6843515475204855,
+          "R@10": 0.3076923076923077,
+          "P@10": 0.4,
+          "nDCG@10": 0.5174612499126158,
+          "R@20": 0.3076923076923077,
+          "P@20": 0.2,
+          "nDCG@20": 0.4390186159930986
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.5,
+          "D3.2": 0.0,
+          "D3.3": 0.3333333333333333,
+          "D3.4": 0.5,
+          "D3.5": 0.0,
+          "D3.6": 0.0
+        },
+        "final": [
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.24395604395604398,
+          "R@5": 0.23076923076923078,
+          "P@5": 0.6,
+          "nDCG@5": 0.6843515475204855,
+          "R@10": 0.3076923076923077,
+          "P@10": 0.4,
+          "nDCG@10": 0.5174612499126158,
+          "R@20": 0.3076923076923077,
+          "P@20": 0.2,
+          "nDCG@20": 0.4390186159930986
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.5,
+          "D3.2": 0.0,
+          "D3.3": 0.3333333333333333,
+          "D3.4": 0.5,
+          "D3.5": 0.0,
+          "D3.6": 0.0
+        },
+        "final": [
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "11",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.019493443333941072,
+          "P@5": 0.04,
+          "R@5": 0.015384615384615385,
+          "nDCG@5": 0.030078518014914984,
+          "P@10": 0.06,
+          "R@10": 0.046153846153846156,
+          "nDCG@10": 0.049478068278414895,
+          "P@20": 0.075,
+          "R@20": 0.11538461538461539,
+          "nDCG@20": 0.08309819872555103
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.125,
+          "D3.2": 0.075,
+          "D3.3": 0.03333333333333333,
+          "D3.4": 0.2,
+          "D3.5": 0.05,
+          "D3.6": 0.1
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "12",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.1"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 1,
+          "raw:sq1": 1,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "130",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.1",
+          "D3.2",
+          "D3.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "136",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "137",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.1"
+        ],
+        "ranks": {
+          "raw:orig": 17,
+          "ur:orig": 6,
+          "raw:sq1": 17,
+          "ur:sq1": 6
+        },
+        "final_ranks": {
+          "whole_question": 5,
+          "rerank_each": 5,
+          "rerank_once": 5
+        }
+      },
+      {
+        "key": [
+          "121",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "131",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.2",
+          "D3.6"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "135",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "19",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.3"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 2,
+          "raw:sq1": 2,
+          "ur:sq1": 2
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 2,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "134",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.3",
+          "D3.5"
+        ],
+        "ranks": {
+          "raw:orig": 30,
+          "ur:orig": 10,
+          "raw:sq1": 30,
+          "ur:sq1": 10
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "4",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.4"
+        ],
+        "ranks": {
+          "raw:orig": 24,
+          "ur:orig": null,
+          "raw:sq1": 24,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "13",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.4",
+          "D3.4"
+        ],
+        "ranks": {
+          "raw:orig": 12,
+          "ur:orig": 8,
+          "raw:sq1": 12,
+          "ur:sq1": 8
+        },
+        "final_ranks": {
+          "whole_question": 7,
+          "rerank_each": 7,
+          "rerank_once": 7
+        }
+      },
+      {
+        "key": [
+          "9",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.5"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "132",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D3.6"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      }
+    ]
+  },
+  "D4": {
+    "parent_id": "D4",
+    "question": "What does the data measure and represent? What are the available features (or covariates) and their explanation? Which are the target variable(s) and their explanation? Which is the dataset size? And what are the assumptions about what the data represents?",
+    "n_relevant": 9,
+    "gt_subquestions": [
+      {
+        "id": "D4.1",
+        "text": "Available features (or covariates) and their explanation"
+      },
+      {
+        "id": "D4.2",
+        "text": "Target variable(s) and their explanation"
+      },
+      {
+        "id": "D4.3",
+        "text": "Dataset size"
+      },
+      {
+        "id": "D4.4",
+        "text": "Assumptions about representation"
+      }
+    ],
+    "llm_subquestions": [
+      "What does the data measure and represent? What are the available features (or covariates) and their explanation? Which are the target variable(s) and their explanation? Which is the dataset size? And what are the assumptions about what the data represents?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.2126262626262626,
+          "R@5": 0.1111111111111111,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.3,
+          "nDCG@10": 0.37713756561785067,
+          "R@20": 0.4444444444444444,
+          "P@20": 0.2,
+          "nDCG@20": 0.44270186353371543
+        },
+        "retrieved": [
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "8",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "29",
+            "EHSRQL"
+          ],
+          [
+            "120",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D4.1": {
+        "metrics_vs_own": {
+          "AP": 0.06222222222222222,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.4,
+          "P@10": 0.2,
+          "nDCG@10": 0.2001366809542687,
+          "R@20": 0.4,
+          "P@20": 0.1,
+          "nDCG@20": 0.2001366809542687
+        },
+        "metrics_vs_union": {
+          "AP": 0.06020892687559355,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.2222222222222222,
+          "P@10": 0.2,
+          "nDCG@10": 0.13869916163937135,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.15,
+          "nDCG@20": 0.20043376590564765
+        },
+        "retrieved": [
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "118",
+            "EHSRQL"
+          ],
+          [
+            "120",
+            "EHSRQL"
+          ],
+          [
+            "27",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "105",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "109",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "4",
+            "EHSRQL"
+          ],
+          [
+            "119",
+            "EHSRQL"
+          ],
+          [
+            "95",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "142",
+            "EHSRQL"
+          ],
+          [
+            "1",
+            "EHSRQL"
+          ],
+          [
+            "138",
+            "EHSRQL"
+          ],
+          [
+            "84",
+            "EHSRQL"
+          ],
+          [
+            "153",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D4.2": {
+        "metrics_vs_own": {
+          "AP": 1.0,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 1.0,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 1.0,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 1.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.16144349477682812,
+          "R@5": 0.1111111111111111,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.2222222222222222,
+          "P@10": 0.2,
+          "nDCG@10": 0.305801310135566,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.15,
+          "nDCG@20": 0.36753591440184225
+        },
+        "retrieved": [
+          [
+            "4",
+            "EHSRQL"
+          ],
+          [
+            "109",
+            "EHSRQL"
+          ],
+          [
+            "107",
+            "EHSRQL"
+          ],
+          [
+            "108",
+            "EHSRQL"
+          ],
+          [
+            "119",
+            "EHSRQL"
+          ],
+          [
+            "142",
+            "EHSRQL"
+          ],
+          [
+            "105",
+            "EHSRQL"
+          ],
+          [
+            "138",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "95",
+            "EHSRQL"
+          ],
+          [
+            "135",
+            "EHSRQL"
+          ],
+          [
+            "151",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "169",
+            "EHSRQL"
+          ],
+          [
+            "78",
+            "EHSRQL"
+          ],
+          [
+            "87",
+            "EHSRQL"
+          ],
+          [
+            "153",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ],
+          [
+            "85",
+            "EHSRQL"
+          ],
+          [
+            "84",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D4.3": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.05555555555555555,
+          "R@5": 0.1111111111111111,
+          "P@5": 0.2,
+          "nDCG@5": 0.21398626473452756,
+          "R@10": 0.1111111111111111,
+          "P@10": 0.1,
+          "nDCG@10": 0.1482972305701491,
+          "R@20": 0.1111111111111111,
+          "P@20": 0.05,
+          "nDCG@20": 0.1482972305701491
+        },
+        "retrieved": [
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "140",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "69",
+            "EHSRQL"
+          ],
+          [
+            "71",
+            "EHSRQL"
+          ],
+          [
+            "53",
+            "EHSRQL"
+          ],
+          [
+            "51",
+            "EHSRQL"
+          ],
+          [
+            "58",
+            "EHSRQL"
+          ],
+          [
+            "44",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D4.4": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.02244668911335578,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.2222222222222222,
+          "P@20": 0.1,
+          "nDCG@20": 0.12089611529519323
+        },
+        "retrieved": [
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "118",
+            "EHSRQL"
+          ],
+          [
+            "119",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "78",
+            "EHSRQL"
+          ],
+          [
+            "80",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "107",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ],
+          [
+            "77",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "109",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "115",
+            "EHSRQL"
+          ],
+          [
+            "26",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "4",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.2126262626262626,
+          "R@5": 0.1111111111111111,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.3,
+          "nDCG@10": 0.37713756561785067,
+          "R@20": 0.4444444444444444,
+          "P@20": 0.2,
+          "nDCG@20": 0.44270186353371543
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.2,
+          "D4.2": 0.0,
+          "D4.3": 0.5,
+          "D4.4": 1.0
+        },
+        "final": [
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "8",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "29",
+            "EHSRQL"
+          ],
+          [
+            "120",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.2126262626262626,
+          "R@5": 0.1111111111111111,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.3,
+          "nDCG@10": 0.37713756561785067,
+          "R@20": 0.4444444444444444,
+          "P@20": 0.2,
+          "nDCG@20": 0.44270186353371543
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.2,
+          "D4.2": 0.0,
+          "D4.3": 0.5,
+          "D4.4": 1.0
+        },
+        "final": [
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "8",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "29",
+            "EHSRQL"
+          ],
+          [
+            "120",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.2126262626262626,
+          "R@5": 0.1111111111111111,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.3,
+          "nDCG@10": 0.37713756561785067,
+          "R@20": 0.4444444444444444,
+          "P@20": 0.2,
+          "nDCG@20": 0.44270186353371543
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.2,
+          "D4.2": 0.0,
+          "D4.3": 0.5,
+          "D4.4": 1.0
+        },
+        "final": [
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "8",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "29",
+            "EHSRQL"
+          ],
+          [
+            "120",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.011419957560308438,
+          "P@5": 0.02,
+          "R@5": 0.01111111111111111,
+          "nDCG@5": 0.014606834984270645,
+          "P@10": 0.02,
+          "R@10": 0.02222222222222222,
+          "nDCG@10": 0.017198436893338078,
+          "P@20": 0.04,
+          "R@20": 0.08888888888888888,
+          "nDCG@20": 0.051945483508443635
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.08,
+          "D4.2": 0.1,
+          "D4.3": 0.1,
+          "D4.4": 0.09999999999999999
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "2",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D4.1",
+          "D4.3"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 1,
+          "raw:sq1": 2,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "4",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D4.1",
+          "D4.2"
+        ],
+        "ranks": {
+          "raw:orig": 21,
+          "ur:orig": 17,
+          "raw:sq1": 21,
+          "ur:sq1": 17
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "121",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "122",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "123",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D4.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "130",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D4.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "3",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D4.4"
+        ],
+        "ranks": {
+          "raw:orig": 3,
+          "ur:orig": 9,
+          "raw:sq1": 3,
+          "ur:sq1": 9
+        },
+        "final_ranks": {
+          "whole_question": 8,
+          "rerank_each": 8,
+          "rerank_once": 8
+        }
+      },
+      {
+        "key": [
+          "8",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D4.4"
+        ],
+        "ranks": {
+          "raw:orig": 14,
+          "ur:orig": 12,
+          "raw:sq1": 14,
+          "ur:sq1": 12
+        },
+        "final_ranks": {
+          "whole_question": 10,
+          "rerank_each": 10,
+          "rerank_once": 10
+        }
+      },
+      {
+        "key": [
+          "18",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D4.4"
+        ],
+        "ranks": {
+          "raw:orig": 9,
+          "ur:orig": 14,
+          "raw:sq1": 9,
+          "ur:sq1": 14
+        },
+        "final_ranks": {
+          "whole_question": 11,
+          "rerank_each": 11,
+          "rerank_once": 11
+        }
+      }
+    ]
+  },
+  "D5": {
+    "parent_id": "D5",
+    "question": "Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the marginal distribution of protected attributes? And what about the joint distribution of protected and target? What are the expected distributions? What is the label provenance?",
+    "n_relevant": 8,
+    "gt_subquestions": [
+      {
+        "id": "D5.1",
+        "text": "Attributes at risk"
+      },
+      {
+        "id": "D5.2",
+        "text": "Marginal distribution"
+      },
+      {
+        "id": "D5.3",
+        "text": "Joint distribution"
+      },
+      {
+        "id": "D5.5",
+        "text": "Label provenance"
+      },
+      {
+        "id": "D5.6",
+        "text": "Bias mitigation"
+      }
+    ],
+    "llm_subquestions": [
+      "Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the marginal distribution of protected attributes? And what about the joint distribution of protected and target? What are the expected distributions? What is the label provenance?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "143",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "116",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "32",
+            "EHSRQL"
+          ],
+          [
+            "29",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D5.1": {
+        "metrics_vs_own": {
+          "AP": 0.1111111111111111,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.2,
+          "nDCG@5": 0.23463936301137822,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.1,
+          "nDCG@10": 0.23463936301137822,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.05,
+          "nDCG@20": 0.23463936301137822
+        },
+        "metrics_vs_union": {
+          "AP": 0.2351190476190476,
+          "R@5": 0.25,
+          "P@5": 0.4,
+          "nDCG@5": 0.5087403079104241,
+          "R@10": 0.25,
+          "P@10": 0.2,
+          "nDCG@10": 0.37941405415148566,
+          "R@20": 0.375,
+          "P@20": 0.15,
+          "nDCG@20": 0.4441567687419514
+        },
+        "retrieved": [
+          [
+            "134",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "8",
+            "EHSRQL"
+          ],
+          [
+            "143",
+            "EHSRQL"
+          ],
+          [
+            "105",
+            "EHSRQL"
+          ],
+          [
+            "119",
+            "EHSRQL"
+          ],
+          [
+            "101",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "106",
+            "EHSRQL"
+          ],
+          [
+            "51",
+            "EHSRQL"
+          ],
+          [
+            "169",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "102",
+            "EHSRQL"
+          ],
+          [
+            "4",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "22",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D5.2": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "162",
+            "EHSRQL"
+          ],
+          [
+            "22",
+            "EHSRQL"
+          ],
+          [
+            "169",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ],
+          [
+            "46",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "70",
+            "EHSRQL"
+          ],
+          [
+            "71",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "50",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "75",
+            "EHSRQL"
+          ],
+          [
+            "51",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "53",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D5.3": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "62",
+            "EHSRQL"
+          ],
+          [
+            "56",
+            "EHSRQL"
+          ],
+          [
+            "70",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "48",
+            "EHSRQL"
+          ],
+          [
+            "57",
+            "EHSRQL"
+          ],
+          [
+            "50",
+            "EHSRQL"
+          ],
+          [
+            "76",
+            "EHSRQL"
+          ],
+          [
+            "55",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "51",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "75",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ],
+          [
+            "54",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "77",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D5.5": {
+        "metrics_vs_own": {
+          "AP": 0.16666666666666666,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.3065735963827292,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.3065735963827292,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.3065735963827292
+        },
+        "metrics_vs_union": {
+          "AP": 0.14583333333333331,
+          "R@5": 0.25,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.25,
+          "P@10": 0.2,
+          "nDCG@10": 0.2860604285087249,
+          "R@20": 0.25,
+          "P@20": 0.1,
+          "nDCG@20": 0.2860604285087249
+        },
+        "retrieved": [
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "122",
+            "EHSRQL"
+          ],
+          [
+            "4",
+            "EHSRQL"
+          ],
+          [
+            "153",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "113",
+            "EHSRQL"
+          ],
+          [
+            "79",
+            "EHSRQL"
+          ],
+          [
+            "56",
+            "EHSRQL"
+          ],
+          [
+            "57",
+            "EHSRQL"
+          ],
+          [
+            "58",
+            "EHSRQL"
+          ],
+          [
+            "71",
+            "EHSRQL"
+          ],
+          [
+            "49",
+            "EHSRQL"
+          ],
+          [
+            "51",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ],
+          [
+            "77",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "53",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D5.6": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "62",
+            "EHSRQL"
+          ],
+          [
+            "67",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "71",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "76",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "75",
+            "EHSRQL"
+          ],
+          [
+            "14",
+            "EHSRQL"
+          ],
+          [
+            "53",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "77",
+            "EHSRQL"
+          ],
+          [
+            "52",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.0,
+          "D5.2": 0.0,
+          "D5.3": 0.0,
+          "D5.5": 0.0,
+          "D5.6": 0.0
+        },
+        "final": [
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "143",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "116",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "32",
+            "EHSRQL"
+          ],
+          [
+            "29",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.0,
+          "D5.2": 0.0,
+          "D5.3": 0.0,
+          "D5.5": 0.0,
+          "D5.6": 0.0
+        },
+        "final": [
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "143",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "116",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "32",
+            "EHSRQL"
+          ],
+          [
+            "29",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.0,
+          "D5.2": 0.0,
+          "D5.3": 0.0,
+          "D5.5": 0.0,
+          "D5.6": 0.0
+        },
+        "final": [
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "143",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "2",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "116",
+            "EHSRQL"
+          ],
+          [
+            "114",
+            "EHSRQL"
+          ],
+          [
+            "42",
+            "EHSRQL"
+          ],
+          [
+            "32",
+            "EHSRQL"
+          ],
+          [
+            "29",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ],
+          [
+            "41",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.011224272803220171,
+          "P@5": 0.0,
+          "R@5": 0.0,
+          "nDCG@5": 0.0,
+          "P@10": 0.05,
+          "R@10": 0.0625,
+          "nDCG@10": 0.04079886563254325,
+          "P@20": 0.035,
+          "R@20": 0.0875,
+          "nDCG@20": 0.05370706695145816
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.09999999999999999,
+          "D5.2": 0.05,
+          "D5.3": 0.1,
+          "D5.5": 0.05,
+          "D5.6": 0.1
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "8",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D5.1",
+          "D5.2",
+          "D5.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "10",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D5.1"
+        ],
+        "ranks": {
+          "raw:orig": 22,
+          "ur:orig": 1,
+          "raw:sq1": 22,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "122",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D5.1",
+          "D5.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "130",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D5.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "4",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D5.5"
+        ],
+        "ranks": {
+          "raw:orig": 21,
+          "ur:orig": 19,
+          "raw:sq1": 21,
+          "ur:sq1": 19
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "13",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D5.5"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "9",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D5.6"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "134",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D5.6"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": 3,
+          "raw:sq1": null,
+          "ur:sq1": 3
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      }
+    ]
+  },
+  "D6": {
+    "parent_id": "D6",
+    "question": "What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps in the data? Which is the severity of inaccuracy?",
+    "n_relevant": 7,
+    "gt_subquestions": [
+      {
+        "id": "D6.1",
+        "text": "Plausible sources of inaccuracy"
+      },
+      {
+        "id": "D6.2",
+        "text": "Gaps in the data"
+      },
+      {
+        "id": "D6.3",
+        "text": "Errors, noise, redundancies"
+      },
+      {
+        "id": "D6.4",
+        "text": "External dependencies"
+      }
+    ],
+    "llm_subquestions": [
+      "What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps in the data? Which is the severity of inaccuracy?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.16666666666666669,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.34915840581679836
+        },
+        "retrieved": [
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "4",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "116",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D6.1": {
+        "metrics_vs_own": {
+          "AP": 0.3333333333333333,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.2,
+          "nDCG@5": 0.46927872602275644,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.1,
+          "nDCG@10": 0.46927872602275644,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.05,
+          "nDCG@20": 0.46927872602275644
+        },
+        "metrics_vs_union": {
+          "AP": 0.16483516483516483,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.34707247394695817
+        },
+        "retrieved": [
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "143",
+            "EHSRQL"
+          ],
+          [
+            "98",
+            "EHSRQL"
+          ],
+          [
+            "142",
+            "EHSRQL"
+          ],
+          [
+            "92",
+            "EHSRQL"
+          ],
+          [
+            "90",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "47",
+            "EHSRQL"
+          ],
+          [
+            "169",
+            "EHSRQL"
+          ],
+          [
+            "38",
+            "EHSRQL"
+          ],
+          [
+            "14",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D6.2": {
+        "metrics_vs_own": {
+          "AP": 0.25,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.38685280723454163,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.38685280723454163,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.38685280723454163
+        },
+        "metrics_vs_union": {
+          "AP": 0.09340659340659341,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.21398626473452756,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.17342765698823945,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.24562379802090678
+        },
+        "retrieved": [
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "130",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "0",
+            "EHSRQL"
+          ],
+          [
+            "135",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "116",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "12",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "13",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "143",
+            "EHSRQL"
+          ],
+          [
+            "131",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D6.3": {
+        "metrics_vs_own": {
+          "AP": 0.25,
+          "R@5": 0.25,
+          "P@5": 0.2,
+          "nDCG@5": 0.3903800499921017,
+          "R@10": 0.25,
+          "P@10": 0.1,
+          "nDCG@10": 0.3903800499921017,
+          "R@20": 0.25,
+          "P@20": 0.05,
+          "nDCG@20": 0.3903800499921017
+        },
+        "metrics_vs_union": {
+          "AP": 0.14285714285714285,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.14285714285714285,
+          "P@20": 0.05,
+          "nDCG@20": 0.27487633291429087
+        },
+        "retrieved": [
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "143",
+            "EHSRQL"
+          ],
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "56",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "57",
+            "EHSRQL"
+          ],
+          [
+            "76",
+            "EHSRQL"
+          ],
+          [
+            "58",
+            "EHSRQL"
+          ],
+          [
+            "59",
+            "EHSRQL"
+          ],
+          [
+            "55",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "14",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "138",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ],
+          [
+            "53",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "78",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "D6.4": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "15",
+            "EHSRQL"
+          ],
+          [
+            "91",
+            "EHSRQL"
+          ],
+          [
+            "73",
+            "EHSRQL"
+          ],
+          [
+            "170",
+            "EHSRQL"
+          ],
+          [
+            "49",
+            "EHSRQL"
+          ],
+          [
+            "50",
+            "EHSRQL"
+          ],
+          [
+            "71",
+            "EHSRQL"
+          ],
+          [
+            "79",
+            "EHSRQL"
+          ],
+          [
+            "76",
+            "EHSRQL"
+          ],
+          [
+            "80",
+            "EHSRQL"
+          ],
+          [
+            "53",
+            "EHSRQL"
+          ],
+          [
+            "74",
+            "EHSRQL"
+          ],
+          [
+            "54",
+            "EHSRQL"
+          ],
+          [
+            "138",
+            "EHSRQL"
+          ],
+          [
+            "75",
+            "EHSRQL"
+          ],
+          [
+            "61",
+            "EHSRQL"
+          ],
+          [
+            "64",
+            "EHSRQL"
+          ],
+          [
+            "77",
+            "EHSRQL"
+          ],
+          [
+            "78",
+            "EHSRQL"
+          ],
+          [
+            "60",
+            "EHSRQL"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.16666666666666669,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.34915840581679836
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.3333333333333333,
+          "D6.2": 0.5,
+          "D6.3": 0.25,
+          "D6.4": 0.5
+        },
+        "final": [
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "4",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "116",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.16666666666666669,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.34915840581679836
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.3333333333333333,
+          "D6.2": 0.5,
+          "D6.3": 0.25,
+          "D6.4": 0.5
+        },
+        "final": [
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "4",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "116",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.16666666666666669,
+          "R@5": 0.14285714285714285,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.14285714285714285,
+          "P@10": 0.1,
+          "nDCG@10": 0.27487633291429087,
+          "R@20": 0.2857142857142857,
+          "P@20": 0.1,
+          "nDCG@20": 0.34915840581679836
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.3333333333333333,
+          "D6.2": 0.5,
+          "D6.3": 0.25,
+          "D6.4": 0.5
+        },
+        "final": [
+          [
+            "5",
+            "EHSRQL"
+          ],
+          [
+            "21",
+            "EHSRQL"
+          ],
+          [
+            "6",
+            "EHSRQL"
+          ],
+          [
+            "10",
+            "EHSRQL"
+          ],
+          [
+            "4",
+            "EHSRQL"
+          ],
+          [
+            "17",
+            "EHSRQL"
+          ],
+          [
+            "3",
+            "EHSRQL"
+          ],
+          [
+            "16",
+            "EHSRQL"
+          ],
+          [
+            "25",
+            "EHSRQL"
+          ],
+          [
+            "24",
+            "EHSRQL"
+          ],
+          [
+            "18",
+            "EHSRQL"
+          ],
+          [
+            "7",
+            "EHSRQL"
+          ],
+          [
+            "19",
+            "EHSRQL"
+          ],
+          [
+            "137",
+            "EHSRQL"
+          ],
+          [
+            "20",
+            "EHSRQL"
+          ],
+          [
+            "116",
+            "EHSRQL"
+          ],
+          [
+            "23",
+            "EHSRQL"
+          ],
+          [
+            "45",
+            "EHSRQL"
+          ],
+          [
+            "28",
+            "EHSRQL"
+          ],
+          [
+            "63",
+            "EHSRQL"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.033298447584161874,
+          "P@5": 0.04,
+          "R@5": 0.02857142857142857,
+          "nDCG@5": 0.06783204105472322,
+          "P@10": 0.030000000000000002,
+          "R@10": 0.04285714285714286,
+          "nDCG@10": 0.06413781101333453,
+          "P@20": 0.025,
+          "R@20": 0.07142857142857142,
+          "nDCG@20": 0.07782825900075721
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.03333333333333333,
+          "D6.2": 0.05,
+          "D6.3": 0.075,
+          "D6.4": 0.1
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "118",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D6.1",
+          "D6.2",
+          "D6.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "134",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D6.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "5",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D6.1",
+          "D6.2",
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 1,
+          "raw:sq1": 2,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "121",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D6.3",
+          "D6.4"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "141",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "144",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "7",
+          "EHSRQL"
+        ],
+        "gt_subquestions": [
+          "D6.4"
+        ],
+        "ranks": {
+          "raw:orig": 13,
+          "ur:orig": 17,
+          "raw:sq1": 13,
+          "ur:sq1": 17
+        },
+        "final_ranks": {
+          "whole_question": 12,
+          "rerank_each": 12,
+          "rerank_once": 12
+        }
+      }
+    ]
+  },
+  "_grand_summary": {
+    "whole_question": {
+      "MAP": 0.24675086817943961,
+      "R@20": 0.3713878713878714
+    },
+    "rerank_each": {
+      "MAP": 0.18655642603011025,
+      "R@20": 0.3713878713878714
+    },
+    "rerank_once": {
+      "MAP": 0.26149009720438293,
+      "R@20": 0.39519739519739516
+    },
+    "random": {
+      "MAP": 0.021794813959541862,
+      "R@20": 0.09386701261701261
+    }
+  }
+}

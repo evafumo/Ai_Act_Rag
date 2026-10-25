@@ -1,0 +1,5615 @@
+{
+  "summary": {
+    "MAP": 0.257002013580961,
+    "macro_metrics": {
+      "@5": {
+        "precision": 0.1142857142857143,
+        "recall": 0.3055555555555555,
+        "ndcg": 0.29017179347256444
+      },
+      "@10": {
+        "precision": 0.06666666666666668,
+        "recall": 0.376984126984127,
+        "ndcg": 0.313166062077676
+      },
+      "@20": {
+        "precision": 0.040476190476190485,
+        "recall": 0.4246031746031746,
+        "ndcg": 0.32957573466173856
+      }
+    }
+  },
+  "by_parent": {
+    "D1": {
+      "MAP": 0.23076923076923075,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.06666666666666667,
+          "recall": 0.16666666666666666,
+          "ndcg": 0.20438239758848611
+        },
+        "@10": {
+          "precision": 0.06666666666666667,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.27718487652787416
+        },
+        "@20": {
+          "precision": 0.05000000000000001,
+          "recall": 0.4444444444444444,
+          "ndcg": 0.318270156258782
+        }
+      }
+    },
+    "D2": {
+      "MAP": 0.0,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        }
+      }
+    },
+    "D3": {
+      "MAP": 0.375,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.15000000000000002,
+          "recall": 0.5,
+          "ndcg": 0.4077324383928644
+        },
+        "@10": {
+          "precision": 0.07500000000000001,
+          "recall": 0.5,
+          "ndcg": 0.4077324383928644
+        },
+        "@20": {
+          "precision": 0.037500000000000006,
+          "recall": 0.5,
+          "ndcg": 0.4077324383928644
+        }
+      }
+    },
+    "D4": {
+      "MAP": 0.11715587044534412,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.1,
+          "recall": 0.16666666666666666,
+          "ndcg": 0.18150325312703944
+        },
+        "@10": {
+          "precision": 0.05,
+          "recall": 0.16666666666666666,
+          "ndcg": 0.17236380518333877
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.2277006264514863
+        }
+      }
+    },
+    "D5": {
+      "MAP": 0.1840277777777778,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.15000000000000002,
+          "recall": 0.3125,
+          "ndcg": 0.22430582963696563
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5625,
+          "ndcg": 0.2995633285529609
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5625,
+          "ndcg": 0.2995633285529609
+        }
+      }
+    },
+    "D6": {
+      "MAP": 0.6666666666666666,
+      "macro_metrics": {
+        "@5": {
+          "precision": 0.20000000000000004,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.7420981285103055
+        },
+        "@10": {
+          "precision": 0.10000000000000002,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.7420981285103055
+        },
+        "@20": {
+          "precision": 0.05000000000000001,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.7420981285103055
+        }
+      }
+    }
+  },
+  "per_query": [
+    {
+      "question_id": "D1.1",
+      "parent_id": "D1",
+      "query": "Purpose for original data collection",
+      "relevant_ids": [
+        [
+          "6",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "37",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "34",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "29",
+          "B_Adult"
+        ],
+        [
+          "44",
+          "B_Adult"
+        ],
+        [
+          "45",
+          "B_Adult"
+        ],
+        [
+          "46",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "38",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "29",
+              "B_Adult"
+            ],
+            [
+              "44",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "46",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "38",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D1.2",
+      "parent_id": "D1",
+      "query": "People and organizations involved in the data collection process",
+      "relevant_ids": [
+        [
+          "6",
+          "B_Adult"
+        ],
+        [
+          "7",
+          "B_Adult"
+        ],
+        [
+          "8",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "37",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "29",
+          "B_Adult"
+        ],
+        [
+          "34",
+          "B_Adult"
+        ],
+        [
+          "6",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "41",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.025641025641025644,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.12325583919272352,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "29",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "41",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D1.3",
+      "parent_id": "D1",
+      "query": "Mechanisms or procedures used to collect the data",
+      "relevant_ids": [
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "37",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "35",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "34",
+          "B_Adult"
+        ],
+        [
+          "6",
+          "B_Adult"
+        ],
+        [
+          "41",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "49",
+          "B_Adult"
+        ],
+        [
+          "12",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.6666666666666666,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.8315546295836225,
+          "retrieved_ids_at_k": [
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.8315546295836225,
+          "retrieved_ids_at_k": [
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "35",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "41",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "49",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.1",
+      "parent_id": "D2",
+      "query": "Timeframe of data collection",
+      "relevant_ids": [
+        [
+          "27",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "37",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "6",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "41",
+          "B_Adult"
+        ],
+        [
+          "56",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "41",
+              "B_Adult"
+            ],
+            [
+              "56",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.2",
+      "parent_id": "D2",
+      "query": "Geographical area of data collection",
+      "relevant_ids": [
+        [
+          "10",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "37",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "6",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "41",
+          "B_Adult"
+        ],
+        [
+          "56",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "41",
+              "B_Adult"
+            ],
+            [
+              "56",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D2.3",
+      "parent_id": "D2",
+      "query": "Context of data collection",
+      "relevant_ids": [
+        [
+          "28",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "37",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "6",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "41",
+          "B_Adult"
+        ],
+        [
+          "56",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "41",
+              "B_Adult"
+            ],
+            [
+              "56",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.1",
+      "parent_id": "D3",
+      "query": "Sampling strategy",
+      "relevant_ids": [
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "30",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "12",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "62",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "13",
+          "B_Adult"
+        ]
+      ],
+      "AP": 1.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "30",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "30",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "62",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "13",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.2",
+      "parent_id": "D3",
+      "query": "Data preprocessing",
+      "relevant_ids": [
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "34",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "45",
+          "B_Adult"
+        ],
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "2",
+          "B_Adult"
+        ],
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "0",
+          "B_Adult"
+        ],
+        [
+          "4",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "30",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "2",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "0",
+              "B_Adult"
+            ],
+            [
+              "4",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "30",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.3",
+      "parent_id": "D3",
+      "query": "Data cleaning",
+      "relevant_ids": [
+        [
+          "33",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "45",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "2",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "4",
+          "B_Adult"
+        ],
+        [
+          "0",
+          "B_Adult"
+        ],
+        [
+          "30",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "2",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "4",
+              "B_Adult"
+            ],
+            [
+              "0",
+              "B_Adult"
+            ],
+            [
+              "30",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D3.4",
+      "parent_id": "D3",
+      "query": "Data labeling and annotation",
+      "relevant_ids": [
+        [
+          "34",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "34",
+          "B_Adult"
+        ],
+        [
+          "45",
+          "B_Adult"
+        ],
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "0",
+          "B_Adult"
+        ],
+        [
+          "1",
+          "B_Adult"
+        ],
+        [
+          "46",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "4",
+          "B_Adult"
+        ],
+        [
+          "2",
+          "B_Adult"
+        ],
+        [
+          "7",
+          "B_Adult"
+        ],
+        [
+          "42",
+          "B_Adult"
+        ],
+        [
+          "52",
+          "B_Adult"
+        ],
+        [
+          "53",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.5,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.6309297535714575,
+          "retrieved_ids_at_k": [
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.6309297535714575,
+          "retrieved_ids_at_k": [
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "0",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 0.6309297535714575,
+          "retrieved_ids_at_k": [
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "0",
+              "B_Adult"
+            ],
+            [
+              "1",
+              "B_Adult"
+            ],
+            [
+              "46",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "4",
+              "B_Adult"
+            ],
+            [
+              "2",
+              "B_Adult"
+            ],
+            [
+              "7",
+              "B_Adult"
+            ],
+            [
+              "42",
+              "B_Adult"
+            ],
+            [
+              "52",
+              "B_Adult"
+            ],
+            [
+              "53",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.1",
+      "parent_id": "D4",
+      "query": "Available features (or covariates) and their explanation",
+      "relevant_ids": [
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "49",
+          "B_Adult"
+        ],
+        [
+          "50",
+          "B_Adult"
+        ],
+        [
+          "52",
+          "B_Adult"
+        ],
+        [
+          "54",
+          "B_Adult"
+        ],
+        [
+          "56",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "2",
+          "B_Adult"
+        ],
+        [
+          "34",
+          "B_Adult"
+        ],
+        [
+          "53",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "12",
+          "B_Adult"
+        ],
+        [
+          "1",
+          "B_Adult"
+        ],
+        [
+          "29",
+          "B_Adult"
+        ],
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "52",
+          "B_Adult"
+        ],
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "7",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "46",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.1923076923076923,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.16666666666666666,
+          "ndcg": 0.3391602052736161,
+          "retrieved_ids_at_k": [
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "2",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "53",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.16666666666666666,
+          "ndcg": 0.30260241349881345,
+          "retrieved_ids_at_k": [
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "2",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "53",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "1",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 0.3333333333333333,
+          "ndcg": 0.3820807967054094,
+          "retrieved_ids_at_k": [
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "2",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "53",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "1",
+              "B_Adult"
+            ],
+            [
+              "29",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "52",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "7",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "46",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.2",
+      "parent_id": "D4",
+      "query": "Target variable(s) and their explanation",
+      "relevant_ids": [
+        [
+          "12",
+          "B_Adult"
+        ],
+        [
+          "56",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "12",
+          "B_Adult"
+        ],
+        [
+          "42",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "52",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "1",
+          "B_Adult"
+        ],
+        [
+          "46",
+          "B_Adult"
+        ],
+        [
+          "29",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "53",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "7",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "2",
+          "B_Adult"
+        ],
+        [
+          "34",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.25,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "42",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "42",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "52",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "1",
+              "B_Adult"
+            ],
+            [
+              "46",
+              "B_Adult"
+            ],
+            [
+              "29",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.38685280723454163,
+          "retrieved_ids_at_k": [
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "42",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "52",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "1",
+              "B_Adult"
+            ],
+            [
+              "46",
+              "B_Adult"
+            ],
+            [
+              "29",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "53",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "7",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "2",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.3",
+      "parent_id": "D4",
+      "query": "Dataset size",
+      "relevant_ids": [
+        [
+          "8",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "13",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "62",
+          "B_Adult"
+        ],
+        [
+          "30",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "12",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "13",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "62",
+              "B_Adult"
+            ],
+            [
+              "30",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D4.4",
+      "parent_id": "D4",
+      "query": "Assumptions about what the data represents",
+      "relevant_ids": [
+        [
+          "8",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "6",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "37",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "29",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "34",
+          "B_Adult"
+        ],
+        [
+          "41",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.02631578947368421,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "29",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.14186890186599416,
+          "retrieved_ids_at_k": [
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "29",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "41",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.1",
+      "parent_id": "D5",
+      "query": "Which attributes are salient or at risk of discrimination",
+      "relevant_ids": [
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "35",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "37",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "10",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "40",
+          "B_Adult"
+        ],
+        [
+          "8",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "9",
+          "B_Adult"
+        ],
+        [
+          "41",
+          "B_Adult"
+        ],
+        [
+          "42",
+          "B_Adult"
+        ],
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "38",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "13",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.5,
+      "metrics": {
+        "@5": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "ndcg": 0.6509209298071326,
+          "retrieved_ids_at_k": [
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "35",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 0.6509209298071326,
+          "retrieved_ids_at_k": [
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "35",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "10",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "40",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.6509209298071326,
+          "retrieved_ids_at_k": [
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "35",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "10",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "40",
+              "B_Adult"
+            ],
+            [
+              "8",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "9",
+              "B_Adult"
+            ],
+            [
+              "41",
+              "B_Adult"
+            ],
+            [
+              "42",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "38",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "13",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.2",
+      "parent_id": "D5",
+      "query": "Marginal distribution of protected attributes",
+      "relevant_ids": [
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "59",
+          "B_Adult"
+        ],
+        [
+          "60",
+          "B_Adult"
+        ],
+        [
+          "61",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "56",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "50",
+          "B_Adult"
+        ],
+        [
+          "7",
+          "B_Adult"
+        ],
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "5",
+          "B_Adult"
+        ],
+        [
+          "8",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "9",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "42",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.125,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.25,
+          "ndcg": 0.24630238874073,
+          "retrieved_ids_at_k": [
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.25,
+          "ndcg": 0.24630238874073,
+          "retrieved_ids_at_k": [
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "56",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.25,
+          "ndcg": 0.24630238874073,
+          "retrieved_ids_at_k": [
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "56",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "50",
+              "B_Adult"
+            ],
+            [
+              "7",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "5",
+              "B_Adult"
+            ],
+            [
+              "8",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "9",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "42",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.3",
+      "parent_id": "D5",
+      "query": "Joint distribution of protected and target",
+      "relevant_ids": [
+        [
+          "37",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "12",
+          "B_Adult"
+        ],
+        [
+          "11",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "60",
+          "B_Adult"
+        ],
+        [
+          "58",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "56",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "7",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "8",
+          "B_Adult"
+        ],
+        [
+          "42",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "60",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "60",
+              "B_Adult"
+            ],
+            [
+              "58",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "56",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "11",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "60",
+              "B_Adult"
+            ],
+            [
+              "58",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "56",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "7",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "8",
+              "B_Adult"
+            ],
+            [
+              "42",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D5.5",
+      "parent_id": "D5",
+      "query": "Label provenance",
+      "relevant_ids": [
+        [
+          "17",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "12",
+          "B_Adult"
+        ],
+        [
+          "45",
+          "B_Adult"
+        ],
+        [
+          "62",
+          "B_Adult"
+        ],
+        [
+          "30",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "17",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "13",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.1111111111111111,
+      "metrics": {
+        "@5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "retrieved_ids_at_k": [
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "62",
+              "B_Adult"
+            ],
+            [
+              "30",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 0.3010299956639812,
+          "retrieved_ids_at_k": [
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "62",
+              "B_Adult"
+            ],
+            [
+              "30",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 0.3010299956639812,
+          "retrieved_ids_at_k": [
+            [
+              "12",
+              "B_Adult"
+            ],
+            [
+              "45",
+              "B_Adult"
+            ],
+            [
+              "62",
+              "B_Adult"
+            ],
+            [
+              "30",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "17",
+              "B_Adult"
+            ],
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "13",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.1",
+      "parent_id": "D6",
+      "query": "Plausible sources of inaccuracy",
+      "relevant_ids": [
+        [
+          "15",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "9",
+          "B_Adult"
+        ],
+        [
+          "5",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "47",
+          "B_Adult"
+        ],
+        [
+          "8",
+          "B_Adult"
+        ],
+        [
+          "7",
+          "B_Adult"
+        ],
+        [
+          "56",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "50",
+          "B_Adult"
+        ],
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "42",
+          "B_Adult"
+        ]
+      ],
+      "AP": 1.0,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "9",
+              "B_Adult"
+            ],
+            [
+              "5",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "retrieved_ids_at_k": [
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "9",
+              "B_Adult"
+            ],
+            [
+              "5",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "47",
+              "B_Adult"
+            ],
+            [
+              "8",
+              "B_Adult"
+            ],
+            [
+              "7",
+              "B_Adult"
+            ],
+            [
+              "56",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "50",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "42",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.2",
+      "parent_id": "D6",
+      "query": "Gaps in the data",
+      "relevant_ids": [
+        [
+          "12",
+          "B_Adult"
+        ],
+        [
+          "19",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "19",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "20",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "43",
+          "B_Adult"
+        ],
+        [
+          "29",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "18",
+          "B_Adult"
+        ],
+        [
+          "28",
+          "B_Adult"
+        ],
+        [
+          "34",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "37",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "21",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "6",
+          "B_Adult"
+        ],
+        [
+          "27",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "41",
+          "B_Adult"
+        ],
+        [
+          "26",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.5,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "29",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "19",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "20",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "43",
+              "B_Adult"
+            ],
+            [
+              "29",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "18",
+              "B_Adult"
+            ],
+            [
+              "28",
+              "B_Adult"
+            ],
+            [
+              "34",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "37",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "21",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "6",
+              "B_Adult"
+            ],
+            [
+              "27",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "41",
+              "B_Adult"
+            ],
+            [
+              "26",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "D6.3",
+      "parent_id": "D6",
+      "query": "Severity of inaccuracy",
+      "relevant_ids": [
+        [
+          "12",
+          "B_Adult"
+        ],
+        [
+          "15",
+          "B_Adult"
+        ]
+      ],
+      "retrieved_ids": [
+        [
+          "15",
+          "B_Adult"
+        ],
+        [
+          "24",
+          "B_Adult"
+        ],
+        [
+          "47",
+          "B_Adult"
+        ],
+        [
+          "33",
+          "B_Adult"
+        ],
+        [
+          "32",
+          "B_Adult"
+        ],
+        [
+          "7",
+          "B_Adult"
+        ],
+        [
+          "5",
+          "B_Adult"
+        ],
+        [
+          "23",
+          "B_Adult"
+        ],
+        [
+          "22",
+          "B_Adult"
+        ],
+        [
+          "50",
+          "B_Adult"
+        ],
+        [
+          "31",
+          "B_Adult"
+        ],
+        [
+          "36",
+          "B_Adult"
+        ],
+        [
+          "8",
+          "B_Adult"
+        ],
+        [
+          "3",
+          "B_Adult"
+        ],
+        [
+          "16",
+          "B_Adult"
+        ],
+        [
+          "14",
+          "B_Adult"
+        ],
+        [
+          "56",
+          "B_Adult"
+        ],
+        [
+          "25",
+          "B_Adult"
+        ],
+        [
+          "42",
+          "B_Adult"
+        ],
+        [
+          "9",
+          "B_Adult"
+        ]
+      ],
+      "AP": 0.5,
+      "metrics": {
+        "@5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "47",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@10": {
+          "precision": 0.1,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "47",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "7",
+              "B_Adult"
+            ],
+            [
+              "5",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "50",
+              "B_Adult"
+            ]
+          ]
+        },
+        "@20": {
+          "precision": 0.05,
+          "recall": 0.5,
+          "ndcg": 0.6131471927654584,
+          "retrieved_ids_at_k": [
+            [
+              "15",
+              "B_Adult"
+            ],
+            [
+              "24",
+              "B_Adult"
+            ],
+            [
+              "47",
+              "B_Adult"
+            ],
+            [
+              "33",
+              "B_Adult"
+            ],
+            [
+              "32",
+              "B_Adult"
+            ],
+            [
+              "7",
+              "B_Adult"
+            ],
+            [
+              "5",
+              "B_Adult"
+            ],
+            [
+              "23",
+              "B_Adult"
+            ],
+            [
+              "22",
+              "B_Adult"
+            ],
+            [
+              "50",
+              "B_Adult"
+            ],
+            [
+              "31",
+              "B_Adult"
+            ],
+            [
+              "36",
+              "B_Adult"
+            ],
+            [
+              "8",
+              "B_Adult"
+            ],
+            [
+              "3",
+              "B_Adult"
+            ],
+            [
+              "16",
+              "B_Adult"
+            ],
+            [
+              "14",
+              "B_Adult"
+            ],
+            [
+              "56",
+              "B_Adult"
+            ],
+            [
+              "25",
+              "B_Adult"
+            ],
+            [
+              "42",
+              "B_Adult"
+            ],
+            [
+              "9",
+              "B_Adult"
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

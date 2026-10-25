@@ -1,0 +1,5838 @@
+{
+  "D1": {
+    "parent_id": "D1",
+    "question": "What is the purpose and origin of the data? What is the purpose for original data collection? Which people and organizations are involved in the data collection process? What are the mechanisms or procedures used to collect the data?",
+    "n_relevant": 5,
+    "gt_subquestions": [
+      {
+        "id": "D1.1",
+        "text": "Purpose for original data collection"
+      },
+      {
+        "id": "D1.2",
+        "text": "People and organizations involved"
+      },
+      {
+        "id": "D1.3",
+        "text": "Mechanisms or procedures used to collect the data"
+      }
+    ],
+    "llm_subquestions": [
+      "What is the purpose and origin of the data?",
+      "What is the purpose for original data collection?",
+      "Which people and organizations are involved in the data collection process?",
+      "What are the mechanisms or procedures used to collect the data?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.45539682539682536,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.27727342735504823,
+          "R@10": 1.0,
+          "P@10": 0.5,
+          "nDCG@10": 0.6132355269353261,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.6132355269353261
+        },
+        "retrieved": [
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ]
+        ]
+      },
+      "D1.1": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.2,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.36005461457723403,
+          "R@10": 0.4,
+          "P@10": 0.2,
+          "nDCG@10": 0.36005461457723403,
+          "R@20": 0.4,
+          "P@20": 0.1,
+          "nDCG@20": 0.36005461457723403
+        },
+        "retrieved": [
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "39",
+            "D_German"
+          ],
+          [
+            "31",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ]
+        ]
+      },
+      "D1.2": {
+        "metrics_vs_own": {
+          "AP": 0.27777777777777773,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.2,
+          "nDCG@5": 0.2960819109658652,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.2,
+          "nDCG@10": 0.4632423659320675,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.1,
+          "nDCG@20": 0.4632423659320675
+        },
+        "metrics_vs_union": {
+          "AP": 0.27666666666666667,
+          "R@5": 0.2,
+          "P@5": 0.2,
+          "nDCG@5": 0.21398626473452756,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.4328368532653788,
+          "R@20": 0.8,
+          "P@20": 0.2,
+          "nDCG@20": 0.5158125813504978
+        },
+        "retrieved": [
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ]
+        ]
+      },
+      "D1.3": {
+        "metrics_vs_own": {
+          "AP": 0.5833333333333333,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 0.6934264036172708,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.6934264036172708,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.6934264036172708
+        },
+        "metrics_vs_union": {
+          "AP": 0.29333333333333333,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.48160565320269266,
+          "R@20": 0.6,
+          "P@20": 0.15,
+          "nDCG@20": 0.48160565320269266
+        },
+        "retrieved": [
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "29",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.45539682539682536,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.27727342735504823,
+          "R@10": 1.0,
+          "P@10": 0.5,
+          "nDCG@10": 0.6132355269353261,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.6132355269353261
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 1.0
+        },
+        "final": [
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.34945697577276524,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.3156484524795145,
+          "R@10": 0.6,
+          "P@10": 0.3,
+          "nDCG@10": 0.42870185423738655,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.5870174718891609
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 1.0
+        },
+        "final": [
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.45539682539682536,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.27727342735504823,
+          "R@10": 1.0,
+          "P@10": 0.5,
+          "nDCG@10": 0.6132355269353261,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.6132355269353261
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 1.0,
+          "D1.2": 1.0,
+          "D1.3": 1.0
+        },
+        "final": [
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "3",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "29",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.08566708721275285,
+          "P@5": 0.08,
+          "R@5": 0.08,
+          "nDCG@5": 0.0809525488059574,
+          "P@10": 0.09000000000000001,
+          "R@10": 0.18000000000000002,
+          "nDCG@10": 0.1331447780620403,
+          "P@20": 0.105,
+          "R@20": 0.42,
+          "nDCG@20": 0.23300307662582817
+        },
+        "coverage_per_gt_subq": {
+          "D1.1": 0.4,
+          "D1.2": 0.39999999999999997,
+          "D1.3": 0.45
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "0",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D1.1",
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": 13,
+          "ur:orig": 5,
+          "raw:sq1": 8,
+          "ur:sq1": 2,
+          "raw:sq2": 11,
+          "ur:sq2": 6,
+          "raw:sq3": null,
+          "ur:sq3": null,
+          "raw:sq4": null,
+          "ur:sq4": null
+        },
+        "final_ranks": {
+          "whole_question": 5,
+          "rerank_each": 18,
+          "rerank_once": 5
+        }
+      },
+      {
+        "key": [
+          "1",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": 18,
+          "ur:orig": 6,
+          "raw:sq1": 12,
+          "ur:sq1": 1,
+          "raw:sq2": null,
+          "ur:sq2": null,
+          "raw:sq3": null,
+          "ur:sq3": null,
+          "raw:sq4": 15,
+          "ur:sq4": 9
+        },
+        "final_ranks": {
+          "whole_question": 6,
+          "rerank_each": 19,
+          "rerank_once": 6
+        }
+      },
+      {
+        "key": [
+          "2",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D1.2"
+        ],
+        "ranks": {
+          "raw:orig": 10,
+          "ur:orig": 9,
+          "raw:sq1": 7,
+          "ur:sq1": 7,
+          "raw:sq2": 8,
+          "ur:sq2": 10,
+          "raw:sq3": 17,
+          "ur:sq3": 5,
+          "raw:sq4": 10,
+          "ur:sq4": 10
+        },
+        "final_ranks": {
+          "whole_question": 9,
+          "rerank_each": 4,
+          "rerank_once": 9
+        }
+      },
+      {
+        "key": [
+          "17",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D1.3"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 4,
+          "raw:sq1": 2,
+          "ur:sq1": 5,
+          "raw:sq2": 2,
+          "ur:sq2": 2,
+          "raw:sq3": null,
+          "ur:sq3": null,
+          "raw:sq4": 1,
+          "ur:sq4": 2
+        },
+        "final_ranks": {
+          "whole_question": 4,
+          "rerank_each": 7,
+          "rerank_once": 4
+        }
+      },
+      {
+        "key": [
+          "22",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D1.3"
+        ],
+        "ranks": {
+          "raw:orig": 4,
+          "ur:orig": 7,
+          "raw:sq1": 3,
+          "ur:sq1": 9,
+          "raw:sq2": 5,
+          "ur:sq2": 4,
+          "raw:sq3": 3,
+          "ur:sq3": 4,
+          "raw:sq4": 7,
+          "ur:sq4": 3
+        },
+        "final_ranks": {
+          "whole_question": 7,
+          "rerank_each": 3,
+          "rerank_once": 7
+        }
+      }
+    ]
+  },
+  "D2": {
+    "parent_id": "D2",
+    "question": "What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area of data collection? What is the Context of data collection?",
+    "n_relevant": 6,
+    "gt_subquestions": [
+      {
+        "id": "D2.1",
+        "text": "Timeframe of data collection"
+      },
+      {
+        "id": "D2.2",
+        "text": "Geographical area"
+      },
+      {
+        "id": "D2.3",
+        "text": "Context of data collection"
+      }
+    ],
+    "llm_subquestions": [
+      "What is the context in which the data was created? Which is the timeframe of data collection? And the geographical area of data collection? What is the Context of data collection?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.6194444444444445,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.8,
+          "nDCG@5": 0.7860137352654724,
+          "R@10": 0.8333333333333334,
+          "P@10": 0.5,
+          "nDCG@10": 0.7887616933979624,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.7887616933979624
+        },
+        "retrieved": [
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "29",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ]
+        ]
+      },
+      "D2.1": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.6131471927654584,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.6131471927654584,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.6131471927654584
+        },
+        "metrics_vs_union": {
+          "AP": 0.3333333333333333,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.48522855511632257,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.540715333933695,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.540715333933695
+        },
+        "retrieved": [
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "3",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "31",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "44",
+            "D_German"
+          ]
+        ]
+      },
+      "D2.2": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.06259029927760577,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.16666666666666666,
+          "P@10": 0.1,
+          "nDCG@10": 0.0874717141014082,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.23005515100521434
+        },
+        "retrieved": [
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ]
+        ]
+      },
+      "D2.3": {
+        "metrics_vs_own": {
+          "AP": 0.08333333333333333,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.2,
+          "nDCG@5": 0.20210734650054757,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.1,
+          "nDCG@10": 0.20210734650054757,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.05,
+          "nDCG@20": 0.20210734650054757
+        },
+        "metrics_vs_union": {
+          "AP": 0.23888888888888885,
+          "R@5": 0.5,
+          "P@5": 0.6,
+          "nDCG@5": 0.4468535299918563,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.3986875657977409,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.3986875657977409
+        },
+        "retrieved": [
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "3",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "31",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "44",
+            "D_German"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.6194444444444445,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.8,
+          "nDCG@5": 0.7860137352654724,
+          "R@10": 0.8333333333333334,
+          "P@10": 0.5,
+          "nDCG@10": 0.7887616933979624,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.7887616933979624
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.5,
+          "D2.2": 1.0,
+          "D2.3": 0.6666666666666666
+        },
+        "final": [
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "29",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.6194444444444445,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.8,
+          "nDCG@5": 0.7860137352654724,
+          "R@10": 0.8333333333333334,
+          "P@10": 0.5,
+          "nDCG@10": 0.7887616933979624,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.7887616933979624
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.5,
+          "D2.2": 1.0,
+          "D2.3": 0.6666666666666666
+        },
+        "final": [
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "29",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.6194444444444445,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.8,
+          "nDCG@5": 0.7860137352654724,
+          "R@10": 0.8333333333333334,
+          "P@10": 0.5,
+          "nDCG@10": 0.7887616933979624,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.7887616933979624
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.5,
+          "D2.2": 1.0,
+          "D2.3": 0.6666666666666666
+        },
+        "final": [
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "29",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.10513462436256553,
+          "P@5": 0.1,
+          "R@5": 0.08333333333333333,
+          "nDCG@5": 0.10827811872221857,
+          "P@10": 0.1,
+          "R@10": 0.16666666666666666,
+          "nDCG@10": 0.14675530897632424,
+          "P@20": 0.13,
+          "R@20": 0.4333333333333333,
+          "nDCG@20": 0.26660503616364956
+        },
+        "coverage_per_gt_subq": {
+          "D2.1": 0.45,
+          "D2.2": 0.6,
+          "D2.3": 0.3333333333333333
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "19",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D2.1"
+        ],
+        "ranks": {
+          "raw:orig": 4,
+          "ur:orig": 1,
+          "raw:sq1": 4,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "20",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D2.1",
+          "D2.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "0",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D2.2"
+        ],
+        "ranks": {
+          "raw:orig": 7,
+          "ur:orig": 3,
+          "raw:sq1": 7,
+          "ur:sq1": 3
+        },
+        "final_ranks": {
+          "whole_question": 3,
+          "rerank_each": 3,
+          "rerank_once": 3
+        }
+      },
+      {
+        "key": [
+          "2",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D2.2"
+        ],
+        "ranks": {
+          "raw:orig": 3,
+          "ur:orig": 4,
+          "raw:sq1": 3,
+          "ur:sq1": 4
+        },
+        "final_ranks": {
+          "whole_question": 4,
+          "rerank_each": 4,
+          "rerank_once": 4
+        }
+      },
+      {
+        "key": [
+          "17",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D2.3"
+        ],
+        "ranks": {
+          "raw:orig": 8,
+          "ur:orig": 5,
+          "raw:sq1": 8,
+          "ur:sq1": 5
+        },
+        "final_ranks": {
+          "whole_question": 5,
+          "rerank_each": 5,
+          "rerank_once": 5
+        }
+      },
+      {
+        "key": [
+          "22",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D2.3"
+        ],
+        "ranks": {
+          "raw:orig": 6,
+          "ur:orig": 10,
+          "raw:sq1": 6,
+          "ur:sq1": 10
+        },
+        "final_ranks": {
+          "whole_question": 10,
+          "rerank_each": 10,
+          "rerank_once": 10
+        }
+      }
+    ]
+  },
+  "D3": {
+    "parent_id": "D3",
+    "question": "What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and data cleaning is done? What are the data labeling and annotation?",
+    "n_relevant": 6,
+    "gt_subquestions": [
+      {
+        "id": "D3.1",
+        "text": "Sampling strategy"
+      },
+      {
+        "id": "D3.2",
+        "text": "Data preprocessing"
+      },
+      {
+        "id": "D3.3",
+        "text": "Data cleaning"
+      },
+      {
+        "id": "D3.4",
+        "text": "Data labeling and annotation"
+      }
+    ],
+    "llm_subquestions": [
+      "What data preparation processing operations took place? Which sampling strategy is used? What data preprocessing and data cleaning is done? What are the data labeling and annotation?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.30324074074074076,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.36005461457723403,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.4,
+          "nDCG@10": 0.5077974684022307,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.2,
+          "nDCG@20": 0.5077974684022307
+        },
+        "retrieved": [
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "31",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "D3.1": {
+        "metrics_vs_own": {
+          "AP": 0.8333333333333333,
+          "R@5": 1.0,
+          "P@5": 0.4,
+          "nDCG@5": 0.9197207891481876,
+          "R@10": 1.0,
+          "P@10": 0.2,
+          "nDCG@10": 0.9197207891481876,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.9197207891481876
+        },
+        "metrics_vs_union": {
+          "AP": 0.44199346405228757,
+          "R@5": 0.5,
+          "P@5": 0.6,
+          "nDCG@5": 0.6548086577531307,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.5842273861585908,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.2,
+          "nDCG@20": 0.656795217329211
+        },
+        "retrieved": [
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ]
+        ]
+      },
+      "D3.2": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.24444444444444444,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.4296937870297496,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.4296937870297496
+        },
+        "retrieved": [
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "37",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ]
+        ]
+      },
+      "D3.3": {
+        "metrics_vs_own": {
+          "AP": 0.020833333333333332,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.05,
+          "nDCG@20": 0.11480929472601784
+        },
+        "metrics_vs_union": {
+          "AP": 0.1099537037037037,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.14606834984270645,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.2214161691338287,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.295448013642597
+        },
+        "retrieved": [
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "37",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ]
+        ]
+      },
+      "D3.4": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.03504273504273504,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.1,
+          "nDCG@20": 0.1551289865812993
+        },
+        "retrieved": [
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "37",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.30324074074074076,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.36005461457723403,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.4,
+          "nDCG@10": 0.5077974684022307,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.2,
+          "nDCG@20": 0.5077974684022307
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 1.0,
+          "D3.2": 1.0,
+          "D3.3": 0.6666666666666666,
+          "D3.4": 0.5
+        },
+        "final": [
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "31",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.30324074074074076,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.36005461457723403,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.4,
+          "nDCG@10": 0.5077974684022307,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.2,
+          "nDCG@20": 0.5077974684022307
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 1.0,
+          "D3.2": 1.0,
+          "D3.3": 0.6666666666666666,
+          "D3.4": 0.5
+        },
+        "final": [
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "31",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.30324074074074076,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.36005461457723403,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.4,
+          "nDCG@10": 0.5077974684022307,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.2,
+          "nDCG@20": 0.5077974684022307
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 1.0,
+          "D3.2": 1.0,
+          "D3.3": 0.6666666666666666,
+          "D3.4": 0.5
+        },
+        "final": [
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "31",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.12648771793508637,
+          "P@5": 0.18000000000000002,
+          "R@5": 0.15,
+          "nDCG@5": 0.1830419897363192,
+          "P@10": 0.13,
+          "R@10": 0.21666666666666665,
+          "nDCG@10": 0.1994616748717313,
+          "P@20": 0.125,
+          "R@20": 0.41666666666666663,
+          "nDCG@20": 0.2906791031009929
+        },
+        "coverage_per_gt_subq": {
+          "D3.1": 0.55,
+          "D3.2": 0.3,
+          "D3.3": 0.39999999999999997,
+          "D3.4": 0.25
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "18",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D3.1"
+        ],
+        "ranks": {
+          "raw:orig": 2,
+          "ur:orig": 2,
+          "raw:sq1": 2,
+          "ur:sq1": 2
+        },
+        "final_ranks": {
+          "whole_question": 2,
+          "rerank_each": 2,
+          "rerank_once": 2
+        }
+      },
+      {
+        "key": [
+          "19",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D3.1"
+        ],
+        "ranks": {
+          "raw:orig": 11,
+          "ur:orig": 8,
+          "raw:sq1": 11,
+          "ur:sq1": 8
+        },
+        "final_ranks": {
+          "whole_question": 8,
+          "rerank_each": 8,
+          "rerank_once": 8
+        }
+      },
+      {
+        "key": [
+          "25",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D3.2",
+          "D3.3",
+          "D3.4"
+        ],
+        "ranks": {
+          "raw:orig": 13,
+          "ur:orig": 4,
+          "raw:sq1": 13,
+          "ur:sq1": 4
+        },
+        "final_ranks": {
+          "whole_question": 4,
+          "rerank_each": 4,
+          "rerank_once": 4
+        }
+      },
+      {
+        "key": [
+          "26",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D3.2",
+          "D3.3"
+        ],
+        "ranks": {
+          "raw:orig": 15,
+          "ur:orig": 9,
+          "raw:sq1": 15,
+          "ur:sq1": 9
+        },
+        "final_ranks": {
+          "whole_question": 9,
+          "rerank_each": 9,
+          "rerank_once": 9
+        }
+      },
+      {
+        "key": [
+          "9",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D3.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "5",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D3.4"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      }
+    ]
+  },
+  "D4": {
+    "parent_id": "D4",
+    "question": "What does the data measure and represent? What are the available features (or covariates) and their explanation? Which are the target variable(s) and their explanation? Which is the dataset size? And what are the assumptions about what the data represents?",
+    "n_relevant": 6,
+    "gt_subquestions": [
+      {
+        "id": "D4.1",
+        "text": "Available features"
+      },
+      {
+        "id": "D4.2",
+        "text": "Target variables"
+      },
+      {
+        "id": "D4.3",
+        "text": "Dataset size"
+      },
+      {
+        "id": "D4.4",
+        "text": "Assumptions about representation"
+      }
+    ],
+    "llm_subquestions": [
+      "What does the data measure and represent? What are the available features (or covariates) and their explanation? Which are the target variable(s) and their explanation? Which is the dataset size? And what are the assumptions about what the data represents?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.28888888888888886,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.4703652827859579,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.5107574098602351,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.5107574098602351
+        },
+        "retrieved": [
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "D4.1": {
+        "metrics_vs_own": {
+          "AP": 0.08333333333333333,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.21840743681816419,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.21840743681816419
+        },
+        "metrics_vs_union": {
+          "AP": 0.1503267973856209,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.20865662569078208,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.2,
+          "nDCG@20": 0.3586779729232415
+        },
+        "retrieved": [
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "37",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ]
+        ]
+      },
+      "D4.2": {
+        "metrics_vs_own": {
+          "AP": 0.3,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.4,
+          "nDCG@5": 0.4776237035032179,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.2,
+          "nDCG@10": 0.4776237035032179,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.1,
+          "nDCG@20": 0.4776237035032179
+        },
+        "metrics_vs_union": {
+          "AP": 0.5074074074074074,
+          "R@5": 0.5,
+          "P@5": 0.6,
+          "nDCG@5": 0.6843515475204855,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.4,
+          "nDCG@10": 0.7016782760391698,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.2,
+          "nDCG@20": 0.7016782760391698
+        },
+        "retrieved": [
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "46",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "47",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ]
+        ]
+      },
+      "D4.3": {
+        "metrics_vs_own": {
+          "AP": 0.03333333333333333,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.1532867981913646
+        },
+        "metrics_vs_union": {
+          "AP": 0.14505503955968352,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.16666666666666666,
+          "P@10": 0.1,
+          "nDCG@10": 0.0874717141014082,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.3745993211174908
+        },
+        "retrieved": [
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ]
+        ]
+      },
+      "D4.4": {
+        "metrics_vs_own": {
+          "AP": 0.125,
+          "R@5": 0.5,
+          "P@5": 0.2,
+          "nDCG@5": 0.2640681225725909,
+          "R@10": 0.5,
+          "P@10": 0.1,
+          "nDCG@10": 0.2640681225725909,
+          "R@20": 0.5,
+          "P@20": 0.05,
+          "nDCG@20": 0.2640681225725909
+        },
+        "metrics_vs_union": {
+          "AP": 0.16666666666666666,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.14606834984270645,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.22578419899983795,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.2,
+          "nDCG@20": 0.3815907612577783
+        },
+        "retrieved": [
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.28888888888888886,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.4703652827859579,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.5107574098602351,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.5107574098602351
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.5,
+          "D4.2": 0.0,
+          "D4.3": 0.5,
+          "D4.4": 1.0
+        },
+        "final": [
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.28888888888888886,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.4703652827859579,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.5107574098602351,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.5107574098602351
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.5,
+          "D4.2": 0.0,
+          "D4.3": 0.5,
+          "D4.4": 1.0
+        },
+        "final": [
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.28888888888888886,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.4703652827859579,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.5107574098602351,
+          "R@20": 0.5,
+          "P@20": 0.15,
+          "nDCG@20": 0.5107574098602351
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.5,
+          "D4.2": 0.0,
+          "D4.3": 0.5,
+          "D4.4": 1.0
+        },
+        "final": [
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "34",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.08486890517463273,
+          "P@5": 0.08,
+          "R@5": 0.06666666666666667,
+          "nDCG@5": 0.09555938379022805,
+          "P@10": 0.08,
+          "R@10": 0.13333333333333333,
+          "nDCG@10": 0.12372582755693788,
+          "P@20": 0.105,
+          "R@20": 0.35,
+          "nDCG@20": 0.22530636661014708
+        },
+        "coverage_per_gt_subq": {
+          "D4.1": 0.3,
+          "D4.2": 0.36666666666666664,
+          "D4.3": 0.45,
+          "D4.4": 0.3
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "4",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D4.1",
+          "D4.4"
+        ],
+        "ranks": {
+          "raw:orig": 1,
+          "ur:orig": 5,
+          "raw:sq1": 1,
+          "ur:sq1": 5
+        },
+        "final_ranks": {
+          "whole_question": 5,
+          "rerank_each": 5,
+          "rerank_once": 5
+        }
+      },
+      {
+        "key": [
+          "48",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D4.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "5",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D4.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "6",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D4.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "2",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D4.3"
+        ],
+        "ranks": {
+          "raw:orig": 6,
+          "ur:orig": 1,
+          "raw:sq1": 6,
+          "ur:sq1": 1
+        },
+        "final_ranks": {
+          "whole_question": 1,
+          "rerank_each": 1,
+          "rerank_once": 1
+        }
+      },
+      {
+        "key": [
+          "18",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D4.4"
+        ],
+        "ranks": {
+          "raw:orig": 4,
+          "ur:orig": 9,
+          "raw:sq1": 4,
+          "ur:sq1": 9
+        },
+        "final_ranks": {
+          "whole_question": 9,
+          "rerank_each": 9,
+          "rerank_once": 9
+        }
+      }
+    ]
+  },
+  "D5": {
+    "parent_id": "D5",
+    "question": "Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the marginal distribution of protected attributes? And what about the joint distribution of protected and target? What are the expected distributions? What is the label provenance?",
+    "n_relevant": 6,
+    "gt_subquestions": [
+      {
+        "id": "D5.1",
+        "text": "Attributes at risk"
+      },
+      {
+        "id": "D5.2",
+        "text": "Marginal distribution"
+      },
+      {
+        "id": "D5.3",
+        "text": "Joint distribution"
+      },
+      {
+        "id": "D5.5",
+        "text": "Label provenance"
+      },
+      {
+        "id": "D5.6",
+        "text": "Bias mitigation"
+      }
+    ],
+    "llm_subquestions": [
+      "Which data biases might lead to discrimination? Which attributes are salient or at risk of discrimination? What are the marginal distribution of protected attributes? And what about the joint distribution of protected and target? What are the expected distributions? What is the label provenance?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.041666666666666664,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.14606834984270645,
+          "R@10": 0.16666666666666666,
+          "P@10": 0.1,
+          "nDCG@10": 0.13032376591037062,
+          "R@20": 0.16666666666666666,
+          "P@20": 0.05,
+          "nDCG@20": 0.13032376591037062
+        },
+        "retrieved": [
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "D5.1": {
+        "metrics_vs_own": {
+          "AP": 0.09821428571428571,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 1.0,
+          "P@20": 0.1,
+          "nDCG@20": 0.3069467374862678
+        },
+        "metrics_vs_union": {
+          "AP": 0.03273809523809524,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.3333333333333333,
+          "P@20": 0.1,
+          "nDCG@20": 0.15148536057060766
+        },
+        "retrieved": [
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "46",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "47",
+            "D_German"
+          ],
+          [
+            "44",
+            "D_German"
+          ],
+          [
+            "42",
+            "D_German"
+          ],
+          [
+            "41",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "45",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "39",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "38",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ]
+        ]
+      },
+      "D5.2": {
+        "metrics_vs_own": {
+          "AP": 0.3333333333333333,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 0.5,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.5,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.5
+        },
+        "metrics_vs_union": {
+          "AP": 0.3993686868686868,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.4,
+          "nDCG@10": 0.5251542201192169,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.6095630287017171
+        },
+        "retrieved": [
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ]
+        ]
+      },
+      "D5.3": {
+        "metrics_vs_own": {
+          "AP": 0.1,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.2890648263178879,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.2890648263178879
+        },
+        "metrics_vs_union": {
+          "AP": 0.46875,
+          "R@5": 0.5,
+          "P@5": 0.6,
+          "nDCG@5": 0.6164336326286644,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.4,
+          "nDCG@10": 0.6374604866485558,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.7114923311573241
+        },
+        "retrieved": [
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "41",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ]
+        ]
+      },
+      "D5.5": {
+        "metrics_vs_own": {
+          "AP": 0.3888888888888889,
+          "R@5": 0.3333333333333333,
+          "P@5": 0.2,
+          "nDCG@5": 0.46927872602275644,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.1,
+          "nDCG@10": 0.46927872602275644,
+          "R@20": 0.6666666666666666,
+          "P@20": 0.1,
+          "nDCG@20": 0.59609574285515
+        },
+        "metrics_vs_union": {
+          "AP": 0.35679713804713803,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.3391602052736161,
+          "R@10": 0.3333333333333333,
+          "P@10": 0.2,
+          "nDCG@10": 0.3936948167222715,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.6339101875627121
+        },
+        "retrieved": [
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ]
+        ]
+      },
+      "D5.6": {
+        "metrics_vs_own": {
+          "AP": 0.5,
+          "R@5": 1.0,
+          "P@5": 0.2,
+          "nDCG@5": 0.6309297535714575,
+          "R@10": 1.0,
+          "P@10": 0.1,
+          "nDCG@10": 0.6309297535714575,
+          "R@20": 1.0,
+          "P@20": 0.05,
+          "nDCG@20": 0.6309297535714575
+        },
+        "metrics_vs_union": {
+          "AP": 0.31816100566100564,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.21398626473452756,
+          "R@10": 0.5,
+          "P@10": 0.3,
+          "nDCG@10": 0.38724877043467315,
+          "R@20": 0.8333333333333334,
+          "P@20": 0.25,
+          "nDCG@20": 0.5511359622237694
+        },
+        "retrieved": [
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.041666666666666664,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.14606834984270645,
+          "R@10": 0.16666666666666666,
+          "P@10": 0.1,
+          "nDCG@10": 0.13032376591037062,
+          "R@20": 0.16666666666666666,
+          "P@20": 0.05,
+          "nDCG@20": 0.13032376591037062
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.0,
+          "D5.2": 0.0,
+          "D5.3": 0.0,
+          "D5.5": 0.0,
+          "D5.6": 1.0
+        },
+        "final": [
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.041666666666666664,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.14606834984270645,
+          "R@10": 0.16666666666666666,
+          "P@10": 0.1,
+          "nDCG@10": 0.13032376591037062,
+          "R@20": 0.16666666666666666,
+          "P@20": 0.05,
+          "nDCG@20": 0.13032376591037062
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.0,
+          "D5.2": 0.0,
+          "D5.3": 0.0,
+          "D5.5": 0.0,
+          "D5.6": 1.0
+        },
+        "final": [
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.041666666666666664,
+          "R@5": 0.16666666666666666,
+          "P@5": 0.2,
+          "nDCG@5": 0.14606834984270645,
+          "R@10": 0.16666666666666666,
+          "P@10": 0.1,
+          "nDCG@10": 0.13032376591037062,
+          "R@20": 0.16666666666666666,
+          "P@20": 0.05,
+          "nDCG@20": 0.13032376591037062
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.0,
+          "D5.2": 0.0,
+          "D5.3": 0.0,
+          "D5.5": 0.0,
+          "D5.6": 1.0
+        },
+        "final": [
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.13847383982832898,
+          "P@5": 0.12000000000000001,
+          "R@5": 0.09999999999999999,
+          "nDCG@5": 0.13242969329432513,
+          "P@10": 0.14,
+          "R@10": 0.23333333333333334,
+          "nDCG@10": 0.19807070699413287,
+          "P@20": 0.16,
+          "R@20": 0.5333333333333333,
+          "nDCG@20": 0.3293771727680652
+        },
+        "coverage_per_gt_subq": {
+          "D5.1": 0.55,
+          "D5.2": 0.5,
+          "D5.3": 0.5,
+          "D5.5": 0.6,
+          "D5.6": 0.3
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "13",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D5.1"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "14",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D5.1",
+          "D5.2",
+          "D5.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "5",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D5.5"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "6",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D5.5"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "25",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D5.5"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "18",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D5.6"
+        ],
+        "ranks": {
+          "raw:orig": 5,
+          "ur:orig": 4,
+          "raw:sq1": 5,
+          "ur:sq1": 4
+        },
+        "final_ranks": {
+          "whole_question": 4,
+          "rerank_each": 4,
+          "rerank_once": 4
+        }
+      }
+    ]
+  },
+  "D6": {
+    "parent_id": "D6",
+    "question": "What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps in the data? Which is the severity of inaccuracy?",
+    "n_relevant": 5,
+    "gt_subquestions": [
+      {
+        "id": "D6.1",
+        "text": "Plausible sources of inaccuracy"
+      },
+      {
+        "id": "D6.2",
+        "text": "Gaps in the data"
+      },
+      {
+        "id": "D6.3",
+        "text": "Errors, noise, redundancies"
+      }
+    ],
+    "llm_subquestions": [
+      "What data gaps and shortcomings are there in the data? Which is the plausible sources of inaccuracy? Are there any gaps in the data? Which is the severity of inaccuracy?"
+    ],
+    "subq_source": "llm",
+    "direct": {
+      "parent_question": {
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ]
+        ]
+      },
+      "D6.1": {
+        "metrics_vs_own": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "retrieved": [
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "3",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "29",
+            "D_German"
+          ],
+          [
+            "37",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "44",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "31",
+            "D_German"
+          ]
+        ]
+      },
+      "D6.2": {
+        "metrics_vs_own": {
+          "AP": 0.027777777777777776,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.25,
+          "P@10": 0.1,
+          "nDCG@10": 0.11751610475642714,
+          "R@20": 0.25,
+          "P@20": 0.05,
+          "nDCG@20": 0.11751610475642714
+        },
+        "metrics_vs_union": {
+          "AP": 0.09444444444444444,
+          "R@5": 0.2,
+          "P@5": 0.2,
+          "nDCG@5": 0.14606834984270645,
+          "R@10": 0.4,
+          "P@10": 0.2,
+          "nDCG@10": 0.24816574496561808,
+          "R@20": 0.4,
+          "P@20": 0.1,
+          "nDCG@20": 0.24816574496561808
+        },
+        "retrieved": [
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "29",
+            "D_German"
+          ],
+          [
+            "0",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "30",
+            "D_German"
+          ]
+        ]
+      },
+      "D6.3": {
+        "metrics_vs_own": {
+          "AP": 0.4444444444444444,
+          "R@5": 0.6666666666666666,
+          "P@5": 0.4,
+          "nDCG@5": 0.5307212739772434,
+          "R@10": 0.6666666666666666,
+          "P@10": 0.2,
+          "nDCG@10": 0.5307212739772434,
+          "R@20": 1.0,
+          "P@20": 0.15,
+          "nDCG@20": 0.6411936689363409
+        },
+        "metrics_vs_union": {
+          "AP": 0.3934343434343434,
+          "R@5": 0.4,
+          "P@5": 0.4,
+          "nDCG@5": 0.38356636737133565,
+          "R@10": 0.4,
+          "P@10": 0.2,
+          "nDCG@10": 0.38356636737133565,
+          "R@20": 1.0,
+          "P@20": 0.25,
+          "nDCG@20": 0.6409897775437869
+        },
+        "retrieved": [
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "8",
+            "D_German"
+          ],
+          [
+            "9",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "48",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "13",
+            "D_German"
+          ],
+          [
+            "15",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "5",
+            "D_German"
+          ],
+          [
+            "6",
+            "D_German"
+          ],
+          [
+            "14",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "20",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "12",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "11",
+            "D_German"
+          ],
+          [
+            "19",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ]
+        ]
+      }
+    },
+    "pipeline": {
+      "whole_question": {
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.0,
+          "D6.2": 0.0,
+          "D6.3": 0.0
+        },
+        "final": [
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_each": {
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.0,
+          "D6.2": 0.0,
+          "D6.3": 0.0
+        },
+        "final": [
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ]
+        ]
+      },
+      "rerank_once": {
+        "metrics_vs_union": {
+          "AP": 0.0,
+          "R@5": 0.0,
+          "P@5": 0.0,
+          "nDCG@5": 0.0,
+          "R@10": 0.0,
+          "P@10": 0.0,
+          "nDCG@10": 0.0,
+          "R@20": 0.0,
+          "P@20": 0.0,
+          "nDCG@20": 0.0
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.0,
+          "D6.2": 0.0,
+          "D6.3": 0.0
+        },
+        "final": [
+          [
+            "7",
+            "D_German"
+          ],
+          [
+            "16",
+            "D_German"
+          ],
+          [
+            "23",
+            "D_German"
+          ],
+          [
+            "21",
+            "D_German"
+          ],
+          [
+            "28",
+            "D_German"
+          ],
+          [
+            "18",
+            "D_German"
+          ],
+          [
+            "4",
+            "D_German"
+          ],
+          [
+            "17",
+            "D_German"
+          ],
+          [
+            "26",
+            "D_German"
+          ],
+          [
+            "10",
+            "D_German"
+          ],
+          [
+            "27",
+            "D_German"
+          ],
+          [
+            "22",
+            "D_German"
+          ],
+          [
+            "1",
+            "D_German"
+          ],
+          [
+            "25",
+            "D_German"
+          ],
+          [
+            "32",
+            "D_German"
+          ],
+          [
+            "24",
+            "D_German"
+          ],
+          [
+            "36",
+            "D_German"
+          ],
+          [
+            "2",
+            "D_German"
+          ],
+          [
+            "35",
+            "D_German"
+          ],
+          [
+            "33",
+            "D_German"
+          ]
+        ]
+      },
+      "random": {
+        "metrics_vs_union": {
+          "AP": 0.12192407265936676,
+          "P@5": 0.1,
+          "R@5": 0.1,
+          "nDCG@5": 0.09172188127778141,
+          "P@10": 0.15000000000000002,
+          "R@10": 0.30000000000000004,
+          "nDCG@10": 0.19865542101496372,
+          "P@20": 0.13,
+          "R@20": 0.52,
+          "nDCG@20": 0.29393604767367953
+        },
+        "coverage_per_gt_subq": {
+          "D6.1": 0.5666666666666667,
+          "D6.2": 0.475,
+          "D6.3": 0.5666666666666667
+        }
+      }
+    },
+    "chunk_trace": [
+      {
+        "key": [
+          "8",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D6.1",
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "9",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D6.1",
+          "D6.2",
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "11",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D6.1",
+          "D6.2",
+          "D6.3"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "6",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D6.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      },
+      {
+        "key": [
+          "12",
+          "D_German"
+        ],
+        "gt_subquestions": [
+          "D6.2"
+        ],
+        "ranks": {
+          "raw:orig": null,
+          "ur:orig": null,
+          "raw:sq1": null,
+          "ur:sq1": null
+        },
+        "final_ranks": {
+          "whole_question": null,
+          "rerank_each": null,
+          "rerank_once": null
+        }
+      }
+    ]
+  },
+  "_grand_summary": {
+    "whole_question": {
+      "MAP": 0.28477292768959434,
+      "R@20": 0.5277777777777778
+    },
+    "rerank_each": {
+      "MAP": 0.26711628608558435,
+      "R@20": 0.5277777777777778
+    },
+    "rerank_once": {
+      "MAP": 0.28477292768959434,
+      "R@20": 0.5277777777777778
+    },
+    "random": {
+      "MAP": 0.11042604119545554,
+      "R@20": 0.44555555555555554
+    }
+  }
+}

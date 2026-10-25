@@ -15,63 +15,41 @@ from rerankers.reranker import rerank_with_bge
 
 
 # ============================================================
-#  RRF - Reciprocal Rank Fusion (veloce con chunk_id)
+#  RRF - Reciprocal Rank Fusion (coerente con (chunk_id, source))
 # ============================================================
 
-def rrf_fusion(resultsA, resultsB, k=60, debug=False):
+def doc_key(doc: Document):
     """
-    Applica la Reciprocal Rank Fusion (RRF) a due liste di documenti.
-    Combina due ranking diversi in un unico ranking.
+    Chiave univoca di un chunk: (chunk_id, source).
+    Necessaria con piu' PDF nello stesso indice, perche' lo stesso
+    chunk_id puo' comparire in documenti diversi.
+    Coerente con GT e valutazione.
+    """
+    return (str(doc.metadata["chunk_id"]), str(doc.metadata["source"]))
 
-    INPUT:
-        resultsA (List[Document]):
-            Risultati del primo retriever.
-        resultsB (List[Document]):
-            Risultati del secondo retriever.
-        k (int):
-            Costante di normalizzazione RRF.
-        debug (bool):
-            Se True stampa i contributi di ogni documento.
+
+def rrf_fuse_rankings(rankings: List[List[Document]], k: int = 60, debug: bool = False, tag: str = "RRF"):
+    """
+    RRF generale su N classifiche (liste di Document gia' ordinate).
+    Usata sia per fondere i retriever (N=2) sia per fondere le
+    sotto-domande del multi-query (N=numero di sub_questions).
 
     OUTPUT:
-        fused_docs (List[Document]):
-            Lista di documenti ordinati per score RRF.
-        scores (dict):
-            Mappa chunk_id - punteggio RRF.
-        docs_map (dict):
-            Mappa chunk_id - documento originale.
-
-    NOTE:
-        - RRF è robusto perché non dipende dai valori assoluti degli score.
-        - Usa solo il rank relativo.
+        fused_docs (List[Document]), scores (dict), docs_map (dict)
+        con chiavi (chunk_id, source).
     """
-
     scores = {}
     docs_map = {}
 
- 
-    def make_key(doc: Document):
-        return doc.metadata.get("chunk_id")
+    for list_idx, results in enumerate(rankings):
+        for rank, doc in enumerate(results):
+            key = doc_key(doc)
+            docs_map.setdefault(key, doc)
+            increment = 1 / (k + rank + 1)
+            scores[key] = scores.get(key, 0) + increment
 
-    # --- lista A ---
-    for rank, doc in enumerate(resultsA):
-        key = make_key(doc)
-        docs_map[key] = doc
-        increment = 1 / (k + rank + 1)
-        scores[key] = scores.get(key, 0) + increment
-
-        if debug:
-            print(f"[RRF][A] rank={rank:3d}  +{increment:.6f}  chunk_id={key}")
-
-    # --- lista B ---
-    for rank, doc in enumerate(resultsB):
-        key = make_key(doc)
-        docs_map[key] = doc
-        increment = 1 / (k + rank + 1)
-        scores[key] = scores.get(key, 0) + increment
-
-        if debug:
-            print(f"[RRF][B] rank={rank:3d}  +{increment:.6f}  chunk_id={key}")
+            if debug:
+                print(f"[{tag}][{list_idx}] rank={rank:3d}  +{increment:.6f}  key={key}")
 
     ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     fused_docs = [docs_map[key] for key, _ in ranked]
@@ -79,41 +57,22 @@ def rrf_fusion(resultsA, resultsB, k=60, debug=False):
     return fused_docs, scores, docs_map
 
 
+def rrf_fusion(resultsA, resultsB, k=60, debug=False):
+    """
+    RRF tra due retriever (wrapper di rrf_fuse_rankings).
+    Chiave unica (chunk_id, source).
+    """
+    return rrf_fuse_rankings([resultsA, resultsB], k=k, debug=debug, tag="RRF")
+
+
 # ============================================================
-#  DEBUG TABLE
+#  DEBUG TABLE (coerente con (chunk_id, source))
 # ============================================================
 
 def print_rrf_debug_table(resultsA, resultsB, scores, docs_map, max_len=80):
-    """
-   
-    Stampare una tabella che mostra:
-            - rank in A
-            - rank in B
-            - score RRF
-            - anteprima contenuto
-            - metadata
 
-    INPUT:
-        resultsA, resultsB:
-            Liste di Document.
-        scores (dict):
-            Punteggi RRF.
-        docs_map (dict):
-            chunk_id → Document.
-        max_len (int):
-            Lunghezza massima dell'anteprima contenuto.
-
-    OUTPUT:
-        Nessun output di ritorno.
-        Stampa su stdout.
-
-    """
-
-    def make_key(doc):
-        return doc.metadata.get("chunk_id")
-
-    rankA = {make_key(doc): i for i, doc in enumerate(resultsA)}
-    rankB = {make_key(doc): i for i, doc in enumerate(resultsB)}
+    rankA = {doc_key(doc): i for i, doc in enumerate(resultsA)}
+    rankB = {doc_key(doc): i for i, doc in enumerate(resultsB)}
 
     ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
@@ -138,34 +97,14 @@ def print_rrf_debug_table(resultsA, resultsB, scores, docs_map, max_len=80):
     print("==========================================================\n")
 
 
+# ============================================================
+#  EXPORT RRF DEBUG JSON (coerente con (chunk_id, source))
+# ============================================================
 
-def export_rrf_debug_json(resultsA, resultsB, scores, docs_map, max_len=200) -> Dict[str, Any]:
-    """
-        Esporta i risultati RRF in formato JSON
+def export_rrf_debug_json(resultsA, resultsB, scores, docs_map, max_len=200):
 
-    INPUT:
-        resultsA, resultsB:
-            Liste di Document.
-        scores (dict):
-            Punteggi RRF.
-        docs_map (dict):
-            chunk_id → Document.
-        max_len (int):
-            Lunghezza massima anteprima contenuto.
-
-    OUTPUT:
-        dict:
-            {
-                "rrf_results": [...],
-                "total_documents": int
-            }
-    """
-
-    def make_key(doc):
-        return doc.metadata.get("chunk_id")
-
-    rankA = {make_key(doc): i for i, doc in enumerate(resultsA)}
-    rankB = {make_key(doc): i for i, doc in enumerate(resultsB)}
+    rankA = {doc_key(doc): i for i, doc in enumerate(resultsA)}
+    rankB = {doc_key(doc): i for i, doc in enumerate(resultsB)}
 
     ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
@@ -184,7 +123,8 @@ def export_rrf_debug_json(resultsA, resultsB, scores, docs_map, max_len=200) -> 
             "rank_in_B": rankB.get(key, None),
             "rrf_score": score,
             "content_preview": content,
-            "metadata": doc.metadata
+            "metadata": doc.metadata,
+            "key": key
         })
 
     return {
@@ -198,18 +138,6 @@ def export_rrf_debug_json(resultsA, resultsB, scores, docs_map, max_len=200) -> 
 # ============================================================
 
 def build_single_bge(chunks: List[Document]):
-    """
-    Costruisce un retriever con BGE-small.
-
-    INPUT:
-        chunks (List[Document]):
-            Documenti da indicizzare.
-
-    OUTPUT:
-        (retriever,):
-            Tupla contenente un solo retriever FAISS.
-    """
-
     emb = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
     vs = FAISS.from_documents(chunks, emb)
     retr = vs.as_retriever(search_kwargs={"k": 20})
@@ -229,39 +157,18 @@ def build_single_bgem3(chunks: List[Document]):
     retr = vs.as_retriever(search_kwargs={"k": 20})
     return (retr,)
 
+
 def build_single_bm25(chunks: List[Document]):
-    """
-    Costruisce un retriever BM25 singolo.
-
-    INPUT:
-        chunks (List[Document]):
-            Documenti da indicizzare.
-
-    OUTPUT:
-        (retriever,):
-            Tupla contenente un solo retriever BM25.
-    """
     bm25 = BM25Retriever.from_documents(chunks)
     bm25.k = 20
     return (bm25,)
 
 
 # ============================================================
-#  DUAL RETRIEVER COMBO (RRF) 
+#  DUAL RETRIEVER COMBO (RRF)
 # ============================================================
 
 def build_dense_bge_e5(chunks: List[Document]) -> Tuple:
-    """
-    Costruisce una coppia di retriever densi (BGE + E5) da usare con RRF.
-
-    INPUT:
-        chunks (List[Document])
-
-    OUTPUT:
-        (retrA, retrB):
-            Due retriever FAISS.
-    """
-
     embA = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
     embB = HuggingFaceEmbeddings(model_name="intfloat/e5-small-v2")
 
@@ -314,25 +221,7 @@ def build_bm25_e5(chunks: List[Document]) -> Tuple:
 # ============================================================
 
 def build_retriever_combo(name: str, chunks: List[Document]) -> Tuple:
-    """
-    Factory che costruisce automaticamente la combinazione
-    di retriever richiesta dal nome.
 
-    INPUT:
-        name (str):
-            Nome della combo (single_bge, dense_bge_e5, ecc.)
-        chunks (List[Document]):
-            Documenti da indicizzare.
-
-    OUTPUT:
-        Tuple:
-            Uno o due retriever a seconda della combo.
-
-    NOTE:
-        - Se il nome non è riconosciuto -> ValueError.
-    """
-
-    # --- SINGLE ---
     if name == "single_bge":
         return build_single_bge(chunks)
     elif name == "single_e5":
@@ -342,7 +231,6 @@ def build_retriever_combo(name: str, chunks: List[Document]) -> Tuple:
     elif name == "single_bm25":
         return build_single_bm25(chunks)
 
-    # --- DUAL (RRF) ---
     elif name == "dense_bge_e5":
         return build_dense_bge_e5(chunks)
     elif name == "dense_bgem3_e5":
@@ -368,39 +256,11 @@ def unified_retrieval(
     debug: bool = False,
     return_debug: bool = False
 ):
-    """
-    Esegue il retrieval:
-            - 1 retriever - retrieval + reranking
-            - 2 retriever - RRF fusion + reranking
-    INPUT:
-        retrievers (Tuple):
-            Uno o due retriever.
-        query (str):
-            Domanda dell’utente.
-        k (int):
-            Numero di documenti finali.
-        rrf_k (int):
-            Costante RRF.
-        debug (bool):
-            Stampa debug RRF.
-        return_debug (bool):
-            Restituisce struttura completa per analisi.
 
-    OUTPUT:
-        List[Document] oppure dict (se return_debug=True)
-
-    NOTE:
-        - Il reranking finale usa sempre il CrossEncoder.
-        - Supporta solo 1 o 2 retriever.
-    """
-
-    # Caso singolo retriever
     if len(retrievers) == 1:
         retr = retrievers[0]
         docs = retr.get_relevant_documents(query)
         docs = docs[:k]
-
-        # RERANKING ANCHE PER I SINGOLI
         reranked = rerank_with_bge(query, docs, top_n=k)
 
         if return_debug:
@@ -412,7 +272,6 @@ def unified_retrieval(
             }
         return reranked
 
-    # Caso RRF
     elif len(retrievers) == 2:
         retrA, retrB = retrievers
 
@@ -425,7 +284,6 @@ def unified_retrieval(
 
         fused_docs = fused_docs[:k]
 
-        # RERANKING DOPO RRF
         reranked = rerank_with_bge(query, fused_docs, top_n=k)
 
         if return_debug:
@@ -443,5 +301,35 @@ def unified_retrieval(
     else:
         raise ValueError(
             f"unified_retrieval supporta solo 1 o 2 retriever, ricevuti: {len(retrievers)}"
+        )
+
+
+# ============================================================
+#  ONLY RETRIEVAL PER SUBQUESTIONS
+# ============================================================        
+
+def retrieve_raw(
+    retrievers: Tuple,
+    query: str,
+    k: int = 20,
+    rrf_k: int = 40,
+    debug: bool = False,
+):
+
+    if len(retrievers) == 1:
+        retr = retrievers[0]
+        docs = retr.get_relevant_documents(query)
+        return docs[:k]
+
+    elif len(retrievers) == 2:
+        retrA, retrB = retrievers
+        resultsA = retrA.get_relevant_documents(query)
+        resultsB = retrB.get_relevant_documents(query)
+        fused_docs, _, _ = rrf_fusion(resultsA, resultsB, k=rrf_k, debug=debug)
+        return fused_docs[:k]
+
+    else:
+        raise ValueError(
+            f"retrieve_raw supporta solo 1 o 2 retriever, ricevuti: {len(retrievers)}"
         )
 
